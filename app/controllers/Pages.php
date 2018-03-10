@@ -1,28 +1,24 @@
 <?php 
 #podemos acceder a Controller desde aqui
 class Pages extends Controller {
-	public function __construct(){		
-		
+
+	public function __construct(){
+
+        $this->tourModel = $this->model('Tour');
+
+
 	}
 	//b. llamar al modelo de la funcion
-	public function index(){
-		
-      
-      $data = [
-        'title' => 'Office Peru',
-        'description' => 'Simple social Network built on the PHP Framework',
-        
-      ];
-     //d. y lo pasamos a la Vista
+
+    public function index(){
+        // llamar al modelo
+        $tours = $this->tourModel->getTours();
+
+        $data = [
+            'tours' => $tours
+        ];
+
         $this->view('pages/index', $data);
     }
 
-    public function about(){
-      $data = [
-        'title' => 'About Us',
-        'description' => 'about of the PHP Framework'
-      ];
-
-      $this->view('pages/about', $data);
-    }
 }

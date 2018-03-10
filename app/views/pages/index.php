@@ -3,7 +3,7 @@
 <div id="banner" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
 
 
-    <!-- Wrapper for slides -->
+    <!-- ========= carrousel Starts ========== -->
     <div class="carousel-inner" role="listbox">
         <div class="item active" style="background-image:url(<?php echo URLROOT; ?>/img/banner/1_machupicchu.jpg);">
             <div class="caption-info">
@@ -77,7 +77,7 @@
         </div>
 
     </div>
-    <!--end carousel-inner-->
+    <!-- ========= carrousel Ends ==========-->
 
 
     <!-- Controls -->
@@ -96,6 +96,8 @@
 <!-- ========== 2 PACKAGES STARTS ========== -->
 <section id="packages" class="inverse">
     <div class="container">
+
+
         <div class="row">
             <div class="col-xs-12">
                 <div class="section-title text-center">
@@ -105,17 +107,19 @@
         </div>
 
         <div class="row">
+
+            <?php foreach($data['tours'] as $post) : ?>
             <div class="col-xs-6 col-sm-6 col-md-4">
                 <div class="package-list wow fadeInUp">
-                    <a href="<?php echo CUSCO_PKG_7D6N_LINK; ?>">
+                    <a href="<?php echo URLROOT; ?>/tours/<?php echo $post->pid; ?>">
                         <div class="package-thumb">
-                            <img src="<?php echo URLROOT; ?>/img/packages/pkg1.jpg" alt="" />
+                            <img src="<?php echo URLROOT; ?><?php echo $post->ruta; ?>" alt="" />
                             <div class="duration">
                                 7 <?php echo DAYS_TEXT; ?><br/>6 <?php echo NIGHTS_TEXT; ?>
                             </div>
                         </div>
                         <div class="package-info">
-                            <h3><?php echo T7D_6N_PACKAGE_TEXT; ?></h3>
+                            <h3><?php echo $post->titulo; ?><?php echo $post->duracion; ?></h3>
                             <span class="pull-left">
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
@@ -130,136 +134,9 @@
                 </div>
             </div>
 
-            <div class="col-xs-6 col-sm-6 col-md-4">
-                <div class="package-list wow fadeInUp">
-                    <a href="index.php?action=<?php echo CUSCO_PKG_6D5N_LINK; ?>">
-                        <div class="package-thumb">
-                            <img src="<?php echo URLROOT; ?>/img/packages/pkg5.jpg" alt="" />
-                            <div class="duration">
-                                6 <?php echo DAYS_TEXT; ?><br/>5 <?php echo NIGHTS_TEXT; ?>
-                            </div>
-                        </div>
-                        <div class="package-info">
-                            <h3><?php echo T6D_5N_PACKAGE_TEXT; ?></h3>
-
-                            <span class="pull-left">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star-half-o"></i>
-									<span class="review-count"> - 190 review</span>
-                                </span>
-                            <span class="pull-right price">$1500</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-xs-6 col-sm-6 col-md-4">
-                <div class="package-list wow fadeInUp">
-                    <a href="index.php?action=<?php echo CUSCO_PKG_5D4N_LINK; ?>">
-                        <div class="package-thumb">
-                            <img src="<?php echo URLROOT; ?>/img/packages/pkg2.jpg" alt="" />
-                            <div class="duration">
-                                5 <?php echo DAYS_TEXT; ?><br/>4 <?php echo NIGHTS_TEXT; ?>
-                            </div>
-                        </div>
-                        <div class="package-info">
-                            <h3><?php echo T5D_4N_PACKAGE_TEXT; ?></h3>
-
-                            <span class="pull-left">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star-o"></i>
-									<span class="review-count"> - 120 review</span>
-                                </span>
-                            <span class="pull-right price">$1300</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-xs-6 col-sm-6 col-md-4">
-                <div class="package-list wow fadeInUp">
-                    <a href="index.php?action=<?php echo CUSCO_PKG_4D3N_LINK; ?>">
-                        <div class="package-thumb">
-                            <img src="<?php echo URLROOT; ?>/img/packages/pkg3.jpg" alt="" />
-                            <div class="duration">
-                                4 <?php echo DAYS_TEXT; ?><br/>3 <?php echo NIGHTS_TEXT; ?>
-                            </div>
-                        </div>
-                        <div class="package-info">
-                            <h3><?php echo T4D_3N_PACKAGE_TEXT; ?></h3>
-
-                            <span class="pull-left">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<span class="review-count"> - 90 review</span>
-                                </span>
-                            <span class="pull-right price">$1200</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-xs-6 col-sm-6 col-md-4">
-                <div class="package-list wow fadeInUp">
-                    <a href="index.php?action=<?php echo CUSCO_PKG_3D2N_LINK; ?>">
-                        <div class="package-thumb">
-                            <img src="<?php echo URLROOT; ?>/img/packages/pkg4.jpg" alt="" />
-                            <div class="duration">
-                                3 <?php echo DAYS_TEXT; ?><br/>2 <?php echo NIGHTS_TEXT; ?>
-                            </div>
-                        </div>
-                        <div class="package-info">
-                            <h3>&ensp;&ensp;&ensp;&ensp;<?php echo T3D_2N_PACKAGE_TEXT; ?></h3>
+            <?php endforeach; ?>
 
 
-                            <span class="pull-left">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star-half-o"></i>
-									<span class="review-count"> - 160 review</span>
-                                </span>
-                            <span class="pull-right price">$1500</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-xs-6 col-sm-6 col-md-4">
-                <div class="package-list wow fadeInUp">
-                    <a href="#">
-                        <div class="package-thumb">
-                            <img src="<?php echo URLROOT; ?>/img/packages/pkg4.jpg" alt="" />
-                            <div class="duration">
-                                0 <?php echo DAYS_TEXT; ?><br/>0 <?php echo NIGHTS_TEXT; ?>
-                            </div>
-                        </div>
-                        <div class="package-info">
-                            <h3>Lorem Ipsum</h3>
-
-                            <span class="pull-left">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star-o"></i>
-									<span class="review-count"> - 90 review</span>
-                                </span>
-                            <span class="pull-right price">$1800</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
         </div>
     </div>
 </section>

@@ -570,7 +570,7 @@ class GestorTours{
             <div class="tab-content">
               <div class="active tab-pane" id="activity"> 
               
-                <!-- Post -->
+                <!-- Tour -->
                 <div class="post">                
                   <div class="user-block">
                   

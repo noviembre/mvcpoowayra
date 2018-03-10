@@ -174,22 +174,22 @@ section{
 }
 
 .seccion label[for*='1']:before {
-	content: '\f1cb';
+	content: '\f016';
 }
 
 .seccion label[for*='2']:before {
-	content: '\f17d';
+	content: '\f00c';
 }
 
 .seccion label[for*='3']:before {
-	content: '\f16b';
+	content: '\f03a';
 }
 
 .seccion label[for*='4']:before {
-	content: '\f1a9';
+	content: '\f0d6';
 }
 .seccion label[for*='5']:before {
-	content: '\f17b';
+	content: '\f00b';
 }
 
 .seccion label:hover {

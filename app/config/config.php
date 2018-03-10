@@ -5,6 +5,7 @@
   define('DB_USER', 'dos');
   define('DB_PASS', '4+4PezUVCkXRm5+5');
   define('DB_NAME', 'cms_travel');
+  define('DB_CHARSET', 'utf8');
 
   // App Root, muestra la ruta
   define('APPROOT', dirname(dirname(__FILE__)));
@@ -12,5 +13,5 @@
   define('URLROOT', 'http://localhost/cwayra');
   // Site Name
   define('SITENAME', 'Wayra cusco world');
-    // App Version
+// App Version
     define('APPVERSION', '1.0.0');
