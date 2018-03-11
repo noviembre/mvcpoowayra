@@ -176,26 +176,27 @@
                 <div class="col-xs-12 col-sm-4 col-md-3">
                     <div class="sidebar">
                         <div class="sidebar-item">
-                            <h3>Tour Booking</h3>
-                            <form action="https://themecrazy.net/tour-maker/tour-details.html#" method="post" id="booking-form">
+                                <h3 class="text-center"><?php echo BOOK_NOW_TEXT;?></h3>
+                            <form action="" method="post" id="booking-form">
+
                                 <div class="form-group">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                        <input type="text" class="form-control" placeholder="Enter Your Name" name="name">
+                                        <input type="text" class="form-control" placeholder="<?php echo NAME_TEXT;?>" name="name">
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
-                                        <input type="text" class="form-control" placeholder="Email Address" name="email">
+                                        <input type="text" class="form-control" placeholder="<?php echo YOUR_EMAIL_TEXT;?>" name="email">
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-phone"></i></span>
-                                        <input type="text" class="form-control" placeholder="Phone" name="phone">
+                                        <input type="text" class="form-control" placeholder="<?php echo PHONE_TEXT;?>" name="phone">
                                     </div>
                                 </div>
 
@@ -209,11 +210,19 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-users"></i></span>
-                                        <input type="number" class="form-control" placeholder="1" min="1" name="name">
+                                        <input name="name" type="number" class="form-control" placeholder="1" min="1" title="<?php echo HOW_MANY_TEXT;?>" >
                                     </div>
                                 </div>
+
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-comment"></i></span>
+                                        <input name="message" type="text" class="form-control" placeholder="<?php echo YOUR_MESSAGE_TEXT;?>">
+                                    </div>
+                                </div>
+
                                 <div class="text-center">
-                                    <input type="submit" name="submit" class="booking btn btn-primary" value="Book Now">
+                                    <input type="submit" name="submit" class="booking btn btn-primary" value="<?php echo SUBMIT_TEXT;?>">
                                 </div>
 
                             </form>
@@ -241,16 +250,6 @@
     <!--end main-content-->
 
     <!--end main-content-->
-
-
-<br>
-<h1><?php echo $data['tours']->titulo; ?></h1>
-<div class="bg-secondary text-white p-2 mb-3">
-    Written by <?php echo $data['detalles']->descripcion; ?>
-
-</div>
-
-
 
 
 

@@ -7,9 +7,9 @@
             <div class="col-xs-12 col-sm-5">
                 <div class="text-left">
                     <ul>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="www.facebook.com/wayracuscoworld"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="www.instagram.com/wayracuscoworld"><i class="fa fa-instagram"></i></a></li>
                         <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                         <li><a href="#"><i class="fa fa-youtube"></i></a></li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>

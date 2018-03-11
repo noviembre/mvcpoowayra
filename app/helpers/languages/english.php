@@ -16,6 +16,7 @@ define('TREKKING_LINK','trekking');
 
 define('MEET_MACHUPICCHU_TEXT','MEET OUR WONDER.');
 define('BOOK_TEXT','Discover Our Tours');
+define('BOOK_NOW_TEXT','Booking');
 define('MORE_INFO_TEXT','More Info');
 define('POPULAR_TOURS_TEXT','Most Popular Tours');
 
@@ -82,6 +83,7 @@ define("ANY_SUGGESTION_TEXT","Doubts, questions, We'll be glad to help you" );
 
 define('NAME_TEXT','Name');
 define('FULL_NAME_TEXT','Full Name');
+define('HOW_MANY_TEXT','How many people?');
 
 
 define('DROP_US_A_LINE_TEXT','Drop us a line');

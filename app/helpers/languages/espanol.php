@@ -18,6 +18,7 @@ define('TREKKING_LINK','trekking');
 
 define('MEET_MACHUPICCHU_TEXT','conoce nuestra maravilla.');
 define('BOOK_TEXT','Descubre Nuestros Tours');
+define('BOOK_NOW_TEXT','Reservar');
 define('MORE_INFO_TEXT','Mas Informacion');
 define('POPULAR_TOURS_TEXT','Tours Mas Populares');
 
@@ -77,6 +78,7 @@ define('CONTACT_LINK','contact-es');
 /*------- SEND US A MESSAGE   --------*/
 define('ADDRESS_TEXT','Direccion');
 define('PHONE_TEXT','Teléfono');
+
 
 define("WEREHAPPY_TO_HEAR_FROM_YOU_TEXT", "Estamos Felices de Escucharte");
 define('YOUR_EMAIL_TEXT','Tu Email');
