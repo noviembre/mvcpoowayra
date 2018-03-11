@@ -58,7 +58,7 @@ define('MACHUPICCHU_LINK','machupicchu-en');
 define('JUNGLE_TREK_LINK','jungle-trek-en');
 define('INKA_TRAIL_LINK','inka-trail-en');
 
-define('MACHUPICCHU_FULL_DAY_LINK','machupicchu-full-day-en');
+define('MACHUPICCHU_FULL_DAY_LINK','3');
 define('MACHUPICCHU_2D1N_LINK','machupicchu-2days-1night-en');
 
 define('FAQS_LINK','faqs-en');
@@ -137,11 +137,11 @@ define('T4DIAS_3NIGHTS_TEXT','4 Days 3 Nights');
 define('T3DIAS_2NIGHTS_TEXT','3 Days 2 Nights');
 
 #------------ LINKS ----------------*
-define('CUSCO_PKG_7D6N_LINK','cusco-package-7days-6nights-en');
-define('CUSCO_PKG_6D5N_LINK','cusco-package-6days-5nights-en');
-define('CUSCO_PKG_5D4N_LINK','cusco-package-5days-4nights-en');
-define('CUSCO_PKG_4D3N_LINK','cusco-package-4days-3nights-en');
-define('CUSCO_PKG_3D2N_LINK','cusco-package-3days-2nights-en');
+define('CUSCO_PKG_7D6N_LINK','19');
+define('CUSCO_PKG_6D5N_LINK','21');
+define('CUSCO_PKG_5D4N_LINK','23');
+define('CUSCO_PKG_4D3N_LINK','25');
+define('CUSCO_PKG_3D2N_LINK','27');
 
 
 define('ONLINE_BOOKING_TEXT', 'Online Booking');

@@ -13,7 +13,7 @@ class Galeria {
             'SELECT * FROM galeria a INNER JOIN tours b ON a.tid=b.tid WHERE a.tid = :id');
         $this->db->bind(':id', $id);
 
-        $row = $this->db->resultSet();
+        $row = $this->db->selectAll();
         return $row;
 
     }

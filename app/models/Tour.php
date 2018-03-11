@@ -14,38 +14,30 @@ class Tour {
         $this->db = new Database;
     }
 
-    public function getTours(){
-        $this->db->query(
-            "SELECT * FROM portada WHERE facha = 1
-                        ");
+    public function listarToursPaquetes(){
+        $this->db->query("SELECT * FROM portada WHERE facha = 1 ");
 
-        $results = $this->db->resultSet();
+        $results = $this->db->selectAll();
         return $results;
     }
 
-    # Seleccionar tour por id
+    public function listarToursPopular(){
+        $this->db->query("SELECT * FROM portada where facha = 2");
+
+        $rows = $this->db->selectAll();
+        return $rows;
+    }
+
+    # Listar Tours en la portada
     public function getTourById($id){
+
         $this->db->query('SELECT * FROM portada WHERE pid = :id');
         $this->db->bind(':id', $id);
 
-        $row = $this->db->single();
-
+        $row = $this->db->selectOne();
         return $row;
     }
 
-    public function addPost($data){
-        $this->db->query('INSERT INTO tours (title, user_id, body) VALUES(:title, :user_id, :body)');
-        // Bind values
-        $this->db->bind(':title', $data['title']);
-        $this->db->bind(':user_id', $data['user_id']);
-        $this->db->bind(':body', $data['body']);
 
-        // Execute
-        if($this->db->execute()){
-            return true;
-        } else {
-            return false;
-        }
-    }
 
 }

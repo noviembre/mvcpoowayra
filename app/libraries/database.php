@@ -66,13 +66,13 @@
     }
 
     // Get result set as array of objects
-    public function resultSet(){
+    public function selectAll(){
       $this->execute();
       return $this->stmt->fetchAll(PDO::FETCH_OBJ);
     }
 
     // Get single record as object
-    public function single(){
+    public function selectOne(){
       $this->execute();
       return $this->stmt->fetch(PDO::FETCH_OBJ);
     }

@@ -6,16 +6,17 @@ class Pages extends Controller {
 
         $this->tourModel = $this->model('Tour');
 
-
 	}
 	//b. llamar al modelo de la funcion
 
     public function index(){
         // llamar al modelo
-        $tours = $this->tourModel->getTours();
+        $tours = $this->tourModel->listarToursPaquetes();
+        $popular = $this->tourModel->listarToursPopular();
 
         $data = [
-            'tours' => $tours
+            'tours' => $tours,
+            'popular' => $popular
         ];
 
         $this->view('pages/index', $data);

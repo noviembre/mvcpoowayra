@@ -15,10 +15,11 @@ class Detalle {
     }
 
     public function listarDetalleTourById($id){
-        $this->db->query('SELECT * FROM tdetalles a INNER JOIN tours b ON a.tid=b.tid INNER JOIN galeria c ON b.tid=c.tid WHERE a.tid = :id');
+        $this->db->query(
+            'SELECT * FROM tdetalles a INNER JOIN tours b ON a.tid=b.tid  WHERE a.tid = :id');
         $this->db->bind(':id', $id);
 
-        $row = $this->db->single();
+        $row = $this->db->selectOne();
 
         return $row;
     }

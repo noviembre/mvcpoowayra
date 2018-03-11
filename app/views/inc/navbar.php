@@ -11,7 +11,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand page-scroll" href="inicio">
+                    <a class="navbar-brand page-scroll" href="<?php echo URLROOT; ?>">
                         <img style="width: 198px; height: auto" src="<?php echo URLROOT; ?>/img/logo-white.png" alt="Logo" /></a>
                 </div>
 
@@ -19,7 +19,8 @@
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active">
-                            <a class="page-scroll" href="#page-top"><?php echo HOME_TEXT; ?></a>
+                            <a class="page-scroll" href="<?php echo URLROOT; ?>">
+                                <?php echo HOME_TEXT; ?></a>
                         </li>
 
                         <li>

@@ -92,23 +92,23 @@ p{
 	transition:all 0.35s ease-in-out;
 }
 .btn.btn-primary{
-	border:1px solid #00bdbb;
-	background:#00bdbb;
+	border:1px solid #6dc82b;
+	background:#6dc82b;
 	color:#fff;
 }
 .btn.btn-primary:hover{
 	background:none;
-	border-color:#00bdbb;
-	color:#00bdbb;
+	border-color:#6dc82b;
+	color:#6dc82b;
 }
 .btn.btn-default{
-	border:1px solid #00bdbb;
+	border:1px solid #6dc82b;
 	background:none;
-	color:#00bdbb;
+	color:#6dc82b;
 }
 .btn.btn-default:hover{
-	background:#00bdbb;
-	border-color:#00bdbb;
+	background:#6dc82b;
+	border-color:#6dc82b;
 	color:#fff;;
 }
 
@@ -331,7 +331,7 @@ SLIDE
 	box-shadow:0 -7px 12px rgba(0, 0, 0, 0.5);
 	background:rgba(0,0,0,0.85);
 }
-.navbar > .container .navbar-brand, 
+.navbar > .container .navbar-brand,
 .navbar > .container-fluid .navbar-brand{
 	margin:0;
 	height:auto;
@@ -368,14 +368,14 @@ SLIDE
 }
 .navbar-default .navbar-nav > li > a:hover::before,
 .navbar-default .navbar-nav > .active > a::before{
-	background-color:#00bdbb;
+	background-color:#6dc82b;
 	width:100%;
 }
-.navbar-default .navbar-nav > .active > a, 
-.navbar-default .navbar-nav > .active > a:focus, 
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > li > a:hover{
-	color:#00bdbb;
+	color:#6dc82b;
 	background:none;
 }
 .navbar-right{
@@ -487,7 +487,7 @@ SLIDE
 }
 .control:hover{
 	background:#fff;
-	color:#00bdbb;
+	color:#6dc82b;
 }
 .left.control{
 	left:10px;
@@ -527,7 +527,7 @@ SLIDE
     margin: 0 0 10px;
     vertical-align: middle;
     width: 80px;
-	color:#00bdbb;
+	color:#6dc82b;
 	background:#fff;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -539,7 +539,7 @@ SLIDE
 	transition:all 0.4s ease-in-out;
 }
 .service-list:hover .fa{
-	background:#00bdbb;
+	background:#6dc82b;
 	color:#fff;
 }
 
@@ -563,7 +563,7 @@ SLIDE
 	-ms-transition:all 0.5s ease-in-out;
 	-o-transition:all 0.5s ease-in-out;
 	transition:all 0.5s ease-in-out;
-	
+
 }
 .package-list:hover{
 	-webkit-box-shadow:0 0 10px -1px rgba(0, 0, 0, 0.4);
@@ -605,7 +605,7 @@ SLIDE
 	right:15px;
 	color:#fff;
 	font-weight:400;
-	
+
 }
 .package-thumb > img{
 	width:100%;
@@ -808,7 +808,7 @@ SLIDE
 	-moz-transform:translateX(-50%);
 	-ms-transform:translateX(-50%);
 	transform:translateX(-50%);
-	background:#00bdbb;
+	background:#6dc82b;
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
 	border-radius:5px;
@@ -846,7 +846,7 @@ SLIDE
 	cursor:pointer;
 }
 .discount-info a:hover{
-	color:#00bdbb;
+	color:#6dc82b;
 }
 .tour-item span .fa{
 	color:#777;
@@ -878,7 +878,7 @@ SLIDE
 }
 .count-section h3{
 	color:#fff;
-	
+
 }
 .count-section ul{
 	float:left;
@@ -909,7 +909,7 @@ SLIDE
 	transition:all 0.3s ease-in-out;
 }
 .count-section li:hover .fa{
-	background:#00bdbb;
+	background:#6dc82b;
 	color:#fff;
 }
 
@@ -940,9 +940,9 @@ SLIDE
 }
 #filter-list li.active,
 #filter-list li:hover{
-	background:#00bdbb;
+	background:#6dc82b;
 	color:#fff;
-	border-color:#00bdbb;
+	border-color:#6dc82b;
 }
 .gallery-item{
 	width:100%;
@@ -1041,7 +1041,7 @@ SLIDE
 }
 .gallery-item a:hover{
 	background:#fff;
-	color:#00bdbb;
+	color:#6dc82b;
 }
 .gallery-item li:hover h2,
 .gallery-item li:hover a{
@@ -1075,7 +1075,7 @@ SLIDE
 	transition:all 0.5s ease-in-out;
 }
 .post:hover{
-	border-color:#00bdbb;
+	border-color:#6dc82b;
 }
 .post-thumb{
 	width:100%;
@@ -1105,7 +1105,7 @@ SLIDE
 .post:hover .post-overlay{
 	opacity:1;
 	visibility:visible;
-} 
+}
 .post-overlay{
 	position:absolute;
 	width:100%;
@@ -1129,7 +1129,7 @@ SLIDE
 	height:auto;
 	background:#fff;
 	left:50%;
-	color:#00bdbb;
+	color:#6dc82b;
 	font-size:20px;
 	width:42px;
 	line-height:42px;
@@ -1148,7 +1148,7 @@ SLIDE
 }
 .post:hover .fa{
 	top:50%;
-} 
+}
 .post-bottom{
 	width:100%;
 	float:left;
@@ -1161,7 +1161,7 @@ SLIDE
 }
 .post-by a:hover,
 .post-comments a:hover{
-	color:#00bdbb;
+	color:#6dc82b;
 }
 .post-date{
 	font-size:14px;
@@ -1170,7 +1170,7 @@ SLIDE
 }
 .post-comments{
 	font-size:14px;
-	color:#00bdbb;
+	color:#6dc82b;
 	margin-left:10px;
 }
 .post:hover .overlay {
@@ -1247,14 +1247,14 @@ SLIDE
 	display:inline-block;
 	width:12px;
 	height:12px;
-	border:1px solid #00bdbb;
+	border:1px solid #6dc82b;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
     border-radius: 50%;
 	margin:0 5px;
 }
 .owl-dot.active{
-	background:#00bdbb;
+	background:#6dc82b;
 }
 
 /***************** Contact Section *************************/
@@ -1315,7 +1315,7 @@ SLIDE
 	color:inherit;
 }
 .contact-left p a:hover{
-	color:#00bdbb;
+	color:#6dc82b;
 }
 .form-control{
 	height:50px;
@@ -1326,7 +1326,7 @@ SLIDE
 	font-weight:300;
 }
 .form-control:focus{
-	border-color:#00bdbb;
+	border-color:#6dc82b;
 }
 .contact-right .form-control::-moz-placeholder{
 	opacity:1;
@@ -1403,7 +1403,7 @@ SLIDE
 	text-decoration:none;
 }
 .meta > span a:hover{
-	color:#00bdbb;
+	color:#6dc82b;
 }
 .meta > span.date{
 	border:none;
@@ -1432,7 +1432,7 @@ blockquote{
 	color:#777;
 	font-weight:300;
 	font-style:italic;
-	border-color:#00bdbb;
+	border-color:#6dc82b;
 	background:#faf9f9;
 }
 .post_bottom{
@@ -1468,7 +1468,7 @@ blockquote{
 	text-decoration:none;
 	color:#fff;
 	line-height:18px;
-	background:#00bdbb;
+	background:#6dc82b;
 	border:3px solid #fff;
 	-webkit-border-radius:50%;
 	-moz-border-radius:50%;
@@ -1527,7 +1527,7 @@ blockquote{
 	-webkit-border-radius:50%;
 	-moz-border-radius:50%;
 	border-radius:50%;
-	
+
 }
 .comment-info .author-desc {
 	margin-left: 80px;
@@ -1551,7 +1551,7 @@ blockquote{
 	font-weight:300;
 }
 .comment-list .list-inline a:hover{
-	color:#00bdbb;
+	color:#6dc82b;
 }
 .content-block .form-control{
 	border-color:#ccc;
@@ -1577,7 +1577,7 @@ blockquote{
 .sidebar-item h3{
 	padding:0 0 7px;
 	margin:0 0 15px;
-	border-bottom:1px solid #00bdbb;
+	border-bottom:1px solid #6dc82b;
 	font-family:"Dancing Script",cursive;
 }
 .sidebar-item .form-control{
@@ -1586,7 +1586,7 @@ blockquote{
 	color:#777;
 }
 .sidebar-item .form-control:focus{
-	border-color:#00bdbb;
+	border-color:#6dc82b;
 }
 .sidebar-item .input-group-addon{
 	padding:0;
@@ -1600,7 +1600,7 @@ blockquote{
     height: 38px;
     padding: 0 8px;
     text-transform: uppercase;
-	background:#00bdbb;
+	background:#6dc82b;
 }
 .category-list,
 .archive-list{
@@ -1619,12 +1619,12 @@ blockquote{
 	color:#777;
 	font-weight:300;
 	border-bottom:1px solid #f5f5f5;
-	
+
 }
 .category-list li a:hover,
 .archive-list li a:hover{
-	color:#00bdbb;
-	border-color:#00bdbb;
+	color:#6dc82b;
+	border-color:#6dc82b;
 }
 .tag-list li{
 	width:auto;
@@ -1645,8 +1645,8 @@ blockquote{
 }
 .tag-list li a:hover{
 	color:#fff;
-	border-color:#00bdbb;
-	background:#00bdbb;
+	border-color:#6dc82b;
+	background:#6dc82b;
 }
 
 #booking-form .fa{
@@ -1698,7 +1698,7 @@ blockquote{
 }
 #footer li a:hover{
 	color:#fff;
-	background:#00bdbb;
+	background:#6dc82b;
 }
 #footer p{
 	margin:0;
@@ -1724,7 +1724,7 @@ blockquote{
 	text-align:center;
 }
 .back-top i {
-    background: #00bdbb none repeat scroll 0 0;
+    background: #6dc82b none repeat scroll 0 0;
     border-radius: 50%;
     color: #fff;
     font-size: 24px;
@@ -1841,7 +1841,7 @@ h3{
 }
 .tour-list li{
 	width:50%;
-}	
+}
 
 .count-section h2{
 	font-size:15px;
@@ -1960,7 +1960,7 @@ h3{
 .navbar-collapse.collapse{
 	display: none!important;
 }
-.navbar-fixed-bottom .navbar-collapse, 
+.navbar-fixed-bottom .navbar-collapse,
 .navbar-fixed-top .navbar-collapse{
 	max-height:100%;
 }
@@ -1994,7 +1994,7 @@ h3{
 	padding:9px 0;
 	background:rgba(0, 0, 0, 0.85) none repeat scroll 0 0;
 }
-.navbar-default .navbar-nav > li > a, 
+.navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-nav > li > a:focus{
 	padding:6px 0;
 }
@@ -2006,15 +2006,15 @@ h3{
 }
 .navbar-default .navbar-toggle{
 	margin:11px 0;
-	border-color:#00bdbb;
+	border-color:#6dc82b;
 	-webkit-border-radius:4px;
 	-moz-border-radius:4px;
 	border-radius:4px;
 }
 .navbar-default .navbar-toggle .icon-bar,
-.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover{
-	background-color:#00bdbb;
+	background-color:#6dc82b;
 }
 .navbar-default .navbar-toggle:focus .icon-bar, 
 .navbar-default .navbar-toggle:hover .icon-bar{

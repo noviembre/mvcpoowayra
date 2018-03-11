@@ -14,19 +14,22 @@ class Tours extends Controller {
 
     // el $id que recibe show viene de la url
     public function index($id){
-        //recibimos el $id
-        $tour = $this->tourModel->getTourById($id);
+	    //recibimos el $id
 
-        $detalles = $this->detallesModel->listarDetalleTourById($tour->pid);
-        $galeria = $this->galeriaModel->llamarTresSlides($tour->pid);
+            $tour = $this->tourModel->getTourById($id);
 
-        $data = [
-            'tours' => $tour,
-            'detalles' => $detalles,
-            'galeria' => $galeria
-        ];
+            $detalles = $this->detallesModel->listarDetalleTourById($tour->pid);
+            $galeria = $this->galeriaModel->llamarTresSlides($tour->pid);
 
-        $this->view('tours/index', $data);
+            $data = [
+                'tours' => $tour,
+                'detalles' => $detalles,
+                'galeria' => $galeria
+            ];
+
+            $this->view('tours/index', $data);
+
+
     }
 
 

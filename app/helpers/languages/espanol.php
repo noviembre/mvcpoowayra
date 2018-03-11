@@ -40,18 +40,19 @@ define('JUNGLE_TREK_4D3N_TEXT','Inka Jungle 4 Dias 3 Noches');
 define('LAGUNA_HUMANTAY_TEXT','Laguna Humantay');
 define('WATCH_CONDOR_FLYING_CUSCO_TEXT','Vuelo del Condor - Cusco');
 
-#------- LINKS TOURS -------------
-define('CITY_TOUR_LINK','city-tour-es');
-define('SACRED_VALLEY_LINK','sacred-valley-es');
-define('MOUNTAIN_COLOURS_LINK','rainbown-mountain-es');
-define('MARAS_MORAY_LINK','maras-moray-es');
-define('VALLE_SUR_LINK','valle-sur-es');
-define('MACHUPICCHU_BY_CAR_LINK','machupicchu-by-car-es');
 
-define('INKA_TRAIL_2D1N_LINK','inka-trail-2days-1night-es');
+#------- LINKS TOURS POPULARES -------------
+define('CITY_TOUR_LINK','5');
+define('MOUNTAIN_COLOURS_LINK','7');
+define('SACRED_VALLEY_LINK','9');
+define('MARAS_MORAY_LINK','xxvacio');
+define('VALLE_SUR_LINK','xxvacio');
+define('MACHUPICCHU_BY_CAR_LINK','14');
+
+define('INKA_TRAIL_2D1N_LINK','16');
 define('INKA_TRAIL_4D3N_LINK','inka-trail-4days-3nights-es');
 define('JUNGLE_TREK_3D2N_LINK','jungle-trek-3days-2nights-es');
-define('JUNGLE_TREK_4D3N_LINK','jungle-trek-4days-3nights-es');
+define('JUNGLE_TREK_4D3N_LINK','18');
 
 define('LAGUNA_HUMANTAY_LINK','laguna-humantay-es');
 define('WATCH_CONDOR_FLYING_CUSCO_LINK','watch-condor-flying-cusco-es');
@@ -61,7 +62,7 @@ define('MACHUPICCHU_LINK','machupicchu-es');
 define('JUNGLE_TREK_LINK','jungle-trek-es');
 define('INKA_TRAIL_LINK','inka-trail-es');
 
-define('MACHUPICCHU_FULL_DAY_LINK','machupicchu-full-day-es');
+define('MACHUPICCHU_FULL_DAY_LINK','2');
 define('MACHUPICCHU_2D1N_LINK','machupicchu-2days-1night-es');
 
 
@@ -144,11 +145,11 @@ define('T4DIAS_3NIGHTS_TEXT','4 Dias 3 Noches');
 define('T3DIAS_2NIGHTS_TEXT','3 Dias 2 Noches');
 
 #------------ LINKS ----------------*
-define('CUSCO_PKG_7D6N_LINK','cusco-package-7days-6nights-es');
-define('CUSCO_PKG_6D5N_LINK','cusco-package-6days-5nights-es');
-define('CUSCO_PKG_5D4N_LINK','cusco-package-5days-4nights-es');
-define('CUSCO_PKG_4D3N_LINK','cusco-package-4days-3nights-es');
-define('CUSCO_PKG_3D2N_LINK','cusco-package-3days-2nights-es');
+define('CUSCO_PKG_7D6N_LINK','20');
+define('CUSCO_PKG_6D5N_LINK','22');
+define('CUSCO_PKG_5D4N_LINK','24');
+define('CUSCO_PKG_4D3N_LINK','26');
+define('CUSCO_PKG_3D2N_LINK','28');
 
 define('DAYS_TEXT','Dias');
 define('NIGHTS_TEXT','Noches');;
