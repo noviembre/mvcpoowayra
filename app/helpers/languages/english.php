@@ -83,7 +83,7 @@ define("ANY_SUGGESTION_TEXT","Doubts, questions, We'll be glad to help you" );
 
 define('NAME_TEXT','Name');
 define('FULL_NAME_TEXT','Full Name');
-define('HOW_MANY_TEXT','How many people?');
+
 
 
 define('DROP_US_A_LINE_TEXT','Drop us a line');
@@ -99,6 +99,17 @@ define('ADVERTISEMENT_TEXT','Advertisement');
 define('OTHER_TEXT','Other');
 
 define('SUBMIT_TEXT','Submit');
+
+
+
+
+
+/*----- consulta o reserva  ----------*/
+define('HOW_MANY_TEXT','How many people?');
+define('CHOOSE_TEXT','What do you want to do?');
+define('BOOKING_TEXT','I want to Book');
+define('SUGGESTION_TEXT','I have a doubt');
+define('BOOKING_OR_DOUBT_TEXT','Booking');
 
 
 #----------- Trekking.php ----------*

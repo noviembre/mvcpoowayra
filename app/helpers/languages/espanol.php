@@ -90,8 +90,6 @@ define('ANY_SUGGESTION_TEXT','Dudas, Preguntas, nos complacera poder ayudarle');
 /*----- Contact.php  ----------*/
 define('NAME_TEXT','Nombre');
 define('FULL_NAME_TEXT','Nombre Completo');
-
-
 define('DROP_US_A_LINE_TEXT','Mensaje');
 define('YOUR_MESSAGE_TEXT','Su Mensaje');
 
@@ -103,8 +101,18 @@ define('SEARCH_ENGINE_TEXT','Google');
 define('FRIENDS_TEXT','Amigos');
 define('ADVERTISEMENT_TEXT','Publicidad');
 define('OTHER_TEXT','Otro');
-
 define('SUBMIT_TEXT','Enviar');
+
+
+
+
+/*----- consulta o reserva  ----------*/
+define('HOW_MANY_TEXT','Cuantas personas son?');
+define('CHOOSE_TEXT','Que desea hacer ?');
+define('BOOKING_TEXT','Quiero Reservar');
+define('SUGGESTION_TEXT','Tengo una duda');
+define('BOOKING_OR_DOUBT_TEXT','Consultar o Reservar');
+
 
 
 #----------- Trekking.php ----------*

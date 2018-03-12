@@ -14,6 +14,23 @@ class Tour {
         $this->db = new Database;
     }
 
+    // Find tour by id
+    public function encontrarTourById($id){
+
+        $this->db->query('SELECT * FROM portada WHERE pid = :id');
+        // Bind value
+        $this->db->bind(':id', $id);
+
+        $row = $this->db->selectOne();
+
+        // Contar
+        if($this->db->rowCount() > 0){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public function listarToursPaquetes(){
         $this->db->query("SELECT * FROM portada WHERE facha = 1 ");
 

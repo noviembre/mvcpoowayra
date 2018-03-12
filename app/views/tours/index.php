@@ -142,21 +142,21 @@
                             <div class="post_bottom">
                                 <ul>
                                     <li class="like">
-                                        <a href="https://themecrazy.net/tour-maker/tour-details.html#">
+                                        <a href="#">
                                             <i class="fa fa-commenting-o"></i>
                                             <span>12</span>
                                         </a>
                                     </li>
 
                                     <li class="share">
-                                        <a href="https://themecrazy.net/tour-maker/tour-details.html#">
+                                        <a href="#">
                                             <i class="fa fa-share-alt"></i>
                                             <span>12</span>
                                         </a>
                                     </li>
 
                                     <li class="favorite">
-                                        <a href="https://themecrazy.net/tour-maker/tour-details.html#">
+                                        <a href="#">
                                             <i class="fa fa-heart"></i>
                                             <span>12</span>
                                         </a>
@@ -176,12 +176,28 @@
                 <div class="col-xs-12 col-sm-4 col-md-3">
                     <div class="sidebar">
                         <div class="sidebar-item">
-                                <h3 class="text-center"><?php echo BOOK_NOW_TEXT;?></h3>
+                                <h3 class="text-center"><?php echo BOOKING_OR_DOUBT_TEXT;?></h3>
                             <form action="" method="post" id="booking-form">
 
                                 <div class="form-group">
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-question"></i>
+                                        </span>
+                                        <select name="r" id="" class="form-control">
+                                            <option value=""><?php echo CHOOSE_TEXT;?> </option>
+                                            <option value="reservar"><?php echo BOOKING_TEXT;?></option>
+                                            <option value="consultar"><?php echo SUGGESTION_TEXT;?></option>
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-user"></i>
+                                        </span>
                                         <input type="text" class="form-control" placeholder="<?php echo NAME_TEXT;?>" name="name">
                                     </div>
                                 </div>
@@ -193,12 +209,6 @@
                                     </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-phone"></i></span>
-                                        <input type="text" class="form-control" placeholder="<?php echo PHONE_TEXT;?>" name="phone">
-                                    </div>
-                                </div>
 
                                 <div class="form-group">
                                     <div class="input-group">
@@ -231,13 +241,13 @@
                         <div class="sidebar-item">
                             <h3>Tag Cloudes</h3>
                             <ul class="tag-list">
-                                <li><a href="https://themecrazy.net/tour-maker/tour-details.html#">Travel</a></li>
-                                <li><a href="https://themecrazy.net/tour-maker/tour-details.html#">Tour</a></li>
-                                <li><a href="https://themecrazy.net/tour-maker/tour-details.html#">Portfolio</a></li>
-                                <li><a href="https://themecrazy.net/tour-maker/tour-details.html#">Photography</a></li>
-                                <li><a href="https://themecrazy.net/tour-maker/tour-details.html#">Wedding</a></li>
-                                <li><a href="https://themecrazy.net/tour-maker/tour-details.html#">Agency</a></li>
-                                <li><a href="https://themecrazy.net/tour-maker/tour-details.html#">Single</a></li>
+                                <li><a href="#">Travel</a></li>
+                                <li><a href="#">Tour</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Photography</a></li>
+                                <li><a href="#">Wedding</a></li>
+                                <li><a href="#">Agency</a></li>
+                                <li><a href="#">Single</a></li>
                             </ul>
                         </div><!--end sidebar-item-->
 
