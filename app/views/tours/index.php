@@ -80,13 +80,14 @@
                                 <section id="content1">
 
                                     <h3>Detalles del Tour</h3>
+                                    <h3>Detalles del Tour</h3>
                                     <h3>Duracion: </h3><?php echo $data['tours']->duracion; ?>
                                     <p><?php echo $data['detalles']->descripcion; ?></p>
                                     <div class="plan-itinerario">
                                         <i class="ion-clock icon-big"></i>
 
                                         <div>
-                                            <?php echo $data['detalles']->itinerario; ?>
+                                            <?php echo $data['detalles']->descripcion; ?>
                                         </div>
 
                                     </div>
@@ -94,19 +95,24 @@
                                 </section>
 
                                 <section id="content2">
+
                                     <h3>Incluye:</h3>
                                     <div><?php echo $data['detalles']->incluye; ?></div>
 
+                                    <br>
                                     <h3>No Incluye:</h3>
                                     <div><?php echo $data['detalles']->noincluye; ?></div>
+                                    <br>
 
                                     <h3>Que llevar:</h3>
                                     <p>Asegurese de llevar ropa apropiada y los items adecuados:</p>
                                     <div><?php echo $data['detalles']->quellevar; ?></div>
+                                    <br>
 
                                     <i class="fa fa-sun-o"></i>
                                     <h3>Clima:</h3>
                                     <div><?php echo $data['detalles']->clima; ?></div>
+
                                 </section>
 
                                 <section id="content3">
@@ -119,7 +125,7 @@
                                     <i class="ion-social-usd icon-big"></i>
                                     <h3>Precios:</h3>
                                     <div>los precios varian</div>
-
+                                    <br>
                                     <h3>Salidas :</h3>
                                     <div>Salidas diarias</div>
 
@@ -129,11 +135,7 @@
                                     <i class="ion-android-list icon-big"></i>
                                     <h3>Itinerario completo:</h3>
                                     <p class="long-copy">
-                                        <?php echo $data['detalles']->descripcion; ?></p>
-
-                                    <h3>Tips::</h3>
-                                    <div>...</div>
-
+                                        <?php echo $data['detalles']->full_itinerario; ?></p>
                                 </section>
 
                             </div><!-- SECCION ENDS -->
@@ -184,7 +186,7 @@
                                         <span class="input-group-addon">
                                             <i class="fa fa-question"></i>
                                         </span>
-                                        <select name="r" id="" class="form-control">
+                                        <select name="religio" id="" class="form-control">
                                             <option value=""><?php echo CHOOSE_TEXT;?> </option>
                                             <option value="reservar"><?php echo BOOKING_TEXT;?></option>
                                             <option value="consultar"><?php echo SUGGESTION_TEXT;?></option>
@@ -198,14 +200,14 @@
                                         <span class="input-group-addon">
                                             <i class="fa fa-user"></i>
                                         </span>
-                                        <input type="text" class="form-control" placeholder="<?php echo NAME_TEXT;?>" name="name">
+                                        <input name="rnombre" type="text" class="form-control" placeholder="<?php echo NAME_TEXT;?>">
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
-                                        <input type="text" class="form-control" placeholder="<?php echo YOUR_EMAIL_TEXT;?>" name="email">
+                                        <input name="remail" type="text" class="form-control" placeholder="<?php echo YOUR_EMAIL_TEXT;?>">
                                     </div>
                                 </div>
 
@@ -213,21 +215,21 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                        <input type="text" class="form-control date_pic" placeholder="08/16/2016" name="phone">
+                                        <input name="rfecha" type="text" class="form-control date_pic" placeholder="08/16/2016" >
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-users"></i></span>
-                                        <input name="name" type="number" class="form-control" placeholder="1" min="1" title="<?php echo HOW_MANY_TEXT;?>" >
+                                        <input name="rpersonas" type="number" class="form-control" placeholder="1" min="1" title="<?php echo HOW_MANY_TEXT;?>" >
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-comment"></i></span>
-                                        <input name="message" type="text" class="form-control" placeholder="<?php echo YOUR_MESSAGE_TEXT;?>">
+                                        <input name="rmensaje" type="text" class="form-control" placeholder="<?php echo YOUR_MESSAGE_TEXT;?>">
                                     </div>
                                 </div>
 
