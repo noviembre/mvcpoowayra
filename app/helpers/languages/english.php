@@ -62,10 +62,10 @@ define('INKA_TRAIL_LINK','inka-trail-en');
 define('MACHUPICCHU_FULL_DAY_LINK','3');
 define('MACHUPICCHU_2D1N_LINK','machupicchu-2days-1night-en');
 
-define('FAQS_LINK','faqs-en');
+define('FAQS_LINK','faqs');
 define('TOURS_LINK','tours-en');
 define('PACKAGES_LINK','packages');
-define('ABOUT_US_LINK','about-en');
+define('ABOUT_US_LINK','aboutus');
 define('CONTACT_LINK','contact-en');
 
 /*------- SEND US A MESSAGE   --------*/
@@ -101,7 +101,10 @@ define('OTHER_TEXT','Other');
 define('SUBMIT_TEXT','Submit');
 
 
-
+/*----- quienes somos  ----------*/
+define('WHO_WE_ARE_TEXT','About Us');
+define('MISSION_TEXT','Mission');
+define('VISION_TEXT','Vision');
 
 
 /*----- consulta o reserva  ----------*/

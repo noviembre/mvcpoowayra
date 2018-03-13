@@ -12,6 +12,6 @@
   // URL Root
   define('URLROOT', 'http://localhost/cwayra');
   // Site Name
-  define('SITENAME', 'Wayra cusco world');
+  define('SITENAME', 'Wayra Cusco World');
 // App Version
     define('APPVERSION', '1.0.0');

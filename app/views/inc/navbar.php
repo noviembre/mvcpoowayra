@@ -24,28 +24,23 @@
                         </li>
 
                         <li>
-                            <a class="page-scroll" href="<?php echo TREKKING_LINK; ?>">
+                            <a class="page-scroll" href="<?php echo URLROOT; ?>/<?php echo TREKKING_LINK; ?>">
                                 <?php echo TREKKING_TEXT; ?></a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="index.php?action=<?php echo PACKAGES_LINK; ?>"><?php echo PACKAGE_TEXT; ?></a>
+                            <a class="page-scroll" href="<?php echo PACKAGES_LINK; ?>"><?php echo PACKAGE_TEXT; ?></a>
                         </li>
 
                         <li>
-                            <a class="page-scroll" href="index.php?action=<?php echo FAQS_LINK; ?>"><?php echo FAQS_TEXT; ?></a>
+                            <a class="page-scroll" href="<?php echo URLROOT; ?>/<?php echo FAQS_LINK; ?>"><?php echo FAQS_TEXT; ?></a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="index.php?action=<?php echo ABOUT_US_LINK; ?>"><?php echo ABOUT_TEXT; ?></a>
+                            <a class="page-scroll" href="<?php echo URLROOT; ?>/<?php echo ABOUT_US_LINK; ?>"><?php echo ABOUT_TEXT; ?></a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="index.php?action=<?php echo CONTACT_LINK; ?>"><?php echo CONTACT_TEXT; ?></a>
+                            <a class="page-scroll" href="<?php echo URLROOT; ?>/<?php echo CONTACT_LINK; ?>"><?php echo CONTACT_TEXT; ?></a>
                         </li>
-                        <li>
-                            <a class="page-scroll" href="#testimonials">Testimonials</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#contact-us">Contact Us</a>
-                        </li>
+                        
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->

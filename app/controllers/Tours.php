@@ -42,8 +42,9 @@ class Tours extends Controller {
 	        redirect('index');
         }
 
-
     }
+
+
 
 
 

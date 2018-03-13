@@ -67,10 +67,10 @@ define('MACHUPICCHU_FULL_DAY_LINK','2');
 define('MACHUPICCHU_2D1N_LINK','machupicchu-2days-1night-es');
 
 
-define('FAQS_LINK','faqs-es');
+define('FAQS_LINK','faqs');
 define('TOURS_LINK','tours-es');
 define('PACKAGES_LINK','packages');
-define('ABOUT_US_LINK','about-es');
+define('ABOUT_US_LINK','aboutus');
 define('CONTACT_LINK','contact-es');
 
 
@@ -104,6 +104,11 @@ define('OTHER_TEXT','Otro');
 define('SUBMIT_TEXT','Enviar');
 
 
+
+/*----- quienes somos  ----------*/
+define('WHO_WE_ARE_TEXT','Quienes Somos');
+define('MISSION_TEXT','Mision');
+define('VISION_TEXT','Vision');
 
 
 /*----- consulta o reserva  ----------*/
