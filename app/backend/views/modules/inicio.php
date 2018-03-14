@@ -21,127 +21,153 @@ include "views/modules/sidebar.php";
     <!-- Main content -->
     <section class="content">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="info-box">
+                    <span class="info-box-icon bg-aqua"><i class="fa fa-star"></i></span>
 
-                <div class="box">
-                    <div class="box-header with-border">
-                        <h1 class="box-title">Wayra Cusco World</h1>
-                        <div class="box-tools pull-right">
-                        </div>
-                    </div> <!-- /.box-header -->
-
-                    <!-- centro -->
-
-                    <div class="row">
-                        <div class="container">
-
-
-                            <div class="col-lg-3 col-xs-6">
-                                <!-- small box -->
-                                <div class="small-box bg-aqua">
-                                    <div class="inner">
-                                        <h3>
-                                            <?php
-                                            $contar = new GestorTours();
-                                            $contar ->count_All_toursControllers();
-                                            ?>
-                                        </h3>
-
-                                        <p>Total Tours</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-line-chart"></i>
-                                    </div>
-                                    <a href="tours" class="small-box-footer">Ver mas <i class="fa fa-arrow-circle-right"></i></a>
-                                </div>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Total Tours</span>
+                            <div class="inner">
+                                <h1 class="text-center text-bold">
+                                    <?php
+                                    $contar = new GestorTours();
+                                    $contar ->count_All_toursControllers();
+                                    ?>
+                                </h1>
                             </div>
-                            <!-- ./col -->
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+            </div>
 
-                            <div class="col-lg-3 col-xs-6">
-                                <!-- small box -->
-                                <div class="small-box bg-green-gradient">
-                                    <div class="inner">
-                                        <h3>
-                                            <?php
-                                            $contar = new GestorTours();
-                                            $contar ->count_Published_toursControllers();
-                                            ?>
-                                        </h3>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="info-box">
+                    <span class="info-box-icon bg-green"><i class="fa fa-check"></i></span>
 
-                                        <p>Tours Publicados</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-check"></i>
-                                    </div>
-                                    <a href="tourspublished" class="small-box-footer">Ver mas <i class="fa fa-arrow-circle-right"></i></a>
-                                </div>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Tours Publicados</span>
+                            <div class="inner">
+                                <h1 class="text-center text-bold">
+
+                                    <?php
+                                    $contar = new GestorTours();
+                                    $contar ->count_Published_toursControllers();
+                                    ?>
+                                </h1>
                             </div>
-                            <!-- ./col -->
-
-                            <div class="col-lg-3 col-xs-6">
-                                <!-- small box -->
-                                <div class="small-box bg-orange-active">
-                                    <div class="inner">
-                                        <h3>
-                                            <?php
-                                            $contar = new GestorTours();
-                                            $contar ->count_editing_toursControllers();
-                                            ?>
-                                        </h3>
-
-                                        <p>Tours Editando</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-pencil-square"></i>
-                                    </div>
-                                    <a href="toursEditing" class="small-box-footer">Ver mas <i class="fa fa-arrow-circle-right"></i></a>
-                                </div>
-                            </div>
-                        <!-- ./col -->
-                        </div>
 
                     </div>
-                    <!-- /.row -->
-                         <div class="login-box">
-                            <div class="login-logo">
-                                <h1>Buscar <span class="fa fa-search"></span></h1>
-                                <h2>Falta terminar</h2>
+                    <!-- /.info-box-content -->
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="info-box">
+                    <span class="info-box-icon bg-blue">
+                        <i class="fa fa-edit"></i></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Tours Editando</span>
+
+                             <div class="inner">
+                                 <h1 class="text-center text-bold">
+                                   <?php
+                                   $contar = new GestorTours();
+                                   $contar ->count_editing_toursControllers();
+                                   ?>
+                                </h1>
                             </div>
-                            <!-- /.login-logo -->
-                            <div class="login-box-body">
 
-                                <form  method="post">
 
-                                    <div class="form-group has-feedback">
-                                        <select class="form-control select2" style="width: 100%;">
-                                            <option selected="selected">Alabama</option>
-                                            <option>Alaska</option>
-                                            <option>California</option>
-                                            <option>Delaware</option>
-                                            <option>Tennessee</option>
-                                            <option>Texas</option>
-                                            <option>Washington</option>
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="info-box">
+                    <span class="info-box-icon bg-purple">
+                        <i class="fa fa-battery-3"></i></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Tours Terminados</span>
+
+                             <div class="inner">
+                                  <h1 class="text-center text-bold">
+                                    ?</h1>
+                            </div>
+                       
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="hold-transition ">
+            <div class="login-box">
+
+
+                <div class="col-md-12 col-sm-12 col-xs-12 ">
+                    <!-- Box Comment -->
+                    <div class="box box-widget">
+                        <div class="box-header with-border">
+                            <div class="user-block">
+
+                                <span class="username text-center">Buscar Tour</span>
+                            </div>
+                            <!-- /.user-block -->
+
+
+                            <!-- /.box-tools -->
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="contact-right">
+                                <form  method="post" class="form-horizontal ">
+
+                                    <div class="form-group-lg">
+                                        <select class="form-control select2 input-lg" >
+                                            <?php
+                                            $buscarTour = new GestorTours();
+                                            $buscarTour -> listar_TourController();
+
+                                            ?>
+
                                         </select>
                                     </div>
 
                                     <div class="form-group">
-                                        <a href=""><input type="submit" value="Buscar" class="btn btn-primary"></a>
+                                        <br>
+
+                                        <div class="col-md-offset-5">
+                                            <a href="#">
+                                                <input type="submit" value="Buscar" class="btn btn-bitbucket btn-lg">
+                                            </a>
+                                        </div>
+
 
                                     </div>
 
                                 </form>
-
                             </div>
 
-                       </div> <!-- /.login-box-body -->
+
+
+                        </div>
 
 
 
-                    <!--Fin centro -->
+                        <!-- /.box-footer -->
+                    </div>
+                    <!-- /.box -->
+                </div>
 
-                </div> <!-- /.box -->
-            </div> <!-- /.col -->
-        </div><!-- /.row -->
+
+            </div>
+        </div>
+
+
+
+
     </section><!-- /.content -->
 
 </div><!-- /.content-wrapper -->

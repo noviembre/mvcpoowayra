@@ -1,36 +1,39 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Backend | Ingreso</title>
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- Bootstrap 3.3.5 -->
-    <link rel="stylesheet" href="views/public/css/bootstrap.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="views/public/css/font-awesome.css">
-
-    <!-- Theme style -->
-    <link rel="stylesheet" href="views/public/css/AdminLTE.min.css">
-    <!-- iCheck -->
-    <link rel="stylesheet" href="views/public/css/blue.css">
 
 
-</head>
-<body class="hold-transition login-page">
+
 <div class="login-box">
-    <div class="login-logo">
-        <a href="../index"><b>Portada</b></a>
-    </div><!-- /.login-logo -->
+
     <div class="login-box-body">
         <p class="login-box-msg">Ingrese sus datos de Acceso</p>
-        <form style="padding: 10px 0" method="post" id="formIngreso" onsubmit="return validarIngreso()">
+        <p class="login-box-msg">
+            <a href="../../index.php"> <input  type="button" class="btn btn-default" value="Inicio"></a>
+
+
+        </p>
+        <form method="post"  onsubmit="return validarIngreso()">
 
             <h1 id="tituloFormIngreso">PANEL DE CONTROL</h1>
+            <div class="form-group has-feedback">
+                <input name="usuarioIngreso" class="form-control formIngreso" type="text" placeholder="ID de Usuario" id="usuarioIngreso">
+                <span class="glyphicon glyphicon-user form-control-feedback"></span>
+            </div>
 
-            <input class="form-control formIngreso" type="text" placeholder="Ingrese su Usuario" name="usuarioIngreso" id="usuarioIngreso">
-            <input class="form-control formIngreso" type="password" placeholder="Ingrese su Contraseña" name="passwordIngreso" id="passwordIngreso">
+            <div class="form-group has-feedback">
+                <input class="form-control formIngreso" type="password" placeholder="Ingrese su Contraseña" name="passwordIngreso" id="passwordIngreso">
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div>
+
+            <div class="row">
+                <!-- /.col -->
+                <div class="col-xs-6">
+                    <input class="form-control btn btn-default btn-block btn-flat" type="reset" value="Limpiar">
+
+                </div>
+                <div class="col-xs-6">
+                    <input class="form-control btn btn-primary btn-block btn-flat" type="submit" value="Enviar">
+                </div>
+                <!-- /.col -->
+            </div>
 
             <?php
 
@@ -38,26 +41,27 @@
             $ingreso -> ingresoController();
 
             ?>
-
-            <input class="form-control formIngreso btn btn-primary" type="submit" value="Enviar">
-
         </form>
 
+        <div class="social-auth-links text-center">
+            <p>- O -</p>
+            <a href="#" class="btn btn-block btn-social btn-facebook btn-flat">
+                <i class="fa fa-facebook"></i> Ingresar con
+                Facebook</a>
+            <a href="#" class="btn btn-block btn-social btn-google btn-flat">
+                <i class="fa fa-google-plus"></i> Ingresar con
+                Google+</a>
+        </div>
+        <!-- /.social-auth-links -->
 
-        <a href="#">Olvidé mi password</a><br>
+        <a href="#">Olvide mi password</a><br>
+        <a href="#" class="text-center">Registrarse</a>
+
+    </div>
+
+
 
 
     </div><!-- /.login-box-body -->
 </div><!-- /.login-box -->
 
-<!-- jQuery -->
-<script src="views/public/js/jquery-3.1.1.min.js"></script>
-<!-- Bootstrap 3.3.5 -->
-<script src="views/public/js/bootstrap.min.js"></script>
-<!-- Bootbox -->
-<script src="views/public/js/bootbox.min.js"></script>
-
-
-
-</body>
-</html>

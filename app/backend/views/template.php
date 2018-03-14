@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>BackEnd <?php include 'modules/nombrepagina.php'; ?></title>
+	<title>Backend <?php include 'modules/nombrepagina.php'; ?></title>
 
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- ok- Bootstrap 3.3.7 -->
@@ -147,9 +147,6 @@
     <!-- ok - DataTables -->
     <script src="views/public/js/jquery.dataTables.min.js"></script>
     <script src="views/public/js/dataTables.bootstrap.min.js"></script>
-
-
-
 
     <!-- ok - FastClick -->
     <script src="views/public/js/fastclick.js"></script>

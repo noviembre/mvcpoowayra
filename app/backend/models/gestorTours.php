@@ -65,31 +65,6 @@ class GestorToursModel{
 
     }
 
-    #BORRAR ARTICULOS
-    #-----------------------------------------------------
-    public function xxxxxxxxxx($datosModel, $tabla){
-
-        $stmt = Conexion::conectar()->prepare("DELETE FROM $tabla WHERE id = :id");
-
-        $stmt->bindParam(":id", $datosModel, PDO::PARAM_INT);
-
-        if($stmt->execute()){
-
-            return "ok";
-
-        }
-
-        else{
-
-            return "error";
-
-        }
-
-        $stmt->close();
-
-    }
-
-
 
 
     #GUARDAR NUEVO TOUR
@@ -161,7 +136,7 @@ class GestorToursModel{
     #------------------------------------------------------
     public function mostrarProyectosModel($tabla){
 
-        $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla a INNER JOIN tours b ON b.id=a.tour_id");
+        $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla a INNER JOIN tours b ON b.id=a.tid");
 
         $stmt -> execute();
         return $stmt -> fetchAll();
@@ -173,7 +148,7 @@ class GestorToursModel{
     #---------------------------------------------------
     public function editarProyectosModel($datosModel, $tabla){
 
-        $stmt = Conexion::conectar()->prepare("UPDATE $tabla a INNER JOIN tdetalles b ON a.id=b.tour_id SET titulo = :titulo, estado =:estado, soles = :soles, dolares=:dolares, descripcion = :descripcion, incluye=:incluye, noincluye=:noincluye, itinerario=:itinerario, quellevar=:quellevar, ruta = :ruta  WHERE a.id = :id");
+        $stmt = Conexion::conectar()->prepare("UPDATE $tabla a INNER JOIN tdetalles b ON a.id=b.tid SET titulo = :titulo, estado =:estado, soles = :soles, dolares=:dolares, descripcion = :descripcion, incluye=:incluye, noincluye=:noincluye, itinerario=:itinerario, quellevar=:quellevar, ruta = :ruta  WHERE a.id = :id");
 
         $stmt -> bindParam(":titulo", $datosModel["titulo"], PDO::PARAM_STR);
         $stmt -> bindParam(":estado", $datosModel["estado"], PDO::PARAM_STR);
@@ -207,7 +182,7 @@ class GestorToursModel{
     #---------------------------------------------------------
     public function count_All_toursModel($tabla){
 
-        $stmt = Conexion::conectar()->prepare("SELECT count(*) FROM $tabla t LEFT JOIN tdetalles d ON t.id=d.tour_id WHERE t.estado = 'editando' OR t.estado = 'publicado'");
+        $stmt = Conexion::conectar()->prepare("SELECT count(*) FROM $tabla t LEFT JOIN tdetalles d ON t.tid=d.tid WHERE t.estado = 'editando' OR t.estado = 'publicado'");
 
         $stmt -> execute();
         return $stmt -> fetchColumn();
@@ -219,7 +194,7 @@ class GestorToursModel{
     #---------------------------------------------------------
     public function count_Published_toursModel($tabla){
 
-        $stmt = Conexion::conectar()->prepare("SELECT count(*) FROM $tabla t LEFT JOIN tdetalles d ON t.id=d.tour_id WHERE t.estado = 'publicado'");
+        $stmt = Conexion::conectar()->prepare("SELECT count(*) FROM $tabla t LEFT JOIN tdetalles d ON t.tid=d.tid WHERE t.estado = 'publicado'");
 
         $stmt -> execute();
         return $stmt -> fetchColumn();
@@ -231,7 +206,7 @@ class GestorToursModel{
     #---------------------------------------------------------
     public function count_Editing_toursModel($tabla){
 
-        $stmt = Conexion::conectar()->prepare("SELECT count(*) FROM $tabla t LEFT JOIN tdetalles d ON t.id=d.tour_id WHERE t.estado = 'editando'");
+        $stmt = Conexion::conectar()->prepare("SELECT count(*) FROM $tabla t LEFT JOIN tdetalles d ON t.tid=d.tid WHERE t.estado = 'editando'");
 
         $stmt -> execute();
         return $stmt -> fetchColumn();
@@ -371,6 +346,19 @@ class GestorToursModel{
         return $stmt->fetch();
 
         $stmt->close();
+
+    }
+
+    #LISTAR TOURS
+    #---------------------------------------------------------
+    public function listar_TourModel($tabla){
+
+        $stmt = Conexion::conectar()->prepare(
+            "SELECT * FROM $tabla a INNER JOIN tdetalles b ON a.tid=b.tid WHERE estado = 'publicado' OR estado= 'editando' AND a.tid IS NOT NULL ORDER by titulo DESC");
+
+        $stmt -> execute();
+        return $stmt -> fetchAll();
+        $stmt -> close();
 
     }
 

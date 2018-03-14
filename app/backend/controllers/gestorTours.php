@@ -738,6 +738,25 @@ class GestorTours{
 
 
 
+    #LISTAR TOURS
+    #-----------------------------------------------------------
+    public function listar_TourController(){
+
+        $respuesta = gestorToursModel::listar_TourModel("tours");
+
+        foreach($respuesta as $row => $item){
+
+            echo '<option value="'.$item["tid"].'">
+        '.$item["titulo"].' - '.$item["duracion"].'';
+
+        }
+
+    }
+
+
+
+
+
 
 
 
