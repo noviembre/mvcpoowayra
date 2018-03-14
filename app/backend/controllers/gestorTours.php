@@ -95,6 +95,8 @@ class GestorTours{
                 "duracion"=>$_POST["duracionTour"]);
 
             $respuesta = GestorToursModel::save_new_TourModel($datosController, "tours");
+            //Guardar una copia en portada
+            GestorToursModel::save_new_TourModel($datosController, "portada");
             GestorToursModel::save_new_TourModel($datosController, "temporal");
 
             if($respuesta == "ok" || $temporal ="ok"){
@@ -140,7 +142,7 @@ class GestorTours{
         foreach ($respuesta as $row => $item){
 
             echo '<tr>
-                    <td>'.$item["orden"].'</td>  
+                    <td>'.$item["tid"].'</td>  
                     <td>'.$item["lang"].'</td>  
                     <td title="'.$item["actualizacion"].'"> '.$item["titulo"].'</td>
                      <td>'.$item["duracion"].'</td>                      

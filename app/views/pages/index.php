@@ -31,7 +31,7 @@
                             <div class="caption-info-inner text-center">
                                 <h1 class="animated zoomIn"><?PHP  echo INKA_TRAIL_TEXT;?></h1>
                                 <p class="animated zoomIn"><?PHP  echo INKA_TRAIL_PREVIEW_TEXT;?></p>
-                                <a href="tours/<?php echo INKA_TRAIL_2D1N_LINK; ?>" class="animated zoomIn btn btn-primary page-scroll">
+                                <a href="tours/<?php echo INKA_TRAIL_4D3N_LINK; ?>" class="animated zoomIn btn btn-primary page-scroll">
                                     <?PHP  echo READ_MORE_TEXT;?>
                                 </a>
                             </div>
@@ -103,7 +103,7 @@
                             </div>
                         </div>
                         <div class="package-info">
-                            <h3>Lorem Ipsum</h3>
+                            <h3><?php echo T8D_7N_PACKAGE_TEXT; ?></h3>
 
                             <span class="pull-left">
 									<i class="fa fa-star"></i>

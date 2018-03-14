@@ -47,7 +47,7 @@ define('MARAS_MORAY_LINK','maras-moray-en');
 define('VALLE_SUR_LINK','valle-sur-en');
 define('MACHUPICCHU_BY_CAR_LINK','machupicchu-by-car-en');
 define('INKA_TRAIL_2D1N_LINK','inka-trail-2days-1night-en');
-define('INKA_TRAIL_4D3N_LINK','inka-trail-4days-3nights-en');
+define('INKA_TRAIL_4D3N_LINK','33');
 define('JUNGLE_TREK_3D2N_LINK','jungle-trek-3days-2nights-en');
 define('JUNGLE_TREK_4D3N_LINK','jungle-trek-4days-3nights-en');
 
@@ -141,11 +141,12 @@ define('HUMANTAY_LAGOON_TOUR_LINK','humantay-lagoon-tour-en');
 #------------------------ packages.php ---------------------------------------*
 define('LENGTH_TEXT','Lenght: ');
 define('TOURISTIC_PACKAGES_TEXT','List of our Packages');
-define('T7D_6N_PACKAGE_TEXT','Cusco, Sacred Valley, Machu Picchu & Rainbow Mountain');
-define('T6D_5N_PACKAGE_TEXT','Cusco, Maras, Tipon, Sacred Valley and Machu Picchu');
-define('T5D_4N_PACKAGE_TEXT','Cusco, Sacred Valley, Maras and Machu Picchu');
-define('T4D_3N_PACKAGE_TEXT','Cusco, Sacred Valley and Machu Picchu');
-define('T3D_2N_PACKAGE_TEXT','Cusco and Machu Picchu');
+define('T8D_7N_PACKAGE_TEXT','Machu Picchu, Sacred Valley, Cusco, Humantay Lagoon...');
+define('T7D_6N_PACKAGE_TEXT','Cusco, Sacred Valley, Machu Picchu, Rainbow Mountain...');
+define('T6D_5N_PACKAGE_TEXT','Machu Picchu, Sacred Valley, Cusco, Maras and Tipon');
+define('T5D_4N_PACKAGE_TEXT','Machu Picchu, Cusco, Sacred Valley and Maras Moray');
+define('T4D_3N_PACKAGE_TEXT','Machu Picchu, Sacred Valley, Cusco');
+define('T3D_2N_PACKAGE_TEXT','Machu Picchu and city tour Cusco');
 define('T7DIAS_6NIGHTS_TEXT','7 Days 6 Nights');
 define('T6DIAS_5NIGHTS_TEXT','6 Days 5 Nights');
 define('T5DIAS_4NIGHTS_TEXT','5 Days 4 Nights');
@@ -153,7 +154,7 @@ define('T4DIAS_3NIGHTS_TEXT','4 Days 3 Nights');
 define('T3DIAS_2NIGHTS_TEXT','3 Days 2 Nights');
 
 #------------ LINKS ----------------*
-define('CUSCO_PKG_8D7N_LINK','yy');
+define('CUSCO_PKG_8D7N_LINK','30');
 define('CUSCO_PKG_7D6N_LINK','19');
 define('CUSCO_PKG_6D5N_LINK','21');
 define('CUSCO_PKG_5D4N_LINK','23');

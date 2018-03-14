@@ -51,7 +51,7 @@ define('VALLE_SUR_LINK','xxvacio');
 define('MACHUPICCHU_BY_CAR_LINK','14');
 
 define('INKA_TRAIL_2D1N_LINK','16');
-define('INKA_TRAIL_4D3N_LINK','inka-trail-4days-3nights-es');
+define('INKA_TRAIL_4D3N_LINK','34');
 define('JUNGLE_TREK_3D2N_LINK','jungle-trek-3days-2nights-es');
 define('JUNGLE_TREK_4D3N_LINK','18');
 
@@ -148,11 +148,12 @@ define('HUMANTAY_LAGOON_TOUR_LINK','humantay-lagoon-tour-es');
 
 define('LENGTH_TEXT','Duracion: ');
 define('TOURISTIC_PACKAGES_TEXT','Lista de nuestros paquetes');
-define('T7D_6N_PACKAGE_TEXT','Cusco, Valle Sagrado, Machu Picchu y Montaña 7 colores');
-define('T6D_5N_PACKAGE_TEXT','Cusco, Maras, Tipon, Valle Sagrado y Machu Picchu');
-define('T5D_4N_PACKAGE_TEXT','Cusco, Valle Sagrado, Maras y Machu Picchu');
-define('T4D_3N_PACKAGE_TEXT','Cusco, Valle Sagrado y Machu Picchu');
-define('T3D_2N_PACKAGE_TEXT','Cusco y Machu Picchu');
+define('T8D_7N_PACKAGE_TEXT','Machu Picchu, Valle Sagrado, Cusco, Laguna Humantay...');
+define('T7D_6N_PACKAGE_TEXT','Machu Picchu, Valle Sagrado, Montaña 7 colores...');
+define('T6D_5N_PACKAGE_TEXT','Machu Picchu, Valle Sagrado, Cusco, Maras..');
+define('T5D_4N_PACKAGE_TEXT','Machu Picchu, Valle Sagrado, Maras Moray...');
+define('T4D_3N_PACKAGE_TEXT','Machu Picchu, Valle Sagrado, Cusco');
+define('T3D_2N_PACKAGE_TEXT','Machu Picchu y City Tour en Cusco');
 define('T7DIAS_6NIGHTS_TEXT','7 Dias 6 Noches');
 define('T6DIAS_5NIGHTS_TEXT','6 Dias 5 Noches');
 define('T5DIAS_4NIGHTS_TEXT','5 Dias 4 Noches');
@@ -160,7 +161,7 @@ define('T4DIAS_3NIGHTS_TEXT','4 Dias 3 Noches');
 define('T3DIAS_2NIGHTS_TEXT','3 Dias 2 Noches');
 
 #------------ LINKS ----------------*
-define('CUSCO_PKG_8D7N_LINK','xx');
+define('CUSCO_PKG_8D7N_LINK','29');
 define('CUSCO_PKG_7D6N_LINK','20');
 define('CUSCO_PKG_6D5N_LINK','22');
 define('CUSCO_PKG_5D4N_LINK','24');
