@@ -92,6 +92,33 @@
         </div>
 
         <div class="row">
+
+            <div class="col-xs-6 col-sm-6 col-md-4">
+                <div class="package-list wow fadeInUp">
+                    <a href="tours/<?php echo CUSCO_PKG_8D7N_LINK; ?>">
+                        <div class="package-thumb">
+                            <img src="<?php echo URLROOT; ?>/img/packages/pkg4.jpg" alt="" />
+                            <div class="duration">
+                                8 <?php echo DAYS_TEXT; ?><br/>7 <?php echo NIGHTS_TEXT; ?>
+                            </div>
+                        </div>
+                        <div class="package-info">
+                            <h3>Lorem Ipsum</h3>
+
+                            <span class="pull-left">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-o"></i>
+									<span class="review-count"> - 90 review</span>
+                                </span>
+                            <span class="pull-right price">$1800</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
             <div class="col-xs-6 col-sm-6 col-md-4">
                 <div class="package-list wow fadeInUp">
                     <a href="tours/<?php echo CUSCO_PKG_7D6N_LINK; ?>">
@@ -222,31 +249,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-6 col-sm-6 col-md-4">
-                <div class="package-list wow fadeInUp">
-                    <a href="#">
-                        <div class="package-thumb">
-                            <img src="<?php echo URLROOT; ?>/img/packages/pkg4.jpg" alt="" />
-                            <div class="duration">
-                                0 <?php echo DAYS_TEXT; ?><br/>0 <?php echo NIGHTS_TEXT; ?>
-                            </div>
-                        </div>
-                        <div class="package-info">
-                            <h3>Lorem Ipsum</h3>
 
-                            <span class="pull-left">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star-o"></i>
-									<span class="review-count"> - 90 review</span>
-                                </span>
-                            <span class="pull-right price">$1800</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
         </div>
     </div>
 </section>

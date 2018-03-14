@@ -153,6 +153,7 @@ define('T4DIAS_3NIGHTS_TEXT','4 Days 3 Nights');
 define('T3DIAS_2NIGHTS_TEXT','3 Days 2 Nights');
 
 #------------ LINKS ----------------*
+define('CUSCO_PKG_8D7N_LINK','yy');
 define('CUSCO_PKG_7D6N_LINK','19');
 define('CUSCO_PKG_6D5N_LINK','21');
 define('CUSCO_PKG_5D4N_LINK','23');
