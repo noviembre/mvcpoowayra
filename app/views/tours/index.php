@@ -37,7 +37,7 @@
                                 <ul>
                             <?php foreach($data['galeria'] as $galeria) : ?>
                                     <li>
-                            <img src="<?php echo URLROOT; ?>/app/backend<?php echo $galeria->gruta; ?>" alt="">
+                            <img src="<?php echo URLROOT; ?><?php echo $galeria->gruta; ?>" alt="">
                                         <div class="slideCaption">
                                            <p><?php echo $galeria->gtitulo; ?></p>
                                         </div>

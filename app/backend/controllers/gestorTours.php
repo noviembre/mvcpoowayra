@@ -755,7 +755,28 @@ class GestorTours{
 
 
 
+    #LISTAR TODOS LAS IMAGENES DE LA GALERIA
+    #-----------------------------------------------------------
+    public function list_Galeria_tres_SlidesController(){
 
+        $respuesta = GestorToursModel::list_Galeria_tres_SlidesModel("galeria");
+
+        foreach ($respuesta as $row => $item){
+
+            echo '<tr>
+                    <td>'.$item["gid"].'</td> 
+                    
+                    <td>'.$item["lang"].'</td>  
+                    <td>'.$item["tid"].'</td>  
+                    <td> '.$item["titulo"].'</td>
+                     <td> '.$item["duracion"].'</td>                 
+                     <td>'.$item["gtitulo"].'</td>                      
+                     <td>'.$item["gruta"].'</td>                      
+                   </tr> ';
+
+        }
+
+    }
 
 
 

@@ -362,4 +362,18 @@ class GestorToursModel{
 
     }
 
+    #LISTAR TODOS LOS TOURS  PUBLICADOS/EDITANDO
+    #------------------------------------------------------------
+    public function list_Galeria_tres_SlidesModel($tabla){
+
+        $stmt = Conexion::conectar()->prepare(
+            "SELECT * FROM $tabla a INNER JOIN tours b ON a.tid=b.tid 
+                      WHERE a.tid IS NOT NULL AND b.estado = 'publicado' OR b.estado= 'editando' 
+                      ORDER by b.lang DESC ");
+        $stmt -> execute();
+        return $stmt -> fetchAll();
+        $stmt -> close();
+
+    }
+
 }

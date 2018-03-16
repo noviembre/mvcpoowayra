@@ -27,7 +27,7 @@ define('MACHUPICCHU_TEXT','Machu Picchu');
 define('CITY_TOUR_TEXT','City Tour');
 define('JUNGLE_TREK_TEXT','Inka Jungle');
 define('SACRED_VALLEY_TEXT','Valle Sagrado');
-define('MOUNTAIN_COLOURS_TEXT','Montana 7 Colores');
+define('MOUNTAIN_COLOURS_TEXT','Montaña 7 Colores');
 define('INKA_TRAIL_TEXT','Camino Inca');
 define('MARAS_MORAY_TEXT','Maras Moray');
 define('VALLE_SUR_TEXT','Valle Sur');
@@ -115,7 +115,7 @@ define('VISION_TEXT','Vision');
 define('HOW_MANY_TEXT','Cuantas personas son?');
 define('CHOOSE_TEXT','Que desea hacer ?');
 define('BOOKING_TEXT','Quiero Reservar');
-define('SUGGESTION_TEXT','Tengo una duda');
+define('SUGGESTION_TEXT','Quiero consultar');
 define('BOOKING_OR_DOUBT_TEXT','Consultar o Reservar');
 
 
@@ -148,8 +148,8 @@ define('HUMANTAY_LAGOON_TOUR_LINK','humantay-lagoon-tour-es');
 
 define('LENGTH_TEXT','Duracion: ');
 define('TOURISTIC_PACKAGES_TEXT','Lista de nuestros paquetes');
-define('T8D_7N_PACKAGE_TEXT','Machu Picchu, Valle Sagrado, Cusco, Laguna Humantay...');
-define('T7D_6N_PACKAGE_TEXT','Machu Picchu, Valle Sagrado, Montaña 7 colores...');
+define('T8D_7N_PACKAGE_TEXT','Machu Picchu, Valle Sagrado, Cusco...');
+define('T7D_6N_PACKAGE_TEXT','Machu Picchu, Valle Sagrado, Montaña 7 C...');
 define('T6D_5N_PACKAGE_TEXT','Machu Picchu, Valle Sagrado, Cusco, Maras..');
 define('T5D_4N_PACKAGE_TEXT','Machu Picchu, Valle Sagrado, Maras Moray...');
 define('T4D_3N_PACKAGE_TEXT','Machu Picchu, Valle Sagrado, Cusco');
@@ -192,4 +192,44 @@ define('MOUNTAIN_COLOURS_PREVIEW_TEXT','es Lorem Ipsum is simply dummy text of t
 
 define('SALKANTAY_TEXT','Salkantay');
 define('SALKANTAY_PREVIEW_TEXT','Salkantay es Lorem Ipsum is simply dummy text of the printing and typeseatting industry. Lorem Ipsum has been the');
+
+
+# ---------- faqs.php -----------
+define('NEW_FAQS_TEXT','Preguntas Precuentes');
+define('FAQS_WEATHER_TITLE_TEXT','¿ Como es el clima en Perú?');
+define('FAQS_WEATHER_DESCRIPTION_TEXT','Sobre la costa Peruana por lo general el clima es cálido aunque excepto en invierno (Agosto-abril) pueda que haga frío temprano por la mañana y de noche. En cambio la Sierra posee dos estaciones climáticas bien definidas: la estación de lluvia y secas entre abril y octubre, caracterizada por días soleados, noches muy frías y ausencia de lluvias (la época ideal para hacer turismo); y lluvia, entre noviembre y marzo, en la que las precipitaciones son abundantes. Lo único seguro de que usted puede decir sobre el tiempo en Perú consiste en que es difícil de con exactitud predecir. ');
+
+define('FAQS_VACCINES_TITLE_TEXT','¿Qué vacunas necesito en Perú?');
+define('FAQS_VACCINES_DESCRIPTION_TEXT','Siempre debería consultar su clínica de viajes local en cuanto a las vacunas. En general las vacunas regulares son el Tétano, la Difteria, Polio, etc. Si usted viaja a la selva baja se recomienda la vacuna contra la Fiebre Amarilla.');
+
+define('FAQS_FIT_TITLE_TEXT','Debo estar en forma para realizar las caminatas?');
+define('FAQS_FIT_DESCRIPTION_TEXT',' Todas nuestras caminatas (Camino Inca, Salkantay, Ausangate etc.) son moderadamente difícil, largo y montañoso. Le recomendamos que usted este relativamente apto y aclimatado a la altitud (un mínimo de 2 días) antes de emprender en una caminata. Durante unos meses (o al menos, un mes) antes de su viaje, usted debería tomar regular, y hacer un ejercicio moderado. Queremos que tenga una experiencia maravillosa');
+
+
+
+define('FAQS_DEPOSIT_TITLE_TEXT','¿Por qué tengo que enviar un depósito?');
+define('FAQS_DEPOSIT_DESCRIPTION_TEXT','El depósito (No hay reembolso) será para pagar garantizar la compra de  los tickets de ingreso. Por ejemplo, si va hacer una caminata larga como Camino Inca, tenemos que pagar a los porteadores (encargados de llevar el equipaje), los impuestos (el 19 %), los cocineros, etc. y todo lo necesario para que usted viaje sin preocupaciones. dependiendo del tour.');
+
+define('FAQS_WAYNAPICCHU_LIMIT_TEXT','Hay un limite de visitantes para ingresar a Machu Picchu?');
+define('FAQS_WAYNAPICCHU_DESCRIPTION_TEXT','El número de visitantes al parque arqueológico de Machu Picchu tiene un límite diario de 2500, es una de las recomendaciones de la UNESCO. En Julio del 2011 muchos turistas no pudieron conseguir una entrada a Machu Picchu cuando llegaron a Aguas Calientes. Por lo que es muy recomendable reservar con anticipación especialmente en temporada alta. Los trenes que van a Aguas Calientes por lo general están repletos así que lo mejor es reservarlo por adelantado. Puedes reservar tu ticket de ingreso solo a Machu Picchu o a la montaña de Huayna Picchu.');
+
+define('FAQS_INCA_TRAIL_2D1N_TITLE_TEXT','Como es el Tour de Camino Inca 2 días 1 noche?');
+define('FAQS_INCA_TRAIL_2D1N_DESCRIPTION_TEXT','La ruta corta de Camino Inca es para aquellos visitantes que no disponen de mucho tiempo o solo quieren realizar el tour sin mucho esfuerzo. La travesía empieza en el km 104 y asciende a las ruinas de Wiñay Wayna antes de continuar a Machu Picchu. Ya que no dispone de mucho tiempo en  Machu Picchu el primer día la mayoría de las personas pasa la noche en el pueblo de Aguas Calientes y vuelve al día siguiente a la ciudadela');
+
+
+define('FAQS_SOROCHE_TITLE_TEXT','Que es el mal de altura?');
+define('FAQS_SOROCHE_DESCRITION_TEXT','La enfermedad más común en las alturas es el mal agudo de montaña. Algunas veces también se le conoce como mal de altura o mal de montaña y en Sudamérica se llama soroche. La mayoría de la gente sufre el mal agudo de montaña como una enfermedad relativamente leve y auto-limitante.');
+
+define('FAQS_SOROCHE_ONE_TEXT','1. FIRST: RECOGNIZE THE SYMPTOMS');
+define('FAQS_SOROCHE_ONE_DESC_TEXT','El mal de altura  es conocido como Soroche en Perú. El mal de altura es el nombre dado a las reacciones fisiológicas del cuerpo humano, que se producen como consecuencia de la baja presión de oxígeno que existe a gran altitud. Por lo general las personas tenemos diferentes reacciones a la altitud. Si piensas que no te va afectar porque estas en forma, está equivocado, el mal de altura no discrimina a nadie. Si reconoces unos de los siguientes síntomas usted es un buen candidato:
+');
+define('FAQS_SOROCHE_ONE_LIST_TEXT','Los síntomas más frecuentes del mal de altura son: Dolor de Cabeza (cefalea), Fatiga (agotamiento físico), Trastorno del sueño, Náusea y vómitos, Vértigo, Trastornos digestivos, Agitación
+');
+define('FAQS_SOROCHE_TWO_TEXT','2. mate de coca');
+define('FAQS_SOROCHE_TWO_DESCRIPTION','No te equivoques: las hojas de coca no son adictivas y consumirla no tiene efectos narcóticos (solo se te adormecerá ligeramente la boca). Mientras que es ilegal en varios países vecinos puedes comprar la hoja de coca libremente en Perú.
+Te sugerimos que tomes mate de coca tan pronto como llegues a la ciudad de Cusco. La mayoría de los hospedajes los ofrecen gratis pero por uno o dos soles (moneda peruana) puedes comprarlo en cualquier mercado.
+');
+
+define('FAQS_SOROCHE_THREE_TEXT','3. Mantente hidratado');
+define('FAQS_SOROCHE_TWO_THREE_TEXT','Probablemente has escuchado que te el mal de altura es normal. Pues no es así. La deshidratación es otra de las causas probables que causa el dolor de cabeza, así que cuando lo tengas toma un litro de agua para combatir los efectos y consigue un buen masaje o toma tus medicinas. En general bebe abundante agua en tus viajes incluso si no tienes sed.');
 ?>

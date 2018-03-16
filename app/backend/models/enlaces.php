@@ -7,6 +7,9 @@ class EnlacesModels{
 		if($enlaces == "inicio" ||
 
 		   $enlaces == "ingreso" ||
+		   $enlaces == "galeria" ||
+		   $enlaces == "galeriaAdd" ||
+		   $enlaces == "galeriaEdit" ||
            $enlaces == "tours" ||
            $enlaces == "toursAdd" ||
            $enlaces == "tourEditar" ||

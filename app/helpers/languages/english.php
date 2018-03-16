@@ -141,8 +141,8 @@ define('HUMANTAY_LAGOON_TOUR_LINK','humantay-lagoon-tour-en');
 #------------------------ packages.php ---------------------------------------*
 define('LENGTH_TEXT','Lenght: ');
 define('TOURISTIC_PACKAGES_TEXT','List of our Packages');
-define('T8D_7N_PACKAGE_TEXT','Machu Picchu, Sacred Valley, Cusco, Humantay Lagoon...');
-define('T7D_6N_PACKAGE_TEXT','Cusco, Sacred Valley, Machu Picchu, Rainbow Mountain...');
+define('T8D_7N_PACKAGE_TEXT','Machu Picchu, Sacred Valley, Cusco...');
+define('T7D_6N_PACKAGE_TEXT','Cusco, Sacred Valley, Machu Picchu...');
 define('T6D_5N_PACKAGE_TEXT','Machu Picchu, Sacred Valley, Cusco, Maras and Tipon');
 define('T5D_4N_PACKAGE_TEXT','Machu Picchu, Cusco, Sacred Valley and Maras Moray');
 define('T4D_3N_PACKAGE_TEXT','Machu Picchu, Sacred Valley, Cusco');
@@ -193,5 +193,48 @@ define('MOUNTAIN_COLOURS_PREVIEW_TEXT','es Lorem Ipsum is simply dummy text of t
 
 define('SALKANTAY_TEXT','Salkantay Tour');
 define('SALKANTAY_PREVIEW_TEXT','Salkantay es Lorem Ipsum is simply dummy text of the printing and typeseatting industry. Lorem Ipsum has been the');
+
+# ---------- faqs.php -----------
+define('NEW_FAQS_TEXT','FAQS');
+
+define('FAQS_WEATHER_TITLE_TEXT','¿ How is the weather in Perú?');
+define('FAQS_WEATHER_DESCRIPTION_TEXT','On the coast it is usually quite hot although during the winter (April-August) it can get chilly early in the morning and at night. In the Andes there are two main seasons - wet and dry. The wet season runs from November to April and is wet but usually warmer overall. The dry season runs from May to October and has hot clear days but cold nights. The only one thing you can say about the weather in Peru is that it is difficult to accurately predict. ');
+
+define('FAQS_VACCINES_TITLE_TEXT','¿What vaccines do I need for Peru?');
+define('FAQS_VACCINES_DESCRIPTION_TEXT','You should always consult your local travel clinic regarding vaccines. In general the regular vaccines such as Tetanus, Diphtheria, Polio, etc. are recommended. If you are visiting the low-land jungle then Yellow Fever is recommended.');
+
+
+
+define('FAQS_FIT_TITLE_TEXT','Do I need to be fit to do one of your treks?');
+define('FAQS_FIT_DESCRIPTION_TEXT','All of our treks (the Inca Trail, Salkantay, Ausangate etc.) are moderately difficult, long and mountainous. We highly recommend that you are relatively fit and acclimatised to altitude (a minimum of 2 days at altitude) before undertaking them.  During the months (or at the very least, one month) before your trip, you should take regular, moderate exercise.  We want you to have an amazing experience and the fitter you are.');
+
+define('FAQS_DEPOSIT_TITLE_TEXT','Why do I need to send a deposit?');
+define('FAQS_DEPOSIT_DESCRIPTION_TEXT',' We’ll use your deposit (Non-refundable) to pay official entrances fees. For instance, we need to pay porters (they are in charge of carrying your baggage), taxes (19%), cooks and everything you need for your trip. Of course, depending the kind of trek you’re paying for.');
+
+define('FAQS_WAYNAPICCHU_LIMIT_TEXT','Is the number of visitors to Machu Picchu limited like those of the Inca Trail?');
+define('FAQS_WAYNAPICCHU_DESCRIPTION_TEXT','The number of visitors to the archeological site of Machu Picchu has a limit of 2500 per day, which is an attempt to keep in line with UNESCO recommendations. During July 2011, several visitors were unable to secure an entrance ticket when they arrived at Aguas Calientes Town. Therefore, it is recommended to book in advance, especially during the high season. The trains are usually full so make your reservations in advance. You can book your visit to MP only or a ticket including the Huayna Picchu Mountain.');
+
+define('FAQS_INCA_TRAIL_2D1N_TITLE_TEXT','How’s the shorter 2 day 1 night Inca Trail?');
+define('FAQS_INCA_TRAIL_2D1N_DESCRIPTION_TEXT','The shorter Inca Trail is for those visitors with limited time on their hands or who just want to take things a little bit easier but still trek the Inca Trail. This trek starts at km104 and ascends to the ruins of Wiñay Wayna before continuing on to MP. Since you don\'t have much time at MP on the first day, most people spend the night at the town of Aguas Calientes and return to MP again the following day. ');
+
+define('FAQS_SOROCHE_TITLE_TEXT','What\'s altitude sickness?');
+define('FAQS_SOROCHE_DESCRITION_TEXT','Altitude sickness, known as soroche in Peru. High altitude sickness is caused when someone increases their elevation, sometimes as low as 8000 feet above sea level.');
+
+define('FAQS_SOROCHE_ONE_TEXT','1. FIRST: RECOGNIZE THE SYMPTOMS');
+define('FAQS_SOROCHE_ONE_DESC_TEXT','People have very different reactions to altitude, and if you think you’ll get off the hook just because you’re in good shape, you’re wrong – altitude sickness discriminates no one. If you recognize any of the following symptoms, count yourself hit:');
+define('FAQS_SOROCHE_ONE_LIST_TEXT','•	Difficulty sleeping
+•	Dizziness
+•	Headache
+•	Nausea or vomiting
+•	Loss of appetite
+•	Rapid heart rate
+•	Shortness of breath
+');
+define('FAQS_SOROCHE_TWO_TEXT','2. DRINK COCA TEA');
+define('FAQS_SOROCHE_TWO_DESCRIPTION','Don’t be confused: The coca leaves are not addictive, and consuming the plant doesn’t have any narcotic effect (it numbs your mouth at best). While it’s still illegal in most of the neighboring countries you can buy coca leaves legally in Peru.
+We suggest coca tea as soon as you arrive. Most accommodations offer this for free, but for a soles or two (Peruvian currency) you can practically buy a whole bag at the local markets.');
+
+define('FAQS_SOROCHE_THREE_TEXT','3. STAY HYDRATED');
+define('FAQS_SOROCHE_TWO_THREE_TEXT','You’ll probably hear people tell you that getting a headache at altitude is normal. It is not. Dehydration on the other hand is a very common cause of headache, so when getting it, drink one liter of water to combat the effects and get a massage or take your AMS medicine. In general, drink tons on your trip even if you are not thirsty.');
 
 ?>
