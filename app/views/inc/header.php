@@ -67,4 +67,4 @@
 
 
 
-<?php require APPROOT . '/views/inc/navbar.php'; ?>
+<?php require APPROOT . '/views/inc/cabecera.php'; ?>
