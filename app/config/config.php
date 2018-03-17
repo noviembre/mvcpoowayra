@@ -14,4 +14,4 @@
   // Site Name
   define('SITENAME', 'Wayra Cusco World');
 // App Version
-    define('APPVERSION', '1.0.0');
+    define('APPVERSION', '3.1.4');

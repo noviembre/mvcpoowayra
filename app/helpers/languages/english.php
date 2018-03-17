@@ -153,13 +153,13 @@ define('T5DIAS_4NIGHTS_TEXT','5 Days 4 Nights');
 define('T4DIAS_3NIGHTS_TEXT','4 Days 3 Nights');
 define('T3DIAS_2NIGHTS_TEXT','3 Days 2 Nights');
 
-#------------ LINKS ----------------*
-define('CUSCO_PKG_8D7N_LINK','30');
-define('CUSCO_PKG_7D6N_LINK','19');
-define('CUSCO_PKG_6D5N_LINK','21');
-define('CUSCO_PKG_5D4N_LINK','23');
-define('CUSCO_PKG_4D3N_LINK','25');
-define('CUSCO_PKG_3D2N_LINK','27');
+#------------ LINKS PAQUETES ----------------*
+define('CUSCO_PKG_8D7N_LINK','cusco-package-8days-7nights-en');
+define('CUSCO_PKG_7D6N_LINK','cusco-package-7days-6nights-en');
+define('CUSCO_PKG_6D5N_LINK','cusco-package-6days-5nights-en');
+define('CUSCO_PKG_5D4N_LINK','cusco-package-5days-4nights-en');
+define('CUSCO_PKG_4D3N_LINK','cusco-package-4days-3nights-en');
+define('CUSCO_PKG_3D2N_LINK','cusco-package-3days-2nights-en');
 
 
 define('ONLINE_BOOKING_TEXT', 'Online Booking');

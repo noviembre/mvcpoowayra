@@ -19,7 +19,7 @@ class Detalle {
             'SELECT * FROM tdetalles a INNER JOIN tours b ON a.tid=b.tid  WHERE a.tid = :id');
         $this->db->bind(':id', $id);
 
-        $row = $this->db->selectOne();
+        $row = $this->db->single();
 
         return $row;
     }

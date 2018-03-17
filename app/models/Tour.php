@@ -15,13 +15,13 @@ class Tour {
     }
 
     // Find tour by id
-    public function encontrarTourById($id){
+    public function encontrarTourbyUrl($url){
 
-        $this->db->query('SELECT * FROM portada WHERE pid = :id');
+        $this->db->query('SELECT * FROM portada WHERE enlace = :url');
         // Bind value
-        $this->db->bind(':id', $id);
+        $this->db->bind(':url', $url);
 
-        $row = $this->db->selectOne();
+        $row = $this->db->single();
 
         // Contar
         if($this->db->rowCount() > 0){
@@ -31,29 +31,19 @@ class Tour {
         }
     }
 
-    public function listarToursPaquetes(){
-        $this->db->query("SELECT * FROM portada WHERE facha = 1 ");
-
-        $results = $this->db->selectAll();
-        return $results;
-    }
-
-    public function listarToursPopular(){
-        $this->db->query("SELECT * FROM portada where facha = 2");
-
-        $rows = $this->db->selectAll();
-        return $rows;
-    }
-
     # Listar Tours en la portada
-    public function getTourById($id){
+    public function listarTourByUrl($url){
 
-        $this->db->query('SELECT * FROM portada WHERE pid = :id');
-        $this->db->bind(':id', $id);
+        $this->db->query('SELECT * FROM portada a INNER JOIN tdetalles b ON a.pid=b.tid WHERE enlace = :url');
+        $this->db->bind(':url', $url);
 
-        $row = $this->db->selectOne();
+        $row = $this->db->single();
         return $row;
     }
+
+
+
+
 
 
 

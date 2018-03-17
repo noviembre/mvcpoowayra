@@ -72,7 +72,7 @@
     }
 
     // Get single record as object
-    public function selectOne(){
+    public function single(){
       $this->execute();
       return $this->stmt->fetch(PDO::FETCH_OBJ);
     }

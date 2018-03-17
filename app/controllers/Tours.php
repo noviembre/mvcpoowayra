@@ -12,21 +12,20 @@ class Tours extends Controller {
 	}
 
     // el $id que recibe show viene de la url
-    public function index($id = null){
-        //recibe el id
+    public function index($url = null){
+        //recibe el url
         // compara si esta vacio
-	    if(!empty(isset($id))){
+	    if(!empty(isset($url))){
 
-            // compara si el id existe
-            if($this->tourModel->encontrarTourById($id)){
+            // compara si el url existe
+            if($this->tourModel->encontrarTourbyUrl($url)){
             }else {
                 redirect('index');
             }
             //
-            $tour = $this->tourModel->getTourById($id);
+            $tour = $this->tourModel->listarTourByUrl($url);
 
             $detalles = $this->detallesModel->listarDetalleTourById($tour->pid);
-
 
             $galeria = $this->galeriaModel->llamarTresSlides($tour->pid);
 
