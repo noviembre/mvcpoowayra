@@ -112,20 +112,20 @@
         // si el  Email esta vacio...
         if(empty($data['email'])){
             //dile que ingrese un email
-          $data['email_err'] = 'Please enter email';
+          $data['email_err'] = 'Por favor Ingrese su email';
         }
 
         // si el password esta vacio
         if(empty($data['password'])){
             //dile que Ingrese un password
-          $data['password_err'] = 'Please enter password';
+          $data['password_err'] = 'Por favor Ingrese su password';
         }
         // ver si el email de usuario existe
           if($this->userModel->findUserByEmail($data['email'])){
               // User found
           } else {
               // no se pudo encontrar al usuario
-              $data['email_err'] = 'No user found';
+              $data['email_err'] = 'El usuario no existe';
           }
 
         // Make sure errors are empty
@@ -137,7 +137,7 @@
              //ejecute la funcion crateUserSession
              $this->createUserSession($loggedInUser);
          } else {
-             $data['password_err'] = 'Password Incorrect';
+             $data['password_err'] = 'Password Incorrecto';
              $this->view('users/login',$data);
 
          }
