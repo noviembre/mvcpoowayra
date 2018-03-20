@@ -22,8 +22,7 @@
         <section class="content-header">
 
             <h1>
-                Data Tables
-                <small>  <?php flash('post_message'); ?></small>
+                Wayra Cusco World
             </h1>
             <ol class="breadcrumb">
                 <li><a href="<?php echo URLROOT; ?>/home">
@@ -47,11 +46,9 @@
                             <div class="box-header with-border">
 
                                 <div class="pull-left">
-                                    <h2> Listado de Todos los Tours</h2>
+                                    <h2> Todos los Tours en Español</h2>
                                 </div>
                                 <div class=" pull-right">
-                                    <a href="<?php echo URLROOT; ?>/tours/spanish">
-                                        <input type="button" value="Español" class="btn btn-warning"></a>
                                     <a href="<?php echo URLROOT; ?>/tours/english">
                                         <input type="button" value="Ingles" class="btn btn-info"></a>
 
@@ -73,9 +70,8 @@
                             <table id="example1" class="table table-bordered table-striped">
                                 <thead>
                                 <tr>
-
-                                    <th>Idioma</th>
-                                    <th>Nombre</th>
+                                    <th>?</th>
+                                    <th>Tour</th>
                                     <th>Duracion</th>
                                     <th>Soles</th>
                                     <th>Dolares</th>
@@ -90,11 +86,11 @@
                                     <td><?php
                                         if($tour->lang =='es'){
                                             echo '<small class="label label-warning">
-                                                <i class="fa fa-flag"></i> Spanish
+                                                <i class="fa fa-flag" title="Spanish"></i>
                                                 </small>';
                                         }else {
                                             echo '<small class="label label-primary">
-                                                <i class="fa fa-flag"></i> English
+                                                <i class="fa fa-flag" title="English"></i> 
                                                 </small>';
                                         }
 
@@ -115,9 +111,8 @@
                                 </tbody>
                                 <tfoot>
                                 <tr>
-
                                     <th>?</th>
-                                    <th>Nombre</th>
+                                    <th>Tour</th>
                                     <th>Duracion</th>
                                     <th>Soles</th>
                                     <th>Dolares</th>

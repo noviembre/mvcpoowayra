@@ -13,16 +13,72 @@
           $this->db = new Database;
       }
 
+      // Find tour by id
+      public function encontrarTourbyId($tid){
+
+          $this->db->query('SELECT * FROM tours WHERE tid = :tid');
+          // Bind value
+          $this->db->bind(':tid', $tid);
+
+          $row = $this->db->single();
+
+          // Contar
+          if($this->db->rowCount() > 0){
+              return true;
+          } else {
+              return false;
+          }
+      }
+
       public function listarTourAll(){
           $this->db->query("SELECT * FROM tdetalles a INNER JOIN tours b 
                             ON a.tid=b.tid WHERE b.estado = 'publicado' 
-                            OR b.estado= 'editando' 
-                            AND a.tid IS NOT NULL ORDER by b.actualizacion DESC LIMIT 40 ");
+                            OR b.estado= 'editando' AND b.lang = 'es' OR b.lang = 'en'
+                            AND a.tid IS NOT NULL ORDER by b.actualizacion DESC ");
 
           $results = $this->db->resultSet();
-
           return $results;
       }
+
+      public function listarTourSpanishAll(){
+          $this->db->query("SELECT * FROM tdetalles a INNER JOIN tours b 
+                            ON a.tid=b.tid WHERE a.tid IS NOT NULL  AND lang = 'es' 
+                            ORDER by b.actualizacion DESC LIMIT 30");
+
+          $results = $this->db->resultSet();
+          return $results;
+      }
+
+
+    public function listarTourEnglishAll(){
+          $this->db->query("SELECT * FROM tdetalles a INNER JOIN tours b 
+                            ON a.tid=b.tid WHERE a.tid IS NOT NULL  AND lang = 'en' 
+                            ORDER by b.actualizacion DESC LIMIT 30");
+
+          $results = $this->db->resultSet();
+          return $results;
+      }
+
+      public function listarTourPublishedAll(){
+          $this->db->query("SELECT * FROM tdetalles a INNER JOIN tours b 
+                            ON a.tid=b.tid WHERE a.tid IS NOT NULL  AND estado ='publicado' 
+                            ORDER by b.actualizacion DESC LIMIT 80");
+
+          $results = $this->db->resultSet();
+          return $results;
+      }
+
+      public function listarTourEditingAll(){
+          $this->db->query("SELECT * FROM tdetalles a INNER JOIN tours b 
+                            ON a.tid=b.tid WHERE a.tid IS NOT NULL  AND estado ='editando' 
+                            ORDER by b.actualizacion DESC LIMIT 80");
+
+          $results = $this->db->resultSet();
+          return $results;
+      }
+
+
+
 
       public function listarTourById($id){
           $this->db->query(" SELECT * FROM tdetalles a INNER JOIN tours b

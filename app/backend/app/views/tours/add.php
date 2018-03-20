@@ -59,26 +59,26 @@
                 <div class="col-sm-3 invoice-col">
                     <address>
                         <strong>Tour:</strong><br>
-                        <input name="titulo" type="inputName" class="form-control" id="inputName">
+                        <input name="titulo" type="inputName" class="form-control" id="inputName" required>
                     </address>
                 </div>
                 <!-- /.col -->
                 <div class="col-sm-3 invoice-col">
                     <address>
                         <strong>Duracion:</strong><br>
-                        <input name="duracion" type="text" class="form-control" id="inputName">
+                        <input name="duracion" type="text" class="form-control" id="inputName" required>
                     </address>
                 </div>
                 <!-- /.col -->
 
                 <div class="col-sm-3 invoice-col">
                     <b>Etiquetas:</b><br>
-                    <input name="etiquetas" type="text" class="form-control" id="inputName" required>
+                    <input name="etiquetas" type="text" class="form-control" id="inputName">
                 </div>
                 <!-- /.col -->
                 <div class="col-sm-3 invoice-col">
                     <b>Idioma:</b><br>
-                    <select name="idioma" id="" class="form-control">
+                    <select name="idioma" id="" class="form-control" required>
                         <option value="es" selected>Espanol</option>
                         <option value="en">Ingles</option>
                     </select>

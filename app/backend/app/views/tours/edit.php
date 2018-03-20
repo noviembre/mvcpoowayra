@@ -22,13 +22,25 @@
         <section class="content-header">
             <h1>
                 Wayra Cusco World
-                <small>....</small>
+
             </h1>
             <ol class="breadcrumb">
-                <li><a href="<?php echo URLROOT; ?>/home">
-                        <i class="fa fa-home"></i> Inicio</a></li>
+
+                <li><a href="<?php echo URLROOT; ?>/tours/spanish">
+                        <i class="fa fa-flag-o"></i> Español</a></li>
+                <li><a href="<?php echo URLROOT; ?>/tours/english">
+                        <i class="fa fa-flag"></i> Ingles</a></li>
+
                 <li><a href="<?php echo URLROOT; ?>/tours">
                         <i class="fa fa-picture-o"></i>Tours</a></li>
+
+                <li><a href="<?php echo URLROOT; ?>/tours/published">
+                        <i class="fa fa-check"></i> Publicados</a></li>
+
+                <li><a href="<?php echo URLROOT; ?>/tours/editing">
+                        <i class="fa fa-pencil"></i> Editando</a></li>
+
+
                 <li><a href="<?php echo URLROOT; ?>/tours/add">
                         <i class="fa fa-plus"></i>Agregar</a></li>
 
@@ -41,15 +53,19 @@
             <div class="row">
                 <div class="col-xs-12">
                     <h2 class="page-header">
-                        <i class="fa fa-globe"></i> <?php echo $data['titulo']; ?> <?php echo $data['duracion']; ?>
-                        <small class="pull-right"><?php
+
+                         <?php echo $data['titulo']; ?> <?php echo $data['duracion']; ?>
+                        <small class="pull-right">
+
+
+                            <?php
                             if($data['lang'] =='es'){
                                 echo '<small class="label label-warning">
                                     <i class="fa fa-flag"></i> Spanish
                                                 </small>';
                             }else {
                                 echo '<small class="label label-primary">
-                                                <i class="fa fa-flag"></i> English
+                                    <i class="fa fa-flag"></i> English
                                                 </small>';
                             }
 
@@ -297,13 +313,13 @@
                 </div>
                 <!-- /.col -->
                 <div class="col-xs-6">
-                    <p class="lead">Guardar</p>
+
                     <button type="submit" class="btn btn-success pull-right" >
                         <i class="fa fa-save"></i> Actualizar
                     </button>
-                    <button type="button" class="btn btn-default pull-right" style="margin-right: 5px;">
-                        <i class="fa fa-times-circle"></i> Cancelar
-                    </button>
+                    <a href="<?php echo URLROOT; ?>/tours">
+                        <input type="text" value="Cancelar" class="btn btn-default pull-right" >
+                    </a>
 
 
                 </div>

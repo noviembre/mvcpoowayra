@@ -27,6 +27,54 @@ class Tours extends Controller {
 
     }
 
+    public function spanish(){
+
+        $tours = $this->tourModel->listarTourSpanishAll();
+
+        $data = [
+            'tours' => $tours,
+        ];
+
+        $this->view('tours/spanish',$data);
+
+    }
+
+    public function english(){
+
+        $tours = $this->tourModel->listarTourEnglishAll();
+
+        $data = [
+            'tours' => $tours,
+        ];
+
+        $this->view('tours/english',$data);
+
+    }
+
+    public function published(){
+
+        $tours = $this->tourModel->listarTourPublishedAll();
+
+        $data = [
+            'tours' => $tours,
+        ];
+
+        $this->view('tours/published',$data);
+
+    }
+
+    public function editing(){
+
+        $tours = $this->tourModel->listarTourEditingAll();
+
+        $data = [
+            'tours' => $tours,
+        ];
+
+        $this->view('tours/editing',$data);
+
+    }
+
     public function add(){
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
             // Sanitize POST array
@@ -133,69 +181,82 @@ class Tours extends Controller {
         }
     }
 
-    public function edit($tid){
-        if($_SERVER['REQUEST_METHOD'] == 'POST'){
-            // Sanitize POST array
-           // $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_SPECIAL_CHARS);
+    public function edit($tid = null){
+        if(!empty(isset($tid))){
 
-            date_default_timezone_set('America/Lima');
-            $fechaPeru = date("Y-m-d H:i:s");
-
-            $user = $_SESSION['user_id'];
-            $data = [
-                'tid' => $tid,
-                'etitulo' => trim($_POST['etitulo']),
-                'eduracion' => trim($_POST['eduracion']),
-                'eestado' => trim($_POST['eestado']),
-                'eisimple' => trim($_POST['eisimple']),
-                'eifull' => trim($_POST['eifull']),
-                'edescripcion' => trim($_POST['edescripcion']),
-                'edolares' => trim($_POST['edolares']),
-                'esoles' => trim($_POST['esoles']),
-                'eetiquetas' => trim($_POST['eetiquetas']),
-                'enota' => trim($_POST['enota']),
-                'eincluye' => trim($_POST['eincluye']),
-                'enoincluye' => trim($_POST['enoincluye']),
-                'equellevar' => trim($_POST['equellevar']),
-                'fecha' => $fechaPeru,
-                'uid' => $user
-
-            ];
-
-            if($this->tourModel->actualizarTour($data)){
-                flash('post_message', 'El tour fue actualizado');
+            // ver si el tour existe
+            if($this->tourModel->encontrarTourbyId($tid)){
+            }else {
                 redirect('tours');
+            }
+            // si el id existe entonces prosiga
+            if($_SERVER['REQUEST_METHOD'] == 'POST'){
+                // Sanitize POST array
+                // $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_SPECIAL_CHARS);
+
+                date_default_timezone_set('America/Lima');
+                $fechaPeru = date("Y-m-d H:i:s");
+
+                $user = $_SESSION['user_id'];
+                $data = [
+                    'tid' => $tid,
+                    'etitulo' => trim($_POST['etitulo']),
+                    'eduracion' => trim($_POST['eduracion']),
+                    'eestado' => trim($_POST['eestado']),
+                    'eisimple' => trim($_POST['eisimple']),
+                    'eifull' => trim($_POST['eifull']),
+                    'edescripcion' => trim($_POST['edescripcion']),
+                    'edolares' => trim($_POST['edolares']),
+                    'esoles' => trim($_POST['esoles']),
+                    'eetiquetas' => trim($_POST['eetiquetas']),
+                    'enota' => trim($_POST['enota']),
+                    'eincluye' => trim($_POST['eincluye']),
+                    'enoincluye' => trim($_POST['enoincluye']),
+                    'equellevar' => trim($_POST['equellevar']),
+                    'fecha' => $fechaPeru,
+                    'uid' => $user
+
+                ];
+
+                if($this->tourModel->actualizarTour($data)){
+                    flash('post_message', 'El tour fue actualizado');
+                    redirect('tours');
+                } else {
+                    // Load view with errors
+                    $this->view('tours/edit', $data);
+                }
+
+
             } else {
-                // Load view with errors
+                // Get existing post from model
+                $tour = $this->tourModel->listarTourById($tid);
+
+                $data = [
+                    'tid' => $tid,
+                    'titulo' => $tour->titulo,
+                    'duracion' => $tour->duracion,
+                    'estado' => $tour->estado,
+                    'lang' => $tour->lang,
+                    'itinerario' => $tour->itinerario,
+                    'full_itinerario' => $tour->full_itinerario,
+                    'descripcion' => $tour->descripcion,
+                    'dolares' => $tour->dolares,
+                    'soles' => $tour->soles,
+                    'etiquetas' => $tour->etiquetas,
+                    'nota' => $tour->nota,
+                    'incluye' => $tour->incluye,
+                    'noincluye' => $tour->noincluye,
+                    'quellevar' => $tour->quellevar
+
+                ];
+
                 $this->view('tours/edit', $data);
             }
 
-
-        } else {
-            // Get existing post from model
-            $tour = $this->tourModel->listarTourById($tid);
-
-            $data = [
-                'tid' => $tid,
-                'titulo' => $tour->titulo,
-                'duracion' => $tour->duracion,
-                'estado' => $tour->estado,
-                'lang' => $tour->lang,
-                'itinerario' => $tour->itinerario,
-                'full_itinerario' => $tour->full_itinerario,
-                'descripcion' => $tour->descripcion,
-                'dolares' => $tour->dolares,
-                'soles' => $tour->soles,
-                'etiquetas' => $tour->etiquetas,
-                'nota' => $tour->nota,
-                'incluye' => $tour->incluye,
-                'noincluye' => $tour->noincluye,
-                'quellevar' => $tour->quellevar
-
-            ];
-
-            $this->view('tours/edit', $data);
+        }else {
+            redirect('tours');
         }
+
     }
 
 
