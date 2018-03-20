@@ -181,7 +181,7 @@
                     </div>
                     <!-- /.box-header -->
                     <div class="box-body pad">
-                        <textarea id="editor1" name="eisimple" rows="10" cols="80">
+                        <textarea id="editor1" name="eisimple" class="form-control">
                           <?php echo $data['itinerario']; ?>
                         </textarea>
 
