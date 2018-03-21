@@ -21,6 +21,8 @@
 
 <!-- DataTables -->
 <script src="<?php echo URLROOT; ?>/js/jquery.dataTables.min.js"></script>
+
+
 <script src="<?php echo URLROOT; ?>/js/dataTables.bootstrap.min.js"></script>
 <!-- SlimScroll -->
 <script src="<?php echo URLROOT; ?>/js/jquery.slimscroll.min.js"></script>
@@ -47,6 +49,8 @@
         })
     })
 </script>
+
+
 
 </body>
 

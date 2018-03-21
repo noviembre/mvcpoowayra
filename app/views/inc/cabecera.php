@@ -48,7 +48,7 @@
 
   <?php
 //puede que la sesion no este funcionando??
- require APPROOT . '/backend/models/db.conn.php';
+ require APPROOT . '/config/dblanguage.php';
  require APPROOT . '/helpers/language.php';
   ;
   ?>
@@ -67,4 +67,4 @@
 
 
 
-<?php require APPROOT . '/views/inc/cabecera.php'; ?>
+<?php require APPROOT . '/views/inc/navbar.php'; ?>

@@ -5,7 +5,7 @@
  * Time: 4:29 AM
  */
 
-require APPROOT . '/views/inc/header.php'; ?>
+require APPROOT . '/views/inc/cabecera.php'; ?>
 
 
 <!-- Top Starts-->

@@ -12,6 +12,8 @@
     <!-- DataTables -->
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/dataTables.bootstrap.min.css">
 
+
+
     <!-- Theme style -->
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/AdminLTE.min.css">
     <!-- AdminLTE Skins. We have chosen the skin-blue for this starter

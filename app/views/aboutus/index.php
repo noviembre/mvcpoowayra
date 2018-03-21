@@ -6,7 +6,7 @@
  * Time: 6:09 AM
  */
 
-require APPROOT . '/views/inc/header.php'; ?>
+require APPROOT . '/views/inc/cabecera.php'; ?>
 
 <!-- Top Starts-->
 <section id="page-title" class="parallax" data-stellar-background-ratio="0.5" style="background-image: url(<?php echo URLROOT; ?>/img/bg_mp.jpg);">

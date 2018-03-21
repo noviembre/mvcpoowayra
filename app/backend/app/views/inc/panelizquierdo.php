@@ -34,8 +34,8 @@
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="<?php echo URLROOT; ?>/tours"><i class="fa fa-list-ul"></i> Ver todo</a></li>
-                    <li><a href="<?php echo URLROOT; ?>/tours"><i class="fa fa-file-text-o"></i> Agregar</a></li>
+                    <li><a href="<?php echo URLROOT; ?>/galeries"><i class="fa fa-list-ul"></i> Ver todo</a></li>
+                    <li><a href="<?php echo URLROOT; ?>/galeries/english"><i class="fa fa-file-text-o"></i> Agregar</a></li>
                 </ul>
             </li>
             <li class="treeview">

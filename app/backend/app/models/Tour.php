@@ -215,7 +215,7 @@
                            dolares =:dolares,incluye = :incluye, noincluye =:noincluye, 
                            itinerario = :isimple, quellevar = :quellevar, nota = :nota, 
                            full_itinerario = :ifull WHERE b.tid = :tid");
-//         orden =:orden,
+
           // Bind values
           $this->db->bind(':tid', $data['tid']);
           $this->db->bind(':titulo', $data['etitulo']);

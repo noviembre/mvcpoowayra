@@ -1,4 +1,4 @@
-<?php require APPROOT . '/views/inc/header.php'; ?>
+<?php require APPROOT . '/views/inc/cabecera.php'; ?>
 <!-- ========= SLIDE STARTS =========== -->
 <div id="banner" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
 
