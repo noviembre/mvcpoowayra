@@ -21,7 +21,13 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Wayra Cusco World
+                &nbsp;
+                <a href="<?php echo URLROOT; ?>/tours/spanish">
+                    <span class="fa fa-arrow-left btn btn-default btn-sm"></span>
+                </a>
+                <button type="submit" class="btn btn-success" >
+                    <i class="fa fa-save"></i> Actualizar
+                </button>
 
             </h1>
             <ol class="breadcrumb">
@@ -54,7 +60,8 @@
                 <div class="col-xs-12">
                     <h2 class="page-header">
 
-                         <?php echo $data['titulo']; ?> <?php echo $data['duracion']; ?>
+                        <?php echo $data['titulo']; ?> - <b> <?php echo $data['duracion']; ?></b>
+
                         <small class="pull-right">
 
 
@@ -211,7 +218,7 @@
                     <!-- /.box-header -->
                     <div class="box-body pad">
                         <textarea name="eifull" class="textarea"
-          style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
+          style="width: 100%; height: 300px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
                             <?php echo $data['full_itinerario']; ?>
                         </textarea>
                     </div>
@@ -306,19 +313,19 @@
 
             <div class="row">
                 <!-- accepted Notes column -->
-                <div class="col-xs-6">
-                    <p class="lead">Notas:</p>
-                    <textarea name="enota" class="form-control"  placeholder="Notas Acerca del tour" rows="4">
+                <div class="col-xs-9">
+                    <p class="lead text-danger">Notas: Alguna Observacion con este Tour?</p>
+                    <textarea name="enota" class="textarea"style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="3">
                         <?php echo $data['nota']; ?></textarea>
                 </div>
                 <!-- /.col -->
-                <div class="col-xs-6">
+                <div class="col-xs-3">
 
                     <button type="submit" class="btn btn-success pull-right" >
                         <i class="fa fa-save"></i> Actualizar
                     </button>
                     <a href="<?php echo URLROOT; ?>/tours">
-                        <input type="text" value="Cancelar" class="btn btn-default pull-right" >
+                      <span class="fa fa-arrow-left btn btn-default pull-right btn-lg"></span>
                     </a>
 
 

@@ -220,7 +220,7 @@ class Tours extends Controller {
 
                 if($this->tourModel->actualizarTour($data)){
                     flash('post_message', 'El tour fue actualizado');
-                    redirect('tours');
+                    redirect('tours/spanish');
                 } else {
                     // Load view with errors
                     $this->view('tours/edit', $data);

@@ -49,13 +49,13 @@
 
                         <!--end post thumb-->
 
-                        <div class="meta">
-                            <span class="tour-duration"><a href="https://themecrazy.net/tour-maker/tour-details.html#">6 Days / 5 Nights</a></span>
+                        <!-- <div class="meta">
+                            <span class="tour-duration"><a href="#">6 Days / 5 Nights</a></span>
 
-                            <span class="date"><a href="https://themecrazy.net/tour-maker/tour-details.html#">14 March 2016</a></span>
-                        </div><!--end meta-->
+                            <span class="date"><a href="#">fecha</a></span>
+                        </div> -->
 
-                        <h2><?php echo $data['tours']->titulo; ?>
+                        <h2><?php echo $data['tours']->titulo; ?> -
                             <?php echo $data['tours']->duracion; ?>
                         </h2>
 
@@ -78,20 +78,8 @@
                             <label for="tab5">Itinerario</label>
 
                             <section id="content1">
-
                                 <h3>Detalles del Tour</h3>
-                                <h3>Detalles del Tour</h3>
-                                <h3>Duracion: </h3><?php echo $data['tours']->duracion; ?>
                                 <p><?php echo $data['detalles']->descripcion; ?></p>
-                                <div class="plan-itinerario">
-                                    <i class="ion-clock icon-big"></i>
-
-                                    <div>
-                                        <?php echo $data['detalles']->descripcion; ?>
-                                    </div>
-
-                                </div>
-
                             </section>
 
                             <section id="content2">
@@ -104,38 +92,31 @@
                                 <div><?php echo $data['detalles']->noincluye; ?></div>
                                 <br>
 
+
                                 <h3>Que llevar:</h3>
                                 <p>Asegurese de llevar ropa apropiada y los items adecuados:</p>
                                 <div><?php echo $data['detalles']->quellevar; ?></div>
                                 <br>
-
-                                <i class="fa fa-sun-o"></i>
-                                <h3>Clima:</h3>
-                                <div><?php echo $data['detalles']->clima; ?></div>
 
                             </section>
 
                             <section id="content3">
                                 <i class=""></i>
                                 <h3>Informacion util antes de reservar:</h3>
-                                <div><?php echo $data['detalles']->nota; ?></div>
+                                <!-- deberia estar la columna nota pero le agregaremos otro -->
                             </section>
 
                             <section id="content4">
-                                <i class="ion-social-usd icon-big"></i>
+
                                 <h3>Precios:</h3>
                                 <div>los precios varian</div>
                                 <br>
-                                <h3>Salidas :</h3>
-                                <div>Salidas diarias</div>
 
                             </section>
 
                             <section id="content5">
-                                <i class="ion-android-list icon-big"></i>
                                 <h3>Itinerario completo:</h3>
-                                <p class="long-copy">
-                                    <?php echo $data['detalles']->full_itinerario; ?></p>
+                                <p><?php echo $data['detalles']->full_itinerario; ?></p>
                             </section>
 
                         </div><!-- SECCION ENDS -->
