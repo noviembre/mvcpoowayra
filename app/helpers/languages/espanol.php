@@ -10,7 +10,7 @@ define('TOURS_TEXT','Tours');
 define('PACKAGE_TEXT','Paquetes');
 define('FAQS_TEXT','FAQS');
 define('CONTACT_TEXT','Contacto');
-define('TREKKING_TEXT','Caminatas');
+define('TREKKING_TEXT','Trekking');
 
 // Portada - LINK
 define('TREKKING_LINK','trekking');

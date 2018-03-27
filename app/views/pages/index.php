@@ -13,7 +13,7 @@
                             <div class="caption-info-inner text-center">
                                 <h1 class="animated fadeInDown"><?PHP  echo MACHUPICCHU_TEXT;?></h1>
                                 <p class="animated fadeInUp"><?PHP  echo MACHUPICCHU_PREVIEW_TEXT;?></p>
-                                <a href="tours/<?PHP  echo MACHUPICCHU_FULL_DAY_LINK;?>" class="animated fadeInUp btn btn-primary page-scroll">
+                                <a href="tours/<?PHP  echo MACHUPICCHU_BY_CAR_LINK;?>" class="animated fadeInUp btn btn-primary page-scroll">
                                     <?PHP  echo READ_MORE_TEXT;?>
                                 </a>
                             </div>
@@ -31,7 +31,7 @@
                             <div class="caption-info-inner text-center">
                                 <h1 class="animated zoomIn"><?PHP  echo INKA_TRAIL_TEXT;?></h1>
                                 <p class="animated zoomIn"><?PHP  echo INKA_TRAIL_PREVIEW_TEXT;?></p>
-                                <a href="tours/<?php echo INKA_TRAIL_4D3N_LINK; ?>" class="animated zoomIn btn btn-primary page-scroll">
+                                <a href="tours/<?php echo INKA_TRAIL_2D1N_LINK; ?>" class="animated zoomIn btn btn-primary page-scroll">
                                     <?PHP  echo READ_MORE_TEXT;?>
                                 </a>
                             </div>
