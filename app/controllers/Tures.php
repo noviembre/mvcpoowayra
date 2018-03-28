@@ -5,73 +5,73 @@
  * Time: 6:01 PM
  */
 
-class ATours extends Controller {
+class Tures extends Controller {
 
     public function __construct(){
         //si no ha iniciado sesion redirigir a login
         if(!isLoggedIn()){
             redirect('users/login');
         }
-        $this->tourModel = $this->model('ATour');
+        $this->tourModelo = $this->model('Ture');
        
     }
     public function index(){
 
-        $tours = $this->tourModel->listarTourAll();
+        $tours = $this->tourModelo->listarTourAll();
 
         $data = [
             'tours' => $tours,
         ];
 
-        $this->view('atours/index',$data);
+        $this->view('tures/index',$data);
 
     }
 
     public function spanish(){
 
-        $tours = $this->tourModel->listarTourSpanishAll();
+        $tours = $this->tourModelo->listarTourSpanishAll();
 
         $data = [
             'tours' => $tours,
         ];
 
-        $this->view('atours/spanish',$data);
+        $this->view('tures/spanish',$data);
 
     }
 
     public function english(){
 
-        $tours = $this->tourModel->listarTourEnglishAll();
+        $tours = $this->tourModelo->listarTourEnglishAll();
 
         $data = [
             'tours' => $tours,
         ];
 
-        $this->view('atours/english',$data);
+        $this->view('tures/english',$data);
 
     }
 
     public function published(){
 
-        $tours = $this->tourModel->listarTourPublishedAll();
+        $tours = $this->tourModelo->listarTourPublishedAll();
 
         $data = [
             'tours' => $tours,
         ];
 
-        $this->view('atours/published',$data);
+        $this->view('tures/published',$data);
 
     }
 
     public function editing(){
 
-        $tours = $this->tourModel->listarTourEditingAll();
+        $tours = $this->tourModelo->listarTourEditingAll();
 
         $data = [
             'tours' => $tours,
         ];
 
-        $this->view('atours/editing',$data);
+        $this->view('tures/editing',$data);
 
     }
 
@@ -104,14 +104,14 @@ class ATours extends Controller {
 
 
 
-            if($this->tourModel->agregarTour($data)){
-                $this->tourModel->agregarTourTemporal($data);
-                // $this->tourModel->agregarTourPortada($data);
+            if($this->tourModelo->agregarTour($data)){
+                $this->tourModelo->agregarTourTemporal($data);
+                // $this->tourModelo->agregarTourPortada($data);
                 flash('post_message', 'Se agrego un nuevo tour');
-                redirect('atours/temporal');
+                redirect('tures/temporal');
             } else {
                 // Load view with errors
-                $this->view('atours/add', $data);
+                $this->view('tures/add', $data);
             }
 
 
@@ -124,7 +124,7 @@ class ATours extends Controller {
 
             ];
 
-            $this->view('atours/add', $data);
+            $this->view('tures/add', $data);
         }
     }
 
@@ -133,7 +133,7 @@ class ATours extends Controller {
             // Sanitize POST array
             // $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
-            $tourIdTemporal = $this->tourModel->listarTourTemporal();
+            $tourIdTemporal = $this->tourModelo->listarTourTemporal();
 
             $data = [
 
@@ -149,24 +149,24 @@ class ATours extends Controller {
             ];
 
 
-            if($this->tourModel->agregarTourDetalles($data)){
-                if($this->tourModel->eliminarTourTemporal()){
+            if($this->tourModelo->agregarTourDetalles($data)){
+                if($this->tourModelo->eliminarTourTemporal()){
                     flash('post_message', 'Se agrego un nuevo tour');
-                    redirect('tours');
+                    redirect('tures');
                 }    else {
                     // Load view with errors
-                    $this->view('atours/temporal', $data);
+                    $this->view('tures/temporal', $data);
                 }
 
             } else {
                 // Load view with errors
-                $this->view('atours/temporal', $data);
+                $this->view('tures/temporal', $data);
             }
 
 
         } else {
             // Get existing post from model
-            $tour = $this->tourModel->listarTourTemporal();
+            $tour = $this->tourModelo->listarTourTemporal();
 
             $data = [
 
@@ -177,7 +177,7 @@ class ATours extends Controller {
 
             ];
 
-            $this->view('atours/temporal', $data);
+            $this->view('tures/temporal', $data);
         }
     }
 
@@ -185,12 +185,14 @@ class ATours extends Controller {
         if(!empty(isset($tid))){
 
             // ver si el tour existe
-            if($this->tourModel->encontrarTourbyId($tid)){
+            if($this->tourModelo->encontrarTourbyId($tid)){
             }else {
-                redirect('tours');
+                redirect('tures');
             }
             // si el id existe entonces prosiga
             if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
+
                 // Sanitize POST array
                 // $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_SPECIAL_CHARS);
 
@@ -218,18 +220,18 @@ class ATours extends Controller {
 
                 ];
 
-                if($this->tourModel->actualizarTour($data)){
+                if($this->tourModelo->actualizarTour($data)){
                     flash('post_message', 'El tour fue actualizado');
-                    redirect('atours/spanish');
+                    redirect('tures/spanish');
                 } else {
                     // Load view with errors
-                    $this->view('atours/edit', $data);
+                    $this->view('tures/edit', $data);
                 }
 
 
             } else {
                 // Get existing post from model
-                $tour = $this->tourModel->listarTourById($tid);
+                $tour = $this->tourModelo->listarTourById($tid);
 
                 $data = [
                     'tid' => $tid,
@@ -250,11 +252,11 @@ class ATours extends Controller {
 
                 ];
 
-                $this->view('atours/edit', $data);
+                $this->view('tures/edit', $data);
             }
 
         }else {
-            redirect('tours');
+            redirect('tures');
         }
 
     }

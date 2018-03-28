@@ -1,7 +1,7 @@
 <?php
 
 
-class ATour {
+class Ture {
     private $db;
 
     public function __construct(){

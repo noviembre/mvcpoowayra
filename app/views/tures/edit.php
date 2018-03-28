@@ -19,10 +19,12 @@
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
+
+        <form action="<?php echo URLROOT; ?>/tures/edit/<?php echo $data['tid']; ?>" method="post">
         <section class="content-header">
             <h1>
                 &nbsp;
-                <a href="<?php echo URLROOT; ?>/atours/spanish">
+                <a href="<?php echo URLROOT; ?>/tures/spanish">
                     <span class="fa fa-arrow-left btn btn-default btn-sm"></span>
                 </a>
                 <button type="submit" class="btn btn-success" >
@@ -32,22 +34,22 @@
             </h1>
             <ol class="breadcrumb">
 
-                <li><a href="<?php echo URLROOT; ?>/atours/spanish">
+                <li><a href="<?php echo URLROOT; ?>/tures/spanish">
                         <i class="fa fa-flag-o"></i> Español</a></li>
-                <li><a href="<?php echo URLROOT; ?>/atours/english">
+                <li><a href="<?php echo URLROOT; ?>/tures/english">
                         <i class="fa fa-flag"></i> Ingles</a></li>
 
-                <li><a href="<?php echo URLROOT; ?>/atours">
+                <li><a href="<?php echo URLROOT; ?>/tures">
                         <i class="fa fa-picture-o"></i>Tours</a></li>
 
-                <li><a href="<?php echo URLROOT; ?>/atours/published">
+                <li><a href="<?php echo URLROOT; ?>/tures/published">
                         <i class="fa fa-check"></i> Publicados</a></li>
 
-                <li><a href="<?php echo URLROOT; ?>/atours/editing">
+                <li><a href="<?php echo URLROOT; ?>/tures/editing">
                         <i class="fa fa-pencil"></i> Editando</a></li>
 
 
-                <li><a href="<?php echo URLROOT; ?>/atours/add">
+                <li><a href="<?php echo URLROOT; ?>/tures/add">
                         <i class="fa fa-plus"></i>Agregar</a></li>
 
             </ol>
@@ -85,7 +87,7 @@
 
 
 
-            <form action="<?php echo URLROOT; ?>/atours/edit/<?php echo $data['tid']; ?>" method="post">
+
 
                 <!--     first row  starts-->
                 <div class="row invoice-info">
@@ -324,7 +326,7 @@
                         <button type="submit" class="btn btn-success pull-right" >
                             <i class="fa fa-save"></i> Actualizar
                         </button>
-                        <a href="<?php echo URLROOT; ?>/atours">
+                        <a href="<?php echo URLROOT; ?>/tures">
                             <span class="fa fa-arrow-left btn btn-default pull-right btn-lg"></span>
                         </a>
 
@@ -333,10 +335,11 @@
                     <!-- /.col -->
                 </div>
                 <!-- /.row -->
-            </form>
+
 
 
         </section>
+        </form>
         <!-- /.content -->
         <div class="clearfix"></div>
         <!-- /.content -->

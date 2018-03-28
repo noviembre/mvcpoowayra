@@ -27,9 +27,9 @@
             <ol class="breadcrumb">
                 <li><a href="<?php echo URLROOT; ?>/home">
                         <i class="fa fa-home"></i> Inicio</a></li>
-                <li><a href="<?php echo URLROOT; ?>/atours">
+                <li><a href="<?php echo URLROOT; ?>/tures">
                         <i class="fa fa-picture-o"></i>Tours</a></li>
-                <li><a href="<?php echo URLROOT; ?>/atours/add">
+                <li><a href="<?php echo URLROOT; ?>/tures/add">
                         <i class="fa fa-plus"></i>Agregar</a></li>
 
             </ol>
@@ -49,16 +49,16 @@
                                     <h2> Todos los Tours Publicados</h2>
                                 </div>
                                 <div class=" pull-right">
-                                    <a href="<?php echo URLROOT; ?>/atours/spanish">
+                                    <a href="<?php echo URLROOT; ?>/tures/spanish">
                                         <input type="button" value="Español" class="btn btn-warning"></a>
-                                    <a href="<?php echo URLROOT; ?>/atours/english">
+                                    <a href="<?php echo URLROOT; ?>/tures/english">
                                         <input type="button" value="Ingles" class="btn btn-info"></a>
 
-                                    <a href="<?php echo URLROOT; ?>/atours">
+                                    <a href="<?php echo URLROOT; ?>/tures">
                                         <input type="button" value="Todos" class="btn btn-default"></a>
 
-                                    <a href="<?php echo URLROOT; ?>/atours/editing">
-                                        <input type="button" value="Editando" class="btn btn-default"></a>                                                  <a href="<?php echo URLROOT; ?>/atours/add">
+                                    <a href="<?php echo URLROOT; ?>/tures/editing">
+                                        <input type="button" value="Editando" class="btn btn-default"></a>                                                  <a href="<?php echo URLROOT; ?>/tures/add">
                                         <input type="button" value="Agregar" class="btn btn-success"></a>
 
                                 </div>
@@ -100,9 +100,9 @@
                                         <td><?php echo $tour->duracion; ?></td>
                                         <td><?php echo $tour->dolares; ?></td>
                                         <td><?php echo $tour->soles; ?></td>
-                                        <td><a href="<?php echo URLROOT; ?>/atours/edit/<?php echo $tour->tid; ?>" class="btn btn-primary btn-sm">
+                                        <td><a href="<?php echo URLROOT; ?>/tures/edit/<?php echo $tour->tid; ?>" class="btn btn-primary btn-sm">
                                                 <i class="fa fa-edit"></i></a>
-                                            <a href="<?php echo URLROOT; ?>/atours" class="btn btn-danger btn-sm">
+                                            <a href="<?php echo URLROOT; ?>/tures" class="btn btn-danger btn-sm">
                                                 <i class="fa fa-trash"></i></a>
 
                                         </td>

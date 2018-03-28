@@ -18,7 +18,7 @@
             </div>
             <div class="col-xs-12 col-sm-7">
                 <div class="text-right">
-                    <p>&copy; Copyright 2018. Todos los Derechos Reversados.</p>
+                    <p>&copy; Copyright 2018. Todos los Derechos Reservados.</p>
                 </div>
             </div>
         </div>

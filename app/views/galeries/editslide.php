@@ -26,12 +26,12 @@
             </h1>
             <ol class="breadcrumb">
 
-                <li><a href="<?php echo URLROOT; ?>/atours/spanish">
+                <li><a href="<?php echo URLROOT; ?>/ATours/spanish">
                         <i class="fa fa-flag-o"></i> Español</a></li>
-                <li><a href="<?php echo URLROOT; ?>/atours/english">
+                <li><a href="<?php echo URLROOT; ?>/ATours/english">
                         <i class="fa fa-flag"></i> Ingles</a></li>
 
-                <li><a href="<?php echo URLROOT; ?>/atours">
+                <li><a href="<?php echo URLROOT; ?>/ATours">
                         <i class="fa fa-picture-o"></i>Tours</a></li>
 
             </ol>

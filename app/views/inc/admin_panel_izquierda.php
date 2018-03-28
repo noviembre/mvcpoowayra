@@ -29,10 +29,10 @@
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="<?php echo URLROOT; ?>/atours"><i class="fa fa-line-chart"></i> Ver todo</a></li>
-                    <li><a href="<?php echo URLROOT; ?>/atours/add"><i class="fa fa-plus"></i> Agregar</a></li>
-                    <li><a href="<?php echo URLROOT; ?>/atours/editing"><i class="fa fa-pencil"></i> Editando</a></li>
-                    <li><a href="<?php echo URLROOT; ?>/atours/published"><i class="fa fa-check"></i> Publicados</a></li>
+                    <li><a href="<?php echo URLROOT; ?>/tures"><i class="fa fa-line-chart"></i> Ver todo</a></li>
+                    <li><a href="<?php echo URLROOT; ?>/tures/add"><i class="fa fa-plus"></i> Agregar</a></li>
+                    <li><a href="<?php echo URLROOT; ?>/tures/editing"><i class="fa fa-pencil"></i> Editando</a></li>
+                    <li><a href="<?php echo URLROOT; ?>/tures/published"><i class="fa fa-check"></i> Publicados</a></li>
                 </ul>
             </li>
 
@@ -53,8 +53,8 @@
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="<?php echo URLROOT; ?>/atours"><i class="fa fa-list-ul"></i> Ver Todo</a></li>
-                    <li><a href="<?php echo URLROOT; ?>/atours"><i class="fa fa-file-text-o"></i> Agregar</a></li>
+                    <li><a href="<?php echo URLROOT; ?>/tures"><i class="fa fa-list-ul"></i> Ver Todo</a></li>
+                    <li><a href="<?php echo URLROOT; ?>/tures"><i class="fa fa-file-text-o"></i> Agregar</a></li>
                 </ul>
             </li>
             <li class="treeview">
@@ -64,8 +64,8 @@
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="<?php echo URLROOT; ?>/atours"><i class="fa fa-circle-o"></i> Ventas</a></li>
-                    <li><a href="<?php echo URLROOT; ?>/atours"><i class="fa fa-circle-o"></i> Clientes</a></li>
+                    <li><a href="<?php echo URLROOT; ?>/tures"><i class="fa fa-circle-o"></i> Ventas</a></li>
+                    <li><a href="<?php echo URLROOT; ?>/tures"><i class="fa fa-circle-o"></i> Clientes</a></li>
                 </ul>
             </li>
 
@@ -75,8 +75,8 @@
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="<?php echo URLROOT; ?>/atours"><i class="fa fa-circle-o"></i> Usuarios</a></li>
-                    <li><a href="<?php echo URLROOT; ?>/atours"><i class="fa fa-circle-o"></i> Permisos</a></li>
+                    <li><a href="<?php echo URLROOT; ?>/tures"><i class="fa fa-circle-o"></i> Usuarios</a></li>
+                    <li><a href="<?php echo URLROOT; ?>/tures"><i class="fa fa-circle-o"></i> Permisos</a></li>
 
                 </ul>
             </li>

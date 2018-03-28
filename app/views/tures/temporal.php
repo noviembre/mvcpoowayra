@@ -27,9 +27,9 @@
             <ol class="breadcrumb">
                 <li><a href="<?php echo URLROOT; ?>/home">
                         <i class="fa fa-home"></i> Inicio</a></li>
-                <li><a href="<?php echo URLROOT; ?>/atours">
+                <li><a href="<?php echo URLROOT; ?>/tures">
                         <i class="fa fa-picture-o"></i>Tours</a></li>
-                <li><a href="<?php echo URLROOT; ?>/atours/add">
+                <li><a href="<?php echo URLROOT; ?>/tures/add">
                         <i class="fa fa-plus"></i>Agregar</a></li>
 
             </ol>
@@ -52,7 +52,7 @@
 
 
 
-            <form action="<?php echo URLROOT; ?>/atours/temporal/<?php echo $data['ramdon']; ?>" method="post">
+            <form action="<?php echo URLROOT; ?>/tures/temporal/<?php echo $data['ramdon']; ?>" method="post">
 
 
 

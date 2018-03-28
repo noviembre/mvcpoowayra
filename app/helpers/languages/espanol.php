@@ -8,7 +8,7 @@ define('READ_MORE_TEXT','Leer mas');
 define('ABOUT_TEXT','Nosotros');
 define('TOURS_TEXT','Tours');
 define('PACKAGE_TEXT','Paquetes');
-define('FAQS_TEXT','FAQS');
+define('FAQS_TEXT','Preg. Frecuentes');
 define('CONTACT_TEXT','Contacto');
 define('TREKKING_TEXT','Trekking');
 
