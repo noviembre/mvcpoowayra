@@ -74,12 +74,12 @@
 
                             <input id="tab4" type="radio" name="tabs">
                             <label for="tab4">Precio</label>
-                            <input id="tab5" type="radio" name="tabs">
-                            <label for="tab5">Itinerario</label>
+
 
                             <section id="content1">
                                 <h3>Detalles del Tour</h3>
                                 <p><?php echo $data['detalles']->descripcion; ?></p>
+                                <p><?php echo $data['detalles']->full_itinerario; ?></p>
                             </section>
 
                             <section id="content2">
@@ -109,14 +109,9 @@
                             <section id="content4">
 
                                 <h3>Precios:</h3>
-                                <div>los precios varian</div>
+                                <div>los precios varian de acuerdo a la cantidad de personas</div>
                                 <br>
 
-                            </section>
-
-                            <section id="content5">
-                                <h3>Itinerario completo:</h3>
-                                <p><?php echo $data['detalles']->full_itinerario; ?></p>
                             </section>
 
                         </div><!-- SECCION ENDS -->
@@ -222,16 +217,8 @@
                     </div><!--end sidebar-item-->
 
                     <div class="sidebar-item">
-                        <h3>Tag Cloudes</h3>
-                        <ul class="tag-list">
-                            <li><a href="#">Travel</a></li>
-                            <li><a href="#">Tour</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Photography</a></li>
-                            <li><a href="#">Wedding</a></li>
-                            <li><a href="#">Agency</a></li>
-                            <li><a href="#">Single</a></li>
-                        </ul>
+                        <h3></h3>
+
                     </div><!--end sidebar-item-->
 
                 </div><!--end sidebar-->

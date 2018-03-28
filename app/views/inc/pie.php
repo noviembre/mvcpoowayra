@@ -7,9 +7,9 @@
             <div class="col-xs-12 col-sm-5">
                 <div class="text-left">
                     <ul>
-                        <li><a href="www.facebook.com/wayracuscoworld"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="www.instagram.com/wayracuscoworld"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                         <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                         <li><a href="#"><i class="fa fa-youtube"></i></a></li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
@@ -18,7 +18,7 @@
             </div>
             <div class="col-xs-12 col-sm-7">
                 <div class="text-right">
-                    <p>&copy; Copyright 2018. All Rights Reserved.</p>
+                    <p>&copy; Copyright 2018. Todos los Derechos Reversados.</p>
                 </div>
             </div>
         </div>
