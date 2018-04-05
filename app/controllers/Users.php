@@ -82,13 +82,11 @@ class Users extends Controller {
     }
 
     public function register(){
-        // Check for POST
-        //si el metdo es = a POST
+
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
-            // Process form
-            //die("sumitted");
-            // Init data
-            // estos campos deben ser llenados
+            // Sanitize POST data
+            $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+
             $data =[
                 'name' => trim($_POST['name']),
                 'email' => trim($_POST['email']),
@@ -102,32 +100,32 @@ class Users extends Controller {
 
             // Validate Email
             if(empty($data['email'])){
-                $data['email_err'] = 'Pleae enter email';
+                $data['email_err'] = 'Por Favor Ingrese su email';
             } else {
                 // buscar si ya existe el email
                 if($this->userModel->findUserByEmail($data['email'])){
-                    $data['email_err'] = 'Email is already taken';
+                    $data['email_err'] = 'El Email ya ha sido tomado';
                 }
             }
 
             // Validate Name
             if(empty($data['name'])){
-                $data['name_err'] = 'Pleae enter name';
+                $data['name_err'] = 'Por Favor Ingrese su Nombre';
             }
 
             // Validate Password
             if(empty($data['password'])){
-                $data['password_err'] = 'Pleae enter password';
+                $data['password_err'] = 'Por Favor Ingrese su password';
             } elseif(strlen($data['password']) < 6){
-                $data['password_err'] = 'Password must be at least 6 characters';
+                $data['password_err'] = 'El Password debe ser de al menos 6 caracteres';
             }
 
             // Validate Confirm Password
             if(empty($data['confirm_password'])){
-                $data['confirm_password_err'] = 'Pleae confirm password';
+                $data['confirm_password_err'] = 'Por Favor confirme su password';
             } else {
                 if($data['password'] != $data['confirm_password']){
-                    $data['confirm_password_err'] = 'Passwords do not match';
+                    $data['confirm_password_err'] = 'los Passwords no coinciden';
                 }
             }
 
@@ -140,10 +138,10 @@ class Users extends Controller {
 
                 // Si se logra regsitrar vaya a...
                 if($this->userModel->register($data)){
-                    flash('register_success', 'You are registered and can log in');
+                    flash('register_success', 'Ya estas registrado ahora puedes Logearte');
                     redirect('users/login');
                 } else {
-                    die('Something went wrong');
+                    die('Algo Salio Mal');
                 }
 
             } else {
@@ -172,7 +170,7 @@ class Users extends Controller {
     public function login(){
         // Check for POST
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
-            // Process form
+
             // Sanitize POST data
             $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
@@ -206,13 +204,17 @@ class Users extends Controller {
 
             // Make sure errors are empty
             if(empty($data['email_err']) && empty($data['password_err'])){
+
                 // Validated
                 $loggedInUser = $this->userModel->login($data['email'], $data['password']);
                 if($loggedInUser){
-                    //Create session
+
                     //ejecute la funcion crateUserSession
                     $this->createUserSession($loggedInUser);
                 } else {
+
+                    $contadorIntentos = $this->userModel->intentos($data['email']);
+
                     $data['password_err'] = 'Password Incorrecto';
                     $this->view('users/login',$data);
 
@@ -242,7 +244,7 @@ class Users extends Controller {
         //los datos vienen del Modelo
         $_SESSION['user_id'] = $user->id;
         $_SESSION['user_email'] = $user->email;
-        $_SESSION['user_name'] = $user->name;
+        $_SESSION['user_name'] = $user->nombre;
         //si se inicio la sesion correctamente redirigir a posts
         redirect('home');
     }

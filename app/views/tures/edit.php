@@ -163,7 +163,7 @@
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body pad">
-                        <textarea name="edescripcion" class="textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
+                        <textarea name="edescripcion" class="ckeditor" style="width: 100%; height: 100px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
                             <?php echo $data['descripcion']; ?>
                         </textarea>
                         </div>
@@ -219,8 +219,8 @@
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body pad">
-                        <textarea name="eifull" class="textarea"
-                                  style="width: 100%; height: 300px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
+                        <textarea id="editor1" name="eifull" class="ckeditor"
+                                  style="width: 100%; height: 400px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
                             <?php echo $data['full_itinerario']; ?>
                         </textarea>
                         </div>
@@ -249,7 +249,7 @@
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body pad">
-                        <textarea name="eincluye" class="textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
+                        <textarea name="eincluye" class="ckeditor" style="width: 100%; height: 400px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
                             <?php echo $data['incluye']; ?>
                         </textarea>
 
@@ -276,7 +276,7 @@
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body pad">
-                        <textarea name="enoincluye" class="textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
+                        <textarea name="enoincluye" class="ckeditor" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
                             <?php echo $data['noincluye']; ?>
                         </textarea>
                         </div>
@@ -303,7 +303,7 @@
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body pad">
-                        <textarea name="equellevar" class="textarea"style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
+                        <textarea name="equellevar" class="ckeditor"style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
                             <?php echo $data['quellevar']; ?>
                         </textarea>
                         </div>
@@ -317,7 +317,7 @@
                     <!-- accepted Notes column -->
                     <div class="col-xs-9">
                         <p class="lead text-danger">Notas: Alguna Observacion con este Tour?</p>
-                        <textarea name="enota" class="textarea"style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="3">
+                        <textarea name="enota" class="ckeditor"style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" rows="3">
                         <?php echo $data['nota']; ?></textarea>
                     </div>
                     <!-- /.col -->

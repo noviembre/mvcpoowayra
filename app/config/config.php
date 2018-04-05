@@ -11,6 +11,8 @@
   define('APPROOT', dirname(dirname(__FILE__)));
   // URL Root
   define('URLROOT', 'http://localhost/cwayra');
+    // URL Root
+  define('URLFACE', 'https://www.facebook.com/wayracuscoworld');
   // Site Name
   define('SITENAME', 'Wayra Cusco World');
 // App Version

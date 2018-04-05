@@ -120,7 +120,8 @@
                 <img src="<?php echo URLROOT; ?>/img/admin.jpg" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
-                <p>Manu Slackerfan</p>
+                <p><?php echo $_SESSION['user_email']; ?></p>
+
                 <!-- Status -->
                 <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>

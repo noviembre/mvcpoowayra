@@ -9,9 +9,10 @@ class User {
 
     // Registrar a un Usuario
     public function register($data){
-        $this->db->query('INSERT INTO users (name, email, password) VALUES(:name, :email, :password)');
+        $this->db->query(
+            'INSERT INTO usuarios (nombre, password, email,rol) VALUES(:nombre, :password,:email,1 )');
         // Bind values
-        $this->db->bind(':name', $data['name']);
+        $this->db->bind(':nombre', $data['name']);
         $this->db->bind(':email', $data['email']);
         $this->db->bind(':password', $data['password']);
 
@@ -67,6 +68,18 @@ class User {
         $row = $this->db->single();
 
         return $row;
+    }
+    //contador de intentos
+    public function intentos($data){
+        $this->db->query("UPDATE usuarios SET intentos =intentos +1 WHERE email= :email");
+        $this->db->bind(':email',$data);
+        // Execute
+        if($this->db->execute()){
+            return true;
+        } else {
+            return false;
+        }
+
     }
 
 }

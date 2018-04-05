@@ -121,16 +121,30 @@
                         <!-- The user image in the navbar-->
                         <img src="<?php echo URLROOT; ?>/img/admin.jpg" class="user-image" alt="User Image">
                         <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                        <span class="hidden-xs">Manu</span>
+                        <span class="hidden-xs">
+                            <?php
+                            if($_SESSION['user_id']==1){
+                                echo 'Hola Admin';
+                            }else {
+                                echo $_SESSION['user_email'];
+                            }
+                             ?>
+                        </span>
                     </a>
                     <ul class="dropdown-menu">
                         <!-- The user image in the menu -->
                         <li class="user-header">
                             <img src="<?php echo URLROOT; ?>/img/admin.jpg" class="img-circle" alt="User Image">
 
-                            <p>
-                                Manu Slakerfan - Web Developer
-                                <small>Miembro desde el 2006</small>
+                            <p><?php
+                                if($_SESSION['user_id']==1){
+                                    echo ' Manu Slackerfan - Web Developer';
+                                }else {
+                                    echo $_SESSION['user_email'];
+                                }
+                                ?>
+
+                                <small>Miembro desde el 2018</small>
                             </p>
                         </li>
                         <!-- Menu Body -->
@@ -159,10 +173,7 @@
                         </li>
                     </ul>
                 </li>
-                <!-- Control Sidebar Toggle Button -->
-                <li>
-                    <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-                </li>
+
             </ul>
         </div>
     </nav>

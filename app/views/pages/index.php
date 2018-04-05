@@ -396,7 +396,7 @@
                                 <i class="fa fa-envelope"></i>
                             </div>
                             <div class="contact-info">
-                                <p><a href="mailto:wayracuscoworld@hotmail.com">wayracuscoworld@hotmail.com</a><br/> <a href="mailto:wayracuscoworld@hotmail.com">info@wayracuscoworld.com</a></p>
+                                <p><a href="mailto:wayracuscoworld@hotmail.com">wayracuscoworld@hotmail.com</a><br/> <a href="mailto:wayracuscoworld@hotmail.com">reservas@wayracuscoworld.com</a></p>
                             </div>
                         </li>
 

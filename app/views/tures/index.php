@@ -22,7 +22,7 @@
         <section class="content-header">
 
             <h1>
-                Data Tables
+                Wayra Cusco World
                 <small>  <?php flash('post_message'); ?></small>
             </h1>
             <ol class="breadcrumb">

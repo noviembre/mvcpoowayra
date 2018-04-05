@@ -23,6 +23,7 @@
 
             <h1>
                 Wayra Cusco World
+                <small>  <?php flash('post_message'); ?></small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="<?php echo URLROOT; ?>/home">
