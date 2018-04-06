@@ -1,88 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!-- ===== PROHIBIDO Importar en la parte superior ======-->
+<?php require APPROOT . '/views/inc/p_admin_header.php'; ?>
 
-    <title><?php echo SITENAME; ?></title>
+
+<!-- ===== Espacio para importar alguna libreria INFERIOR ======-->
 </head>
+<!-- Deja el la etiqueta de cerrado head ahi esta ok -->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
-    <div class="container">
+<body>
 
-        <a class="navbar-brand" href="<?php echo URLROOT; ?>"><?php echo SITENAME; ?></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<div class="container-scroller">
+    <div class="container-fluid page-body-wrapper full-page-wrapper">
+        <div class="content-wrapper d-flex align-items-center auth login-full-bg">
+            <div class="row w-100">
+                <div class="col-lg-4 mx-auto">
+                    <div class="auth-form-dark text-left p-5">
+                        <h2>Login</h2>
+                        <h4 class="font-weight-light">Panel de Control</h4>
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
 
-            <!--  ml-auto = set to the right -->
-            <!--  Si se inicio la sesion muestre sus datos -->
-            <ul class="navbar-nav ml-auto">
-                <?php if(isset($_SESSION['user_id'])) : ?>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Welcome <?php echo $_SESSION['user_name']; ?></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo URLROOT; ?>/users/logout">Logout</a>
-                    </li>
-                <?php else : ?>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo URLROOT; ?>/users/login">Login</a>
-                    </li>
-                <?php endif; ?>
-            </ul>
-        </div>
-    </div>
-</nav>
+                        <form action="<?php echo URLROOT; ?>/users/login" method="post" class="pt-5">
 
-<div class="row">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email</label>
+                                <input type="email" name="email" class="form-control <?php echo (!empty($data['email_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['email']; ?>" maxlength="15" id="correo" required>
+                                <i class="mdi mdi-account"></i>
+                                <span class="invalid-feedback text-warning"><?php echo $data['email_err']; ?></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" name="password" class="form-control <?php echo (!empty($data['password_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['password']; ?>" id="contrasena" placeholder="******" maxlength="20" required>
+                                <i class="mdi mdi-eye"></i>
+                                <span class="invalid-feedback text-warning">
+                                    <?php echo $data['password_err']; ?>
+                                </span>
+                            </div>
+                            <div class="mt-5">
+                                <input type="submit" value="Ingresar" class="btn btn-block btn-warning btn-lg font-weight-medium">
 
-    <div class="col-md-6 mx-auto">
-        <div class="card card-body bg-light mt-5">
-            <?php flash('register_success'); ?>
-            <h2>Login</h2>
-            <p>Panel de Control</p>
+                            </div>
 
-            <form action="<?php echo URLROOT; ?>/users/login" method="post">
-
-                <div class="form-group">
-                    <label for="email">Email: <sup>*</sup></label>
-                    <input type="email" name="email" class="form-control form-control-lg <?php echo (!empty($data['email_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['email']; ?>">
-                    <span class="invalid-feedback"><?php echo $data['email_err']; ?></span>
-                </div>
-
-                <div class="form-group">
-                    <label for="password">Password: <sup>*</sup></label>
-                    <input type="password" name="password" class="form-control form-control-lg <?php echo (!empty($data['password_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['password']; ?>">
-                    <span class="invalid-feedback"><?php echo $data['password_err']; ?></span>
-                </div>
-
-                <div class="row">
-                    <div class="col">
-                        <input type="submit" value="Login" class="btn btn-success btn-block">
-                    </div>
-                    <div class="col">
-                        <a href="<?php echo URLROOT; ?>/users/register" class="btn btn-light btn-block">No tienes una cuenta? Registrate</a>
+                        </form>
                     </div>
                 </div>
-            </form>
-
+            </div>
         </div>
+        <!-- content-wrapper ends -->
     </div>
+    <!-- page-body-wrapper ends -->
 </div>
 
 
-
-
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-
+<?php require APPROOT . '/views/inc/p_admin_pie.php'; ?>
+<!-- Custom js for this page-->
+<script src="<?php echo URLROOT; ?>/assets/js/bt-maxLength.js"></script>
+<!-- End custom js for this page-->
 </body>
+
 </html>

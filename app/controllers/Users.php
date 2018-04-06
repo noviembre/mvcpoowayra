@@ -81,7 +81,7 @@ class Users extends Controller {
         }
     }
 
-    public function register(){
+    public function registrar(){
 
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
             // Sanitize POST data
@@ -168,13 +168,14 @@ class Users extends Controller {
     }
 
     public function login(){
+        date_default_timezone_set('America/Lima');
+        $fechaPeru = date("Y-m-d H:i:s");
         // Check for POST
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
             // Sanitize POST data
             $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
-            // Init data
             //que enviaremos
             $data =[
                 'email' => trim($_POST['email']),
@@ -196,10 +197,16 @@ class Users extends Controller {
             }
             // ver si el email de usuario existe
             if($this->userModel->findUserByEmail($data['email'])){
-                // User found
+
             } else {
                 // no se pudo encontrar al usuario
                 $data['email_err'] = 'El usuario no existe';
+            }
+
+            // Verificar si el usuario esta baneado
+            $baneado = $this->userModel->User_Baneado($data['email']);
+            if($baneado){
+                $data['password_err'] = 'el Usuario esta Inactivo';
             }
 
             // Make sure errors are empty
@@ -208,12 +215,19 @@ class Users extends Controller {
                 // Validated
                 $loggedInUser = $this->userModel->login($data['email'], $data['password']);
                 if($loggedInUser){
+                    //Guardar registro de inicio
+                    $dataRegistro = [
+                        'email'=>$data['email'],
+                        'fecha'=>$fechaPeru,
+                        'actividad'=>'Ingreso',
+                    ];
+                    $this->userModel->registroIngreso($dataRegistro);
 
-                    //ejecute la funcion crateUserSession
                     $this->createUserSession($loggedInUser);
+
                 } else {
 
-                    $contadorIntentos = $this->userModel->intentos($data['email']);
+                    $this->userModel->Sumar_intentos($data['email']);
 
                     $data['password_err'] = 'Password Incorrecto';
                     $this->view('users/login',$data);
@@ -245,13 +259,25 @@ class Users extends Controller {
         $_SESSION['user_id'] = $user->id;
         $_SESSION['user_email'] = $user->email;
         $_SESSION['user_name'] = $user->nombre;
+        $_SESSION['user_photo'] = $user->photo;
         //si se inicio la sesion correctamente redirigir a posts
         redirect('home');
     }
     public function logout(){
+        //Guardar registro de salida
+        date_default_timezone_set('America/Lima');
+        $fechaPeru = date("Y-m-d H:i:s");
+        $data = [
+            'email'=>$_SESSION['user_email'],
+            'fecha'=>$fechaPeru,
+            'actividad'=>'Salio',
+        ];
+        $this->userModel->registroIngreso($data);
+
         unset($_SESSION['user_id']);
         unset($_SESSION['user_email']);
         unset($_SESSION['user_name']);
+        unset($_SESSION['user_photo']);
         session_destroy();
         redirect('users/login');
     }
@@ -263,5 +289,31 @@ class Users extends Controller {
         } else {
             return false;
         }
+    }
+
+
+
+    public function actividades(){
+
+        $act = $this->userModel->listar_All_Actividades();
+
+        $data = [
+            'actividad' => $act,
+        ];
+
+        $this->view('users/actividades',$data);
+
+    }
+
+    public function historial(){
+
+        $hist = $this->userModel->listar_All_Historial();
+
+        $data = [
+            'historial' => $hist,
+        ];
+
+        $this->view('users/historial',$data);
+
     }
 }
