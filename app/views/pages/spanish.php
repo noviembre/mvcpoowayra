@@ -1,169 +1,217 @@
-<!-- ===== PROHIBIDO Importar en la parte superior ======-->
+
+
+
+
 <?php require APPROOT . '/views/inc/p_admin_header.php'; ?>
 
 
-<!-- ===== Espacio para importar alguna libreria INFERIOR ======-->
+<link href="<?php echo URLROOT; ?>/assets/plugins/datatables/dataTables.bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+<!-- Page level plugin CSS -->
 </head>
-<!-- Deja el la etiqueta de cerrado head ahi esta ok -->
 
 
-<body>
-<div class="container-scroller">
+<body class="fixed-nav sticky-footer" id="page-top">
+<!-- ===============         NAVBAR          ====================  -->
+<?php require APPROOT . '/views/inc/p_navbar.php'; ?>
+<!-- ===============         NAVBAR          ====================  -->
 
 
-    <!-- =========== Navbar Starts =========== -->
-    <?php require APPROOT . '/views/inc/p_navbar.php'; ?>
-    <!-- =========== Navbar Ends  =========== -->
-
-    <div class="container-fluid page-body-wrapper">
+<div class="content-wrapper">
 
 
-        <!-- =========== Derecho Starts =========== -->
-        <?php require APPROOT . '/views/inc/p_ladoderecho.php'; ?>
-        <!-- =========== Derecho Ends  =========== -->
+    <div class="container-fluid">
+
+        <!-- =======  primera fila starts   ====== -->
 
 
-        <!-- =========== Izquierdo Starts =========== -->
-        <?php require APPROOT . '/views/inc/p_ladoizquierdo.php'; ?>
-        <!-- =========== Izquierdo Ends  =========== -->
+        <!-- Encabezado starts -->
+        <div class="row page-titles">
 
+            <div class="col-md-5 align-self-center">
+                <h4 class="theme-cl">Todos los Tours en Espanol</h4>
+                <h3><?php flash('post_message'); ?></h3>
+            </div>
 
-
-        <!-- partial -->
-        <div class="main-panel">
-
-
-            <div class="content-wrapper">
-                <div class="card">
-                    <div class="card-body">
+            <div class="col-md-7 text-right">
 
 
 
-                        <div class="row">
-                            <div class="col-12 col-md-3 col-sm-6 mb-4 mb-md-0 border-right-md d-flex justify-content-between justify-content-md-center">
-                                <div class="wrapper d-flex align-items-center justify-content-center">
-
-                                    <div class="wrapper d-flex flex-column ml-4">
-                                        <p class="font-weight-bold mb-2"> </p>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3 col-sm-6 mb-4 mb-md-0 border-right-md d-flex justify-content-between justify-content-md-center">
-                                <div class="wrapper d-flex align-items-center justify-content-center">
-
-                                    <div class="wrapper d-flex flex-column ml-4">
-                                        <div class="template-demo">
-
-                                            <a href="<?php echo URLROOT; ?>/pages/spanish">
-                                                <input type="button" value="Espanol" class="btn btn-inverse-warning btn-rounded btn-fw">
-                                            </a>
-
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3 col-sm-6 mb-4 mb-md-0 border-right-md d-flex justify-content-between justify-content-md-center">
-                                <div class="wrapper d-flex align-items-center justify-content-center">
-
-                                    <div class="wrapper d-flex flex-column ml-4">
-                                        <div class="template-demo">
-
-                                            <a href="<?php echo URLROOT; ?>/pages/english">
-                                                <input type="button" value="Ingles" class="btn btn-inverse-primary btn-rounded btn-fw">
-                                            </a>
-
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-3 col-sm-6 d-flex justify-content-between justify-content-md-center">
-                                <div class="wrapper d-flex align-items-center justify-content-center">
-
-                                    <div class="wrapper d-flex flex-column ml-4">
-                                        <div class="template-demo">
-
-
-                                            <a href="<?php echo URLROOT; ?>/pages/add">
-                                                <input type="button" value="Agregar" class="btn btn-inverse-dark btn-rounded btn-fw">
-                                            </a>
-
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-                        <h4 class="card-title">Listado de todos los Tours en Espanol</h4>
-                        <div class="row">
-                            <div class="col-12">
-                                <table id="order-listing" class="table">
-                                    <thead>
-                                    <tr>
-
-                                        <th>Tour</th>
-                                        <th>Duracion</th>
-                                        <th>Soles</th>
-                                        <th>Dolares</th>
-                                        <th>Acciones</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-
-                                    <?php foreach($data['tours'] as $tour) : ?>
-                                        <tr>
-                                            <td><?php echo $tour->titulo; ?></td>
-                                            <td><?php echo $tour->duracion; ?></td>
-                                            <td><?php echo $tour->dolares; ?></td>
-                                            <td><?php echo $tour->soles; ?></td>
-                                            <td><a href="<?php echo URLROOT; ?>/pages/edit/<?php echo $tour->tid; ?>" class="btn btn-warning">
-                                                    <i class="mdi mdi-border-color"></i></a>
-
-                                            </td>
-                                        </tr>
-                                    <?php endforeach; ?>
-
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
+                <div class="btn-group">
+                    <a href="#" class="btn gredient-btn" data-toggle="modal" data-target="#addTour" title="Create project">
+                        Agregar Tours
+                    </a>
                 </div>
             </div>
 
-
-            <!-- =========== Wrapers Ends  =========== -->
-<!-- ==== No esta permitido la edicion hacia abajo a partir de aqui  ====== -->
-
-            <!-- =========== Mini footer Starts =========== -->
-            <?php require APPROOT . '/views/inc/p_admin_mini_pie.php'; ?>
-            <!-- =========== Mini footer Ends  =========== -->
-
-
-            <!-- partial -->
         </div>
-        <!-- main-panel ends -->
-    </div>
-    <!-- page-body-wrapper ends -->
+        <!-- Encabezado ends -->
+
+
+
+        <!-- Listar Projects Starts -->
+            <div class="row">
+
+                <!-- Single Contact List -->
+                <div class="col-md-12 col-sm-12 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <table id="example" class="table table-striped table-bordered table-hover" style="width:100%">
+                            <thead>
+                            <tr>
+
+                                <th>Tour</th>
+                                <th>Duracion</th>
+                                <th>Soles</th>
+                                <th>Dolares</th>
+                                <th>Acciones</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <?php foreach($data['tours'] as $tour) : ?>
+                            <tr>
+                                <td><?php echo $tour->titulo; ?> </td>
+                                <td><?php echo $tour->duracion; ?></td>
+                                <td><?php echo $tour->dolares; ?></td>
+                                <td><?php echo $tour->soles; ?></td>
+
+
+                                <td>
+                                    <div class="ground-right">
+                                        <a class="btn btn-small font-midium font-12 btn-rounded btn-warning width-45 height-45 text-center" href="<?php echo URLROOT; ?>/pages/edit/<?php echo $tour->tid; ?>">
+                                            <i class="ti-pencil "></i></a>
+
+                                    </div>
+
+
+
+                                </td>
+                            </tr>
+                            <?php endforeach; ?>
+
+
+
+            </tbody>
+        </table>
+
+
+
+
 </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Listar Projects Ends -->
+
+
+
+    </div>
+
+    <!-- /. container-fluid ends -->
+
+    <!-- ===== Modal New Project Starts  ===== -->
+    <div class="add-popup modal fade" id="addTour" tabindex="-1" role="dialog" aria-labelledby="addTour">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header gredient-bg">
+                    <ul class="card-actions icons right-top">
+                        <li>
+                            <a href="javascript:void(0)" class="text-white" data-dismiss="modal" aria-label="Close">
+                                <i class="ti-close"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <h4 class="modal-title">Nuevo Tour</h4>
+
+                </div>
+                <form action="<?php echo URLROOT; ?>/pages/add" method="post">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label class="control-label">Nombre del tour: </label>
+                            <div class="input-group">
+                                <span class="input-group-addon br br-light no-br">
+                                    <i class="ti-pencil-alt"></i>
+                                </span>
+                                <input name="titulo" type="text" class="form-control no-bl" id="add_name" placeholder="Ejemplo: City Tour" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Duracion:</label>
+                            <div class="input-group">
+                               <span class="input-group-addon br br-light no-br">
+                                    <i class="ti-time"></i>
+                                </span>
+                                <input name="duracion" type="text" class="form-control no-bl" id="add_duracion" placeholder="Full Day" required>
+
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Etiquetas:</label>
+                            <div class="input-group">
+                               <span class="input-group-addon br br-light no-br">
+                                    <i class="ti-tag"></i>
+                                </span>
+                                <input name="etiquetas" type="text" class="form-control no-bl" id="add_name" placeholder="City Tour Full Day" required>
+
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Idioma</label>
+                            <div class="input-group">
+                                <span class="input-group-addon br br-light no-br"><i class="ti-flag"></i></span>
+                                <select name="idioma" class="form-control select2" style="width: 100%;" required>
+                                    <option value="es" selected>Espanol</option>
+                                    <option value="en">Ingles</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-default btn-flat pull-left" type="reset">Limpiar</button>
+                        <button class="btn btn-dark btn-flat" data-dismiss="modal" aria-label="Close">Cerrar</button>
+                        <button type="submit" class="btn gredient-btn">Guardar</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- ===== Modal New Project Ends ===== -->
 
 
 
 
 
-<?php require APPROOT . '/views/inc/p_admin_pie.php'; ?>
-<!-- Custom js for this page-->
-<script src="<?php echo URLROOT; ?>/assets/js/data-table.js"></script>
-<!-- End custom js for this page-->
+    <?php require APPROOT . '/views/inc/p_admin_pie.php'; ?>
+
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable({
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+                }
+            });
+
+
+        } );
+
+    </script>
+</div>
+<!-- content-wrapper -->
+
 </body>
-
 </html>

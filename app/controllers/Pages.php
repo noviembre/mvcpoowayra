@@ -3,16 +3,12 @@
 class Pages extends Controller {
 
 	public function __construct(){
-        if(!isLoggedIn()){
-            redirect('users/login');
-        }
-        $this->tourModelo = $this->model('Ture');
-        $this->userModel = $this->model('User');
 
 
 	}
 
     public function index(){
+
 
         $data = [
 
@@ -22,6 +18,11 @@ class Pages extends Controller {
     }
 
     public function todos(){
+        if(!isLoggedIn()){
+            redirect('users/login');
+        }
+        $this->tourModelo = $this->model('Ture');
+        $this->userModel = $this->model('User');
 
         $tours = $this->tourModelo->listarTourAll();
 
@@ -36,6 +37,12 @@ class Pages extends Controller {
 
     public function spanish(){
 
+        if(!isLoggedIn()){
+            redirect('users/login');
+        }
+        $this->tourModelo = $this->model('Ture');
+        $this->userModel = $this->model('User');
+
         $tours = $this->tourModelo->listarTourSpanishAll();
 
         $data = [
@@ -47,6 +54,11 @@ class Pages extends Controller {
     }
 
     public function english(){
+        if(!isLoggedIn()){
+            redirect('users/login');
+        }
+        $this->tourModelo = $this->model('Ture');
+        $this->userModel = $this->model('User');
 
         $tours = $this->tourModelo->listarTourEnglishAll();
 
@@ -61,6 +73,12 @@ class Pages extends Controller {
 
 
     public function add(){
+        if(!isLoggedIn()){
+            redirect('users/login');
+        }
+        $this->tourModelo = $this->model('Ture');
+        $this->userModel = $this->model('User');
+
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
             // Sanitize POST array
             $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
@@ -110,6 +128,13 @@ class Pages extends Controller {
     }
 
     public function temporal(){
+
+        if(!isLoggedIn()){
+            redirect('users/login');
+        }
+        $this->tourModelo = $this->model('Ture');
+        $this->userModel = $this->model('User');
+
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
             // Sanitize POST array
             // $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
@@ -176,6 +201,13 @@ class Pages extends Controller {
     }
 
     public function edit($tid = null){
+
+        if(!isLoggedIn()){
+            redirect('users/login');
+        }
+        $this->tourModelo = $this->model('Ture');
+        $this->userModel = $this->model('User');
+
         if(!empty(isset($tid))){
 
             // ver si el tour existe

@@ -12,10 +12,12 @@
   // URL Root
   define('URLROOT', 'http://localhost/cwayra');
 
-define('PCSITENAME', 'Panel de control - Wayra Cusco World');
+define('PCSITENAME', 'Wayra Cusco W.');
   // Site Name
   define('SITENAME', 'Wayra Cusco World');
 // App Version
     define('APPVERSION', '3.1.4');
     //URL EXTERNAS
 define('URLFACE', 'https://www.facebook.com/wayracuscoworld');
+define('URL_INSTAGRAM', 'https://www.instagram.com/wayracuscoworld');
+define('URL_TWITTER', 'https://twitter.com/wayracuscoworld');

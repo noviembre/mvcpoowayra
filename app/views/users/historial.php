@@ -1,138 +1,151 @@
-<!-- ===== PROHIBIDO Importar en la parte superior ======-->
 <?php require APPROOT . '/views/inc/p_admin_header.php'; ?>
 
-
-<!-- ===== Espacio para importar alguna libreria INFERIOR ======-->
+<!-- Page level plugin CSS -->
 </head>
-<!-- Deja el la etiqueta de cerrado head ahi esta ok -->
-
-<body>
-<div class="container-scroller">
 
 
-    <!-- =========== Navbar Starts =========== -->
-    <?php require APPROOT . '/views/inc/p_navbar.php'; ?>
-    <!-- =========== Navbar Ends  =========== -->
-
-    <div class="container-fluid page-body-wrapper">
-
-
-        <!-- =========== Derecho Starts =========== -->
-        <?php require APPROOT . '/views/inc/p_ladoderecho.php'; ?>
-        <!-- =========== Derecho Ends  =========== -->
+<body class="fixed-nav sticky-footer" id="page-top">
+<!-- ===============         NAVBAR          ====================  -->
+<?php require APPROOT . '/views/inc/p_navbar.php'; ?>
+<!-- ===============         NAVBAR          ====================  -->
 
 
-        <!-- =========== Izquierdo Starts =========== -->
-        <?php require APPROOT . '/views/inc/p_ladoizquierdo.php'; ?>
-        <!-- =========== Izquierdo Ends  =========== -->
+<div class="content-wrapper">
+
+
+    <div class="container-fluid">
+
+        <!-- =======  primera fila starts   ====== -->
+
+
+        <!-- Encabezado starts -->
+        <div class="row page-titles">
+
+            <div class="col-md-12 align-self-center">
+                <h4 class="theme-cl">Lista de Registros del Sistema</h4>
+
+            </div>
+
+        </div>
+        <!-- Encabezado ends -->
 
 
 
-        <!-- partial -->
-        <div class="main-panel">
-
-
-            <div class="content-wrapper">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-
-                            <div class="card-body">
-                                <h4 class="card-title">Historial</h4>
-                                <p class="card-description">Registro de logeo</p>
-                                <div class="mt-5">
-                                    <div class="timeline">
-
-                                        <?php foreach ($data['historial'] as $lts):?>
-
-
-                                        <?php if ($lts->actividad == 'Ingreso'): ?>
-                                        <div class="timeline-wrapper timeline-wrapper-success">
-                                            <?php elseif ($lts->actividad == 'Salio'): ?>
-                                            <div class="timeline-wrapper timeline-wrapper-danger">
-                                         <?php else: ?>
-                                           <div class="timeline-wrapper timeline-wrapper-warning">
-                                         <?php endif; ?>
-
-
-                                            <div class="timeline-badge"></div>
-                                            <div class="timeline-panel">
-                                                <div class="timeline-heading">
-                                                    <h6 class="timeline-title">
-                                                        <b><?php echo $lts->actividad ;?></b>
-                                                    </h6>
-                                                </div>
-
-                                                <?php if ($lts->actividad == 'Ingreso'): ?>
-                                                    <div class="timeline-body">
-                                                        <p><?php echo $lts->actividad ;?> al Sistema a las
-                                                            <small>
-                                                                <b>
-                                                                    <?php echo date("H :i :s", strtotime($lts->fecha)) ;?>
-                                                                </b></small>
-                                                        </p>
-                                                    </div>
-
-                                                <?php else: ?>
-                                                    <div class="timeline-body">
-                                                        <p><?php echo $lts->actividad ;?> del Sistema a las
-                                                            <small>
-                                                                <b>
-                                                                    <?php echo date("H :i :s", strtotime($lts->fecha)) ;?>
-                                                                </b></small>
-                                                        </p>
-                                                    </div>
-                                                 <?php endif; ?>
-
-
-                                                <div class="timeline-footer d-flex align-items-center">
-
-                                                    <i class="mdi mdi-heart-outline text-muted mr-1"></i>
-
-                                                    <span><?php echo $lts->nombre ;?></span>
-                                                    <span class="ml-auto font-weight-bold">
-                                              <?php echo date("D d, M Y", strtotime($lts->fecha)) ;?>
-                                            </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <?php endforeach; ?>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
+        <!-- Listar Projects Starts -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-overlap">
+                        <a href="#" class="user-icon user-card-mail"><i class="ti-email"></i></a>
+                        <a href="#" class="user-icon user-card-phone"><i class="ti-mobile"></i></a>
+                        <img class="card-img-top" src="<?php echo URLROOT; ?>/img/wayra.png" alt="Card image cap" />
+                    </div>
+                    <div class="card-block padd-0 translateY-50 text-center">
+                        <div class="card-avatar style-2">
+                            <img src="<?php echo URLROOT; ?>/img/wayra.png" class="img-circle img-responsive" alt="" />
                         </div>
+                        <h5 class="font-normal mrg-bot-0 font-18 card-title">
+                            <?php echo SITENAME; ?>
+                        </h5>
+                        <p class="card-small-text">Travel Agency</p>
                     </div>
 
-
-                    <!-- =========== Wrapers Ends  =========== -->
-                    <!-- ==== No esta permitido la edicion hacia abajo a partir de aqui  ====== -->
-
-                    <!-- =========== Mini footer Starts =========== -->
-                    <?php require APPROOT . '/views/inc/p_admin_mini_pie.php'; ?>
-                    <!-- =========== Mini footer Ends  =========== -->
-
-
-                    <!-- partial -->
                 </div>
-                <!-- main-panel ends -->
+
+
             </div>
-            <!-- page-body-wrapper ends -->
+            <!-- /.col-md-4 -->
+            <div class="col-md-8">
+                <div class="nav-tabs-custom bg-white">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#activity" data-toggle="tab">Historial</a></li>
+
+
+                    </ul>
+                    <div class="tab-content">
+                        <div class="active tab-pane" id="activity">
+                            <ul class="timeline timeline-inverse" >
+
+                                <!-- timeline item -->
+
+                                <?php foreach ($data['historial'] as $lts):?>
+                                    <li >
+
+                                        <?php if ($lts->actividad == 'Ingreso'): ?>
+                                            <i class="fa fa-sign-out bg-success-light"></i>
+                                        <?php else: ?>
+                                            <i class="fa fa-sign-in bg-danger-light"></i>
+                                        <?php endif; ?>
+
+                                        <div class="timeline-item">
+                                    <span class="time"><i class="fa fa-clock-o"></i>
+                                    <b>
+                                        <?php echo date('H:i:s', strtotime($lts->fecha));?>
+
+                                    </b>
+                                    </span>
+
+                                            <h3 class="timeline-header">
+
+
+                                                <?php if ($lts->actividad == 'Ingreso'): ?>
+                                                    <b class="text-success">Ingreso </b> al Sistema
+                                                <?php else: ?>
+                                                    <b class="text-danger">Salio</b> del Sistema
+                                                <?php endif; ?>
+                                            </h3>
+
+                                            <div class="timeline-body" >
+                                                <i><?php echo $lts->nombre ;?></i>
+
+
+                                                <div class="pull-right">
+
+                                                    <small>
+                                                        <?php echo date("D d, M Y", strtotime($lts->fecha)) ;?>
+                                                    </small>
+
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                <?php endforeach; ?>
+                                <!-- END timeline item -->
+                                <!-- timeline item -->
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <!-- /.tab-content -->
+                </div>
+                <!-- /.nav-tabs-custom -->
+            </div>
+            <!-- /.col-md-8 -->
+
+
+
+
         </div>
+        <!-- Listar Projects Ends -->
 
 
 
+    </div>
 
-        <?php require APPROOT . '/views/inc/p_admin_pie.php'; ?>
-        <!-- Custom js for this page-->
+    <!-- /. container-fluid ends -->
 
-        <!-- End custom js for this page-->
 
+    <?php require APPROOT . '/views/inc/p_admin_pie.php'; ?>
+
+
+</div>
+<!-- content-wrapper -->
 
 </body>
-
 </html>
+

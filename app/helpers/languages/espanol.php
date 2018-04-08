@@ -185,9 +185,9 @@ define('HUCHUY_QOSQO_TOUR_TEXT','Tour a Huchuy Qosqo');
 define('VALLEY_SUR_TOUR_TEXT','Tour al Valle Sur');
 
 #----------- CARROUSEL ----------*
-define('MACHUPICCHU_PREVIEW_TEXT','Machu picchu es Lorem Ipsum is simply dummy text of the printing and typeseatting industry. Lorem Ipsum has been the');
-define('INKA_TRAIL_PREVIEW_TEXT','Inka trail es Lorem Ipsum is simply dummy text of the printing and typeseatting industry. Lorem Ipsum has been the');
-define('MOUNTAIN_COLOURS_PREVIEW_TEXT','es Lorem Ipsum is simply dummy text of the printing and typeseatting industry. Lorem Ipsum');
+define('MACHUPICCHU_PREVIEW_TEXT','Escuchaste sobre Machu picchu? Estas listo para viajar y conocer una de las 7 Maravillas del Mundo? Que Esperas!');
+define('INKA_TRAIL_PREVIEW_TEXT','Algunos viajes que tomamos para llegar a un destino, otros los tomamos por el placer del viaje en sí. El Camino Inca en Perú es quizás la caminata más grande del mundo porque combina...');
+define('MOUNTAIN_COLOURS_PREVIEW_TEXT','La montaña Vinicunca es parte de los Andes peruanos y es una de las características geológicas más increíbles del mundo. La montaña está rayada con una gama de colores que incluye granate intenso, dorado e incluso tonos azules..');
 
 define('SALKANTAY_TEXT','Salkantay');
 define('SALKANTAY_PREVIEW_TEXT','Salkantay es Lorem Ipsum is simply dummy text of the printing and typeseatting industry. Lorem Ipsum has been the');

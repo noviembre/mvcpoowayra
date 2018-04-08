@@ -260,6 +260,7 @@ class Users extends Controller {
         $_SESSION['user_email'] = $user->email;
         $_SESSION['user_name'] = $user->nombre;
         $_SESSION['user_photo'] = $user->photo;
+        $_SESSION['user_rol'] = $user->rol;
         //si se inicio la sesion correctamente redirigir a posts
         redirect('home');
     }
@@ -278,6 +279,7 @@ class Users extends Controller {
         unset($_SESSION['user_email']);
         unset($_SESSION['user_name']);
         unset($_SESSION['user_photo']);
+        unset($_SESSION['user_rol']);
         session_destroy();
         redirect('users/login');
     }
