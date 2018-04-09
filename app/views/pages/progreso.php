@@ -24,24 +24,20 @@
         <div class="row page-titles">
 
             <div class="col-md-5 align-self-center">
-                <h4 class="theme-cl">Todos los Tours</h4>
-                <h3><?php flash('post_message'); ?></h3>
+                <h4 class="theme-cl">Progreso de los Tours</h4>
             </div>
 
             <div class="col-md-7 text-right">
-                <div class="btn-group">
-                    <a href="<?php echo URLROOT; ?>/pages/progreso" class="btn btn-info">
-                        Progreso
-                    </a>
-                </div>
+
                 <div class="btn-group">
                     <a href="<?php echo URLROOT; ?>/pages/spanish" class="btn btn-warning">
-                       Espanol
+                        Espanol
                     </a>
                 </div>
+
                 <div class="btn-group">
-                    <a href="#" class="btn gredient-btn" data-toggle="modal" data-target="#addTour" title="Crear un Nuevo Tour">
-                        Agregar Tour
+                    <a href="#" class="btn gredient-btn" data-toggle="modal" data-target="#addTour" title="Create project">
+                        Agregar Tours
                     </a>
                 </div>
             </div>
@@ -57,55 +53,114 @@
             <!-- Single Contact List -->
             <div class="col-md-12 col-sm-12 mb-4">
                 <div class="card">
-                    <div class="card-body ">
+                    <div class="card-body">
                         <table id="example" class="table table-striped table-bordered table-hover" style="width:100%">
-
-                        <thead>
+                            <thead>
                             <tr>
-                                <th>Idioma</th>
-                                <th>Nombre</th>
-                                <th>Duracion</th>
-                                <th>Soles</th>
-                                <th>Dolares</th>
 
+                                <th>Tour</th>
+                                <th>Duracion</th>
+                                <th>Descripcion</th>
+                                <th>Itinerario</th>
+                                <th>Incluye</th>
+                                <th>No Incluye</th>
+                                <th>Que Llevar</th>
+                                <th>Editar</th>
                                 <th>?</th>
                             </tr>
                             </thead>
                             <tbody>
-
                             <?php foreach($data['tours'] as $tour) : ?>
                                 <tr>
-
-                                    <td><?php
-                                        if($tour->lang =='es'){
-                                            echo '<small class="label label-warning">
-                                                <i class="fa fa-flag"></i> Espanol
-                                                </small>';
-                                        }else {
-                                            echo '<small class="label label-primary">
-                                                <i class="fa fa-flag"></i> Ingles
-                                                </small>';
-                                        }
-
-                                        ?></td>
-
-
-                                    <td><?php echo $tour->titulo; ?></td>
+                                    <td><?php echo $tour->titulo; ?> </td>
                                     <td><?php echo $tour->duracion; ?></td>
-                                    <td><?php echo $tour->dolares; ?></td>
-                                    <td><?php echo $tour->soles; ?></td>
+                                    <td>
+
+                                        <?php if (empty($tour->descripcion)):?>
+                                        <div class="label cl-danger bg-danger-light">
+                                            <i class="fa fa-times"></i>
+                                        </div>
+                                        <?php else: ?>
+                                        <div class="label cl-success bg-success-light">
+                                            <i class="fa fa-check"></i>
+                                        </div>
+                                        <?php endif; ?>
+
+                                    </td>
+                                    <td>
+                                        <?php if (empty($tour->full_itinerario)):?>
+                                            <div class="label cl-danger bg-danger-light">
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        <?php else: ?>
+                                            <div class="label cl-success bg-success-light">
+                                                <i class="fa fa-check"></i>
+                                            </div>
+                                        <?php endif; ?>
+                                    </td>
+                                    <td>
+                                        <?php if (empty($tour->incluye)):?>
+                                            <div class="label cl-danger bg-danger-light">
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        <?php else: ?>
+                                            <div class="label cl-success bg-success-light">
+                                                <i class="fa fa-check"></i>
+                                            </div>
+                                        <?php endif; ?>
+                                    </td>
+                                    <td>
+                                        <?php if (empty($tour->noincluye)):?>
+                                            <div class="label cl-danger bg-danger-light">
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        <?php else: ?>
+                                            <div class="label cl-success bg-success-light">
+                                                <i class="fa fa-check"></i>
+                                            </div>
+                                        <?php endif; ?>
+                                    </td>
+                                    <td>
+                                        <?php if (empty($tour->quellevar)):?>
+                                            <div class="label cl-danger bg-danger-light">
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        <?php else: ?>
+                                            <div class="label cl-success bg-success-light">
+                                                <i class="fa fa-check"></i>
+                                            </div>
+                                        <?php endif; ?>
+                                    </td>
+
+                                    <td>
+                                        <div class="ground-right">
+                                            <a class="btn btn-small font-midium font-12 btn-rounded btn-warning width-45 height-45 text-center" href="<?php echo URLROOT; ?>/pages/edit/<?php echo $tour->tid; ?>">
+                                                <i class="ti-pencil "></i></a>
+
+                                        </div>
+
+
+
+                                    </td>
                                     <td></td>
                                 </tr>
+
+
+
+
                             <?php endforeach; ?>
 
 
 
                             </tbody>
                         </table>
+
+
+
+
                     </div>
                 </div>
             </div>
-
         </div>
         <!-- Listar Projects Ends -->
 
@@ -115,7 +170,7 @@
 
     <!-- /. container-fluid ends -->
 
-    <!-- ===== Modal New Tour Starts  ===== -->
+    <!-- ===== Modal New Project Starts  ===== -->
     <div class="add-popup modal fade" id="addTour" tabindex="-1" role="dialog" aria-labelledby="addTour">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -192,8 +247,10 @@
             </div>
         </div>
     </div>
+    <!-- ===== Modal New Project Ends ===== -->
 
-    <!-- ===== Modal New Tour Ends ===== -->
+
+
 
 
     <?php require APPROOT . '/views/inc/p_admin_pie.php'; ?>

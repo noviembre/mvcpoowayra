@@ -21,11 +21,26 @@
 
         <!-- Encabezado starts -->
 
+        <!-- Encabezado starts -->
         <div class="row page-titles">
-            <div class="col-md-12 align-self-center">
+
+            <div class="col-md-5 align-self-center">
                 <h4 class="theme-cl">Editando...</h4>
             </div>
+
+            <div class="col-md-7 text-right">
+
+                <div class="btn-group">
+                    <a href="<?php echo URLROOT; ?>/pages/spanish" class="btn btn-warning">
+                        Espanol
+                    </a>
+                </div>
+
+
+            </div>
+
         </div>
+        <!-- Encabezado ends -->
         <!-- Encabezado ends -->
 
 
@@ -37,8 +52,8 @@
                 <div class="nav-tabs-custom bg-white">
                     <ul class="nav nav-tabs">
                         <li class="active"><a href="#activity" data-toggle="tab"><b>Info</b></a></li>
-                        <li><a href="#timeline" data-toggle="tab"><b>Itinerario</b></a></li>
-                        <li><a href="#settings" data-toggle="tab"><b>Incluye</b></a></li>
+                        <li><a href="#timeline" data-toggle="tab"><b>Incluye</b></a></li>
+                        <li><a href="#settings" data-toggle="tab"><b>Notas</b></a></li>
                     </ul>
                     <div class="tab-content">
                         <div class="active tab-pane" id="activity">

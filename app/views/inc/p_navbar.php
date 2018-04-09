@@ -19,7 +19,7 @@
 
 
                 <!-- Start Dashboard -->
-                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Chatting">
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
                     <a class="nav-link" href="<?php echo URLROOT; ?>/pages/todos">
                         <i class="ti i-cl-3 ti-comment-alt"></i>
                         <span class="nav-link-text">Dashboard</span>
@@ -28,7 +28,7 @@
                 <!-- End Dashboard -->
 
                 <!-- Start Shopping -->
-                <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Chatting">
+                <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Tours">
                     <a class="nav-link" href="<?php echo URLROOT; ?>/pages/todos">
                         <i class="ti i-cl-3 ti-comment-alt"></i>
                         <span class="nav-link-text">Tours</span>
@@ -39,7 +39,7 @@
 
 
                 <!-- Start Tasks Apps -->
-                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Advance Apps">
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Registros">
                     <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#advance-apps" data-parent="#exampleAccordion">
                         <i class="ti i-cl-9 ti ti-desktop"></i>
                         <span class="nav-link-text">Registros</span>

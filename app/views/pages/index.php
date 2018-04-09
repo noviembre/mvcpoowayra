@@ -366,7 +366,7 @@
 
 
 <!-- CONTACT FORM STARTS-->
-<section id="contact-us" class="parallax" data-stellar-background-ratio="0.5" style="background-image: url(<?php echo URLROOT; ?>views/img/banner/2.jpg);">
+<section id="contact-us" class="parallax" data-stellar-background-ratio="0.5" style="background-image: url(<?php echo URLROOT; ?>/img/banner/1_machupicchu.jpg);">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">

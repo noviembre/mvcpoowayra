@@ -298,5 +298,21 @@ class Pages extends Controller {
     }
 
 
+    public function progreso(){
 
+        if(!isLoggedIn()){
+            redirect('users/login');
+        }
+        $this->tourModelo = $this->model('Ture');
+        $this->userModel = $this->model('User');
+
+        $tours = $this->tourModelo->listarTourSpanishAll();
+
+        $data = [
+            'tours' => $tours,
+        ];
+
+        $this->view('pages/progreso',$data);
+
+    }
 }

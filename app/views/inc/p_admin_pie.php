@@ -12,10 +12,9 @@
 <!-- Switcher -->
 <button class="w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu()"><i class="spin theme-cl fa fa-cog" aria-hidden="true"></i></button>
 <div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-right" style="display:none;right:0;" id="rightMenu">
-    <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large theme-bg">Close &times;</button>
+    <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large theme-bg">Cerrar &times;</button>
     <div class="title-logo">
-        <img src="assets/img/logo.html" alt="" class="img-responsive">
-        <h4>Choose Your Color</h4>
+        <h4>Elige un Color</h4>
     </div>
     <ul id="styleOptions" title="switch styling">
         <li>
@@ -44,7 +43,7 @@
 
 <!-- Bootstrap core JavaScript-->
 
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="<?php echo URLROOT; ?>/assets/plugins/jquery/jquery-1.12.4.js"></script>
 
 <script src="<?php echo URLROOT; ?>/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 

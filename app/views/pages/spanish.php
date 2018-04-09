@@ -1,12 +1,5 @@
-
-
-
-
 <?php require APPROOT . '/views/inc/p_admin_header.php'; ?>
-
-
-<link href="<?php echo URLROOT; ?>/assets/plugins/datatables/dataTables.bootstrap.min.css" rel="stylesheet">
-<link href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+<link href="<?php echo URLROOT; ?>/assets/plugins/datatables/css/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 <!-- Page level plugin CSS -->
 </head>
@@ -31,10 +24,15 @@
 
             <div class="col-md-5 align-self-center">
                 <h4 class="theme-cl">Todos los Tours en Espanol</h4>
-                <h3><?php flash('post_message'); ?></h3>
             </div>
 
             <div class="col-md-7 text-right">
+
+                <div class="btn-group">
+                    <a href="<?php echo URLROOT; ?>/pages/progreso" class="btn btn-info">
+                        Progreso
+                    </a>
+                </div>
 
 
 
@@ -65,7 +63,8 @@
                                 <th>Duracion</th>
                                 <th>Soles</th>
                                 <th>Dolares</th>
-                                <th>Acciones</th>
+                                <th>Editar</th>
+                                <th>?</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -87,6 +86,7 @@
 
 
                                 </td>
+                                <td></td>
                             </tr>
                             <?php endforeach; ?>
 
@@ -195,14 +195,14 @@
 
     <?php require APPROOT . '/views/inc/p_admin_pie.php'; ?>
 
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript" src="<?php echo URLROOT; ?>/assets/plugins/datatables/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="<?php echo URLROOT; ?>/assets/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
 
     <script>
         $(document).ready(function() {
             $('#example').DataTable({
                 "language": {
-                    "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+                    "url": "<?php echo URLROOT; ?>/assets/plugins/datatables/js/Spanish.json"
                 }
             });
 
