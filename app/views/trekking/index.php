@@ -15,7 +15,7 @@ require APPROOT . '/views/inc/cabecera.php'; ?>
             <div class="row">
                 <div class="col-xs-12">
                     <div class="page-title text-center">
-                        <h1>falta traducir al espanol</h1>
+                        <h1>Wayra Cusco World</h1>
                     </div>
                 </div>
             </div>
@@ -40,108 +40,109 @@ require APPROOT . '/views/inc/cabecera.php'; ?>
         </div>
 
         <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-4">
-                <div class="package-list wow fadeInUp">
-                    <a href="<?php echo URLROOT; ?>/tours/<?php echo SALKANTAY_5D4N_LINK; ?>">
-                        <div class="package-thumb">
-                            <img src="<?php echo URLROOT; ?>/img/trek/salkantay_600_400_2.jpg" alt="" />
-                            <div class="duration">
-                                5 <?php echo DAYS_TEXT; ?><br/>4 <?php echo NIGHTS_TEXT; ?>
-                            </div>
-                        </div>
-                        <div class="package-info">
-                            <h3><?php echo SALKANTAY_5D4N_TEXT; ?></h3>
-                            <span class="pull-left">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<span class="review-count"> - 100 review</span>
-                                </span>
-                            <span class="pull-right price">$1400</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
 
-
-            <div class="col-xs-6 col-sm-6 col-md-4">
-                <div class="package-list wow fadeInUp">
-                    <a href="<?php echo URLROOT; ?>/tours/<?php echo SALKANTAY_4D3N_LINK; ?>">
-                        <div class="package-thumb">
-                            <img src="<?php echo URLROOT; ?>/img/trek/salkantay_600_400.jpg" alt="" />
-                            <div class="duration">
-                                4 <?php echo DAYS_TEXT; ?><br/>3 <?php echo NIGHTS_TEXT; ?>
-                            </div>
-                        </div>
-                        <div class="package-info">
-                            <h3><?php echo SALKANTAY_4D3N_TEXT; ?></h3>
-                            <span class="pull-left">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<span class="review-count"> - 100 review</span>
-                                </span>
-                            <span class="pull-right price">$1400</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!--     Inka Trail 4x3       -->
-            <div class="col-xs-6 col-sm-6 col-md-4">
-                <div class="package-list wow fadeInUp">
-                    <a href="<?php echo URLROOT; ?>/tours/<?php echo INKA_TRAIL_4D3N_LINK; ?>">
-                        <div class="package-thumb">
-                            <img src="<?php echo URLROOT; ?>/img/trek/camino_inca_600_400_1.jpg" alt="" />
-                            <div class="duration">
-                                4 <?php echo DAYS_TEXT; ?><br/>3 <?php echo NIGHTS_TEXT; ?>
-                            </div>
-                        </div>
-                        <div class="package-info">
-                            <h3><?php echo INKA_TRAIL_4D3N_TEXT; ?></h3>
-                            <span class="pull-left">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<span class="review-count"> - 100 review</span>
-                                </span>
-                            <span class="pull-right price">$1400</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!--     Inka Trail 2x1       -->
-            <div class="col-xs-6 col-sm-6 col-md-4">
-                <div class="package-list wow fadeInUp">
-                    <a href="<?php echo URLROOT; ?>/tours/<?php echo INKA_TRAIL_2D1N_LINK; ?>">
-                        <div class="package-thumb">
-                            <img src="<?php echo URLROOT; ?>/img/trek/camino_inca_600_400_1.jpg" alt="" />
-                            <div class="duration">
-                                2 <?php echo DAYS_TEXT; ?><br/>1 <?php echo NIGHT_TEXT; ?>
-                            </div>
-                        </div>
-                        <div class="package-info">
-                            <h3><?php echo INKA_TRAIL_2D1N_TEXT; ?></h3>
-                            <span class="pull-left">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<span class="review-count"> - 100 review</span>
-                                </span>
-                            <span class="pull-right price">$1400</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
+<!--            <div class="col-xs-6 col-sm-6 col-md-4">-->
+<!--                <div class="package-list wow fadeInUp">-->
+<!--                    <a href="--><?php //echo URLROOT; ?><!--/tours/--><?php //echo SALKANTAY_5D4N_LINK; ?><!--">-->
+<!--                        <div class="package-thumb">-->
+<!--                            <img src="--><?php //echo URLROOT; ?><!--/img/trek/salkantay_600_400_2.jpg" alt="" />-->
+<!--                            <div class="duration">-->
+<!--                                5 --><?php //echo DAYS_TEXT; ?><!--<br/>4 --><?php //echo NIGHTS_TEXT; ?>
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="package-info">-->
+<!--                            <h3>--><?php //echo SALKANTAY_5D4N_TEXT; ?><!--</h3>-->
+<!--                            <span class="pull-left">-->
+<!--									<i class="fa fa-star"></i>-->
+<!--									<i class="fa fa-star"></i>-->
+<!--									<i class="fa fa-star"></i>-->
+<!--									<i class="fa fa-star"></i>-->
+<!--									<i class="fa fa-star"></i>-->
+<!---->
+<!--                                </span>-->
+<!---->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!---->
+<!--            <div class="col-xs-6 col-sm-6 col-md-4">-->
+<!--                <div class="package-list wow fadeInUp">-->
+<!--                    <a href="--><?php //echo URLROOT; ?><!--/tours/--><?php //echo SALKANTAY_4D3N_LINK; ?><!--">-->
+<!--                        <div class="package-thumb">-->
+<!--                            <img src="--><?php //echo URLROOT; ?><!--/img/trek/salkantay_600_400.jpg" alt="" />-->
+<!--                            <div class="duration">-->
+<!--                                4 --><?php //echo DAYS_TEXT; ?><!--<br/>3 --><?php //echo NIGHTS_TEXT; ?>
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="package-info">-->
+<!--                            <h3>--><?php //echo SALKANTAY_4D3N_TEXT; ?><!--</h3>-->
+<!--                            <span class="pull-left">-->
+<!--									<i class="fa fa-star"></i>-->
+<!--									<i class="fa fa-star"></i>-->
+<!--									<i class="fa fa-star"></i>-->
+<!--									<i class="fa fa-star"></i>-->
+<!--									<i class="fa fa-star"></i>-->
+<!--									<span class="review-count"></span>-->
+<!--                                </span>-->
+<!--                            <span class="pull-right review-count">--><?php //echo SALES_TEXT; ?><!--: 82</span>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!--            <!--     Inka Trail 4x3       -->
+<!--            <div class="col-xs-6 col-sm-6 col-md-4">-->
+<!--                <div class="package-list wow fadeInUp">-->
+<!--                    <a href="--><?php //echo URLROOT; ?><!--/tours/--><?php //echo INKA_TRAIL_4D3N_LINK; ?><!--">-->
+<!--                        <div class="package-thumb">-->
+<!--                            <img src="--><?php //echo URLROOT; ?><!--/img/trek/camino_inca_600_400_1.jpg" alt="" />-->
+<!--                            <div class="duration">-->
+<!--                                4 --><?php //echo DAYS_TEXT; ?><!--<br/>3 --><?php //echo NIGHTS_TEXT; ?>
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="package-info">-->
+<!--                            <h3>--><?php //echo INKA_TRAIL_4D3N_TEXT; ?><!--</h3>-->
+<!--                            <span class="pull-left">-->
+<!--									<i class="fa fa-star"></i>-->
+<!--									<i class="fa fa-star"></i>-->
+<!--									<i class="fa fa-star"></i>-->
+<!--									<i class="fa fa-star"></i>-->
+<!--									<i class="fa fa-star"></i>-->
+<!--									<span class="review-count"></span>-->
+<!--                                </span>-->
+<!--                            <span class="pull-right review-count">--><?php //echo SALES_TEXT; ?><!--: 185</span>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!--            <!--     Inka Trail 2x1       -->
+<!--            <div class="col-xs-6 col-sm-6 col-md-4">-->
+<!--                <div class="package-list wow fadeInUp">-->
+<!--                    <a href="--><?php //echo URLROOT; ?><!--/tours/--><?php //echo INKA_TRAIL_2D1N_LINK; ?><!--">-->
+<!--                        <div class="package-thumb">-->
+<!--                            <img src="--><?php //echo URLROOT; ?><!--/img/trek/camino_inca_600_400_1.jpg" alt="" />-->
+<!--                            <div class="duration">-->
+<!--                                2 --><?php //echo DAYS_TEXT; ?><!--<br/>1 --><?php //echo NIGHT_TEXT; ?>
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="package-info">-->
+<!--                            <h3>--><?php //echo INKA_TRAIL_2D1N_TEXT; ?><!--</h3>-->
+<!--                            <span class="pull-left">-->
+<!--									<i class="fa fa-star"></i>-->
+<!--									<i class="fa fa-star"></i>-->
+<!--									<i class="fa fa-star"></i>-->
+<!--									<i class="fa fa-star"></i>-->
+<!--									<i class="fa fa-star"></i>-->
+<!--									<span class="review-count"></span>-->
+<!--                                </span>-->
+<!--                            <span class="pull-right review-count">--><?php //echo SALES_TEXT; ?><!--: 163</span>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
 
 
             <!--     Jungle Trek 4x3       -->
@@ -162,9 +163,9 @@ require APPROOT . '/views/inc/cabecera.php'; ?>
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
-									<span class="review-count"> - 100 review</span>
+									<span class="review-count"></span>
                                 </span>
-                            <span class="pull-right price">$1400</span>
+                            <span class="pull-right review-count"><?php echo SALES_TEXT; ?>: 310</span>
                         </div>
                     </a>
                 </div>
@@ -188,9 +189,9 @@ require APPROOT . '/views/inc/cabecera.php'; ?>
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
-									<span class="review-count"> - 100 review</span>
+									<span class="review-count"></span>
                                 </span>
-                            <span class="pull-right price">$1400</span>
+                            <span class="pull-right review-count"><?php echo SALES_TEXT; ?>: 143</span>
                         </div>
                     </a>
                 </div>
@@ -214,9 +215,9 @@ require APPROOT . '/views/inc/cabecera.php'; ?>
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
-									<span class="review-count"> - 100 review</span>
+									<span class="review-count"></span>
                                 </span>
-                            <span class="pull-right price">$1400</span>
+                            <span class="pull-right review-count"><?php echo SALES_TEXT; ?>: 95</span>
                         </div>
                     </a>
                 </div>
@@ -240,9 +241,9 @@ require APPROOT . '/views/inc/cabecera.php'; ?>
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
-									<span class="review-count"> - 100 review</span>
+									<span class="review-count"></span>
                                 </span>
-                            <span class="pull-right price">$1200 </span>
+                            <span class="pull-right review-count"><?php echo SALES_TEXT; ?>: 77</span>
                         </div>
                     </a>
                 </div>
@@ -266,9 +267,9 @@ require APPROOT . '/views/inc/cabecera.php'; ?>
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
-									<span class="review-count"> - 100 review</span>
+									<span class="review-count"></span>
                                 </span>
-                            <span class="pull-right price">$1400</span>
+                            <span class="pull-right review-count"><?php echo SALES_TEXT; ?>: 214</span>
                         </div>
                     </a>
                 </div>

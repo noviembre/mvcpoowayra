@@ -31,6 +31,7 @@
     <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
     <!-- Main CSS -->
     <link href="<?php echo URLROOT; ?>/css/style.css" rel="stylesheet">
+    <link href="<?php echo URLROOT; ?>/css/style2.css" rel="stylesheet">
     <!-- Color switcher -->
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/skin/switcher.css">
     <!--    <link rel="stylesheet" href="" id="colors">-->
@@ -45,7 +46,13 @@
 </head>
 
 <body id="page-top">
+<script>
+    function langchange(lng)
+    {
+        window.location.href = '<?php echo $_SERVER['PHP_SELF']; ?>?lang=' + lng;
+    }
 
+</script>
   <?php
 //puede que la sesion no este funcionando??
  require APPROOT . '/config/dblanguage.php';

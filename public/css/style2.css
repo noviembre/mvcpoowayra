@@ -1,0 +1,14 @@
+/*=====================         =========================*/
+
+
+.listar ul li::before {
+    line-height: 120%;
+    content: "•";
+    display: inline-block;
+    margin-top: -1px;
+    margin-right: 5px;
+    width: 20px;
+}
+.font-negro {
+    color: #000;
+}

@@ -111,9 +111,10 @@
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star-o"></i>
-									<span class="review-count"> - 90 review</span>
+									<span class="review-count"></span>
                                 </span>
-                            <span class="pull-right price">$1800</span>
+<!--                            <span class="pull-right price">$1800</span>-->
+                            <span class="pull-right review-count"><?php echo SALES_TEXT; ?>: 154</span>
                         </div>
                     </a>
                 </div>
@@ -136,9 +137,9 @@
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
-									<span class="review-count"> - 100 review</span>
+									<span class=""></span>
                                 </span>
-                            <span class="pull-right price">$1400</span>
+                            <span class="pull-right review-count"><?php echo SALES_TEXT; ?>: 152</span>
                         </div>
                     </a>
                 </div>
@@ -162,9 +163,9 @@
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star-half-o"></i>
-									<span class="review-count"> - 190 review</span>
+									<span class="review-count"></span>
                                 </span>
-                            <span class="pull-right price">$1500</span>
+                            <span class="pull-right review-count"><?php echo SALES_TEXT; ?>: 97</span>
                         </div>
                     </a>
                 </div>
@@ -188,9 +189,10 @@
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star-o"></i>
-									<span class="review-count"> - 120 review</span>
+									<span class="review-count"></span>
                                 </span>
-                            <span class="pull-right price">$1300</span>
+<!--                            <span class="pull-right price">$1300</span>-->
+                            <span class="pull-right review-count"><?php echo SALES_TEXT; ?>: 110</span>
                         </div>
                     </a>
                 </div>
@@ -214,9 +216,10 @@
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
-									<span class="review-count"> - 90 review</span>
+									<span class="review-count"></span>
                                 </span>
-                            <span class="pull-right price">$1200</span>
+<!--                            <span class="pull-right price">$1200</span>-->
+                            <span class="pull-right review-count"><?php echo SALES_TEXT; ?>: 98</span>
                         </div>
                     </a>
                 </div>
@@ -241,9 +244,10 @@
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star-half-o"></i>
-									<span class="review-count"> - 160 review</span>
+									<span class="review-count"></span>
                                 </span>
-                            <span class="pull-right price">$1500</span>
+<!--                            <span class="pull-right price">$1500</span>-->
+                            <span class="pull-right review-count"><?php echo SALES_TEXT; ?>: 93</span>
                         </div>
                     </a>
                 </div>

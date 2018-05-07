@@ -315,4 +315,22 @@ class Pages extends Controller {
         $this->view('pages/progreso',$data);
 
     }
+
+    public function progresoEn(){
+
+        if(!isLoggedIn()){
+            redirect('users/login');
+        }
+        $this->tourModelo = $this->model('Ture');
+        $this->userModel = $this->model('User');
+
+        $tours = $this->tourModelo->listarTourEnglishAll();
+
+        $data = [
+            'tours' => $tours,
+        ];
+
+        $this->view('pages/progresoEn',$data);
+
+    }
 }

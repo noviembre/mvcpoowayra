@@ -89,6 +89,8 @@ define('FULL_NAME_TEXT','Full Name');
 define('DROP_US_A_LINE_TEXT','Drop us a line');
 define('YOUR_MESSAGE_TEXT','Your Message');
 
+define('WHEN_U_WANT_TRAVELLING_TEXT','When you want to travel?');
+
 define('SELECT_A_PROGRAM_TEXT','Select a Program');
 define('TOUR_TEXT','Show Tours');
 define('JUST_REQUEST_TEXT','I just have a Question');
@@ -114,6 +116,21 @@ define('BOOKING_TEXT','I want to Book');
 define('SUGGESTION_TEXT','I have a doubt');
 define('BOOKING_OR_DOUBT_TEXT','Booking');
 
+/* ======= Detalles del tour ========*/
+define('DESCRIPTION_TEXT','Description');
+define('INCLUDES_LINK','Inclusions');
+define('INCLUDES_TEXT','Does Include');
+define('INCLUDES_NOT_TEXT','Does Not Include');
+define('INFO_TEXT','Information');
+define('RECOMENDATIONS_TEXT','Recomendations');
+define('WHAT_SHOULD_I_TAKE_TEXT','What should I pack for my journey');
+define('PRICES_TEXT','Prices');
+define('DETAILS_OF_TOUR_TEXT','Details of the Tour');
+define('INFO_BEFORE_BOOKING_TEXT','Information before booking');
+
+define('PRICE_CHANGE_DEPENDING','the price change depending on quantity of person, the more person you are the cheaper');
+
+define('SALES_TEXT','Sales');
 
 #----------- Trekking.php ----------*
 define('JUST_FOR_TREKKING_GUYS_TEXT','Just for Trekking guys');
@@ -187,9 +204,9 @@ define('VALLEY_SUR_TOUR_TEXT','South Valley Cusco Tour');
 
 
 #----------- CARROUSEL ----------*
-define('MACHUPICCHU_PREVIEW_TEXT','Machu picchu es Lorem Ipsum is simply dummy text of the printing and typeseatting industry. Lorem Ipsum has been the');
-define('INKA_TRAIL_PREVIEW_TEXT','Inka trail es Lorem Ipsum is simply dummy text of the printing and typeseatting industry. Lorem Ipsum has been the');
-define('MOUNTAIN_COLOURS_PREVIEW_TEXT','es Lorem Ipsum is simply dummy text of the printing and typeseatting industry. Lorem Ipsum');
+define('MACHUPICCHU_PREVIEW_TEXT','Are you ready to travel and visit one of the New Seven Wonders of the World? What are you waiting for?');
+define('INKA_TRAIL_PREVIEW_TEXT','The Inca Trail in Peru is perhaps the largest trek in the world because it combines...');
+define('MOUNTAIN_COLOURS_PREVIEW_TEXT','The Rainbown mountain is part of the Peruvian Andes and is one of the most incredible geological features in the world...');
 
 define('SALKANTAY_TEXT','Salkantay Tour');
 define('SALKANTAY_PREVIEW_TEXT','Salkantay es Lorem Ipsum is simply dummy text of the printing and typeseatting industry. Lorem Ipsum has been the');

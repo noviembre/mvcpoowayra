@@ -92,6 +92,7 @@ define('NAME_TEXT','Nombre');
 define('FULL_NAME_TEXT','Nombre Completo');
 define('DROP_US_A_LINE_TEXT','Mensaje');
 define('YOUR_MESSAGE_TEXT','Su Mensaje');
+define('WHEN_U_WANT_TRAVELLING_TEXT','Cuando desea viajar?');
 
 define('SELECT_A_PROGRAM_TEXT','Escoja un Programa');
 define('TOUR_TEXT','Lista de Tours');
@@ -118,7 +119,20 @@ define('BOOKING_TEXT','Quiero Reservar');
 define('SUGGESTION_TEXT','Quiero consultar');
 define('BOOKING_OR_DOUBT_TEXT','Consultar o Reservar');
 
+/* ======= Detalles del tour ========*/
+define('DESCRIPTION_TEXT','Descripcion');
+define('INCLUDES_LINK','Incluye');
+define('INCLUDES_TEXT','Incluye');
+define('INCLUDES_NOT_TEXT','No Incluye');
+define('INFO_TEXT','Informacion');
+define('RECOMENDATIONS_TEXT','Recomendaciones');
+define('WHAT_SHOULD_I_TAKE_TEXT','Que debo llevar');
+define('PRICES_TEXT','Precios');
+define('DETAILS_OF_TOUR_TEXT','Detalles del Tour');
+define('INFO_BEFORE_BOOKING_TEXT','Informacion util antes de reservar');
+define('PRICE_CHANGE_DEPENDING','los precios varian de acuerdo a la cantidad de personas');
 
+define('SALES_TEXT','Ventas');
 
 #----------- Trekking.php ----------*
 define('JUST_FOR_TREKKING_GUYS_TEXT','Tour para los que le gusta la caminata');
@@ -185,9 +199,9 @@ define('HUCHUY_QOSQO_TOUR_TEXT','Tour a Huchuy Qosqo');
 define('VALLEY_SUR_TOUR_TEXT','Tour al Valle Sur');
 
 #----------- CARROUSEL ----------*
-define('MACHUPICCHU_PREVIEW_TEXT','Escuchaste sobre Machu picchu? Estas listo para viajar y conocer una de las 7 Maravillas del Mundo? Que Esperas!');
-define('INKA_TRAIL_PREVIEW_TEXT','Algunos viajes que tomamos para llegar a un destino, otros los tomamos por el placer del viaje en sí. El Camino Inca en Perú es quizás la caminata más grande del mundo porque combina...');
-define('MOUNTAIN_COLOURS_PREVIEW_TEXT','La montaña Vinicunca es parte de los Andes peruanos y es una de las características geológicas más increíbles del mundo. La montaña está rayada con una gama de colores que incluye granate intenso, dorado e incluso tonos azules..');
+define('MACHUPICCHU_PREVIEW_TEXT','Estas listo para viajar y conocer una de las 7 Maravillas del Mundo? Que Esperas?');
+define('INKA_TRAIL_PREVIEW_TEXT','El Camino Inca en Perú es quizás la caminata más grande del mundo porque combina...');
+define('MOUNTAIN_COLOURS_PREVIEW_TEXT','La Montaña 7 Colores es parte de los Andes peruanos y es una de las características geológicas más increíbles del mundo...');
 
 define('SALKANTAY_TEXT','Salkantay');
 define('SALKANTAY_PREVIEW_TEXT','Salkantay es Lorem Ipsum is simply dummy text of the printing and typeseatting industry. Lorem Ipsum has been the');

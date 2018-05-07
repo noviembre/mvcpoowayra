@@ -1,4 +1,13 @@
 <!-- =========== Navigation Starts =========== -->
+<!-- Color Switcher -->
+<div id="color-switcher">
+    <h2>Choose Language<a href="#"><i class="fa fa-pencil"></i></a></h2>
+    <div style="display: block; margin: auto; padding-left: 30%;">
+        <select style="padding: 3px 5px; margin-bottom: 15px;" onChange="langchange(this.value)">
+            <?php echo $lang_dd; ?>
+        </select>
+    </div>
+</div>
 
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">

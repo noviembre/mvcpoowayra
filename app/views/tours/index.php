@@ -64,52 +64,74 @@
                         <div class="seccion">
 
                             <input id="tab1" type="radio" name="tabs" checked>
-                            <label for="tab1">Descripcion</label>
+                            <label for="tab1"><?php echo DESCRIPTION_TEXT; ?> </label>
 
                             <input id="tab2" type="radio" name="tabs">
-                            <label for="tab2">Incluye</label>
+                            <label for="tab2"><?php echo INCLUDES_LINK; ?> </label>
 
                             <input id="tab3" type="radio" name="tabs">
-                            <label for="tab3">Informacion</label>
+                            <label for="tab3"><?php echo RECOMENDATIONS_TEXT; ?></label>
 
                             <input id="tab4" type="radio" name="tabs">
-                            <label for="tab4">Precio</label>
+                            <label for="tab4"><?php echo PRICES_TEXT ; ?></label>
 
 
                             <section id="content1">
-                                <h3>Detalles del Tour</h3>
+                                <div class="sidebar-item">
+                                    <h3 class="font-negro"><?php echo DETAILS_OF_TOUR_TEXT; ?></h3>
+
+                                </div>
+
                                 <p><?php echo $data['detalles']->descripcion; ?></p>
                                 <p><?php echo $data['detalles']->full_itinerario; ?></p>
                             </section>
 
                             <section id="content2">
 
-                                <h3>Incluye:</h3>
-                                <div><?php echo $data['detalles']->incluye; ?></div>
+                                <div class="sidebar-item">
+                                    <h3 class="font-negro">
+                                        <?php echo INCLUDES_TEXT; ?>:
+                                    </h3>
+                                </div>
+                                <div class="listar">
+                                    <?php echo $data['detalles']->incluye; ?>
+                                </div>
 
                                 <br>
-                                <h3>No Incluye:</h3>
-                                <div><?php echo $data['detalles']->noincluye; ?></div>
+                                <div class="sidebar-item">
+                                    <h3 class="font-negro">
+                                    <?php echo INCLUDES_NOT_TEXT; ?>:</h3>
+                                </div>
+                                <div class="listar">
+                                    <?php echo $data['detalles']->noincluye; ?>
+                                </div>
                                 <br>
 
 
-                                <h3>Que llevar:</h3>
-                                <p>Asegurese de llevar ropa apropiada y los items adecuados:</p>
-                                <div><?php echo $data['detalles']->quellevar; ?></div>
+
                                 <br>
 
                             </section>
 
                             <section id="content3">
-                                <i class=""></i>
-                                <h3>Informacion util antes de reservar:</h3>
-                                <!-- deberia estar la columna nota pero le agregaremos otro -->
+                                <div class="sidebar-item">
+                                    <h3 class="font-negro">
+                                    <?php echo WHAT_SHOULD_I_TAKE_TEXT; ?>:</h3>
+                                <!-- <p>Asegurese de llevar ropa apropiada y los items adecuados:</p>-->
+                                </div>
+
+                                <div class="listar">
+                                    <?php echo $data['detalles']->quellevar; ?>
+                                </div>
+                                <br>
                             </section>
 
                             <section id="content4">
 
-                                <h3>Precios:</h3>
-                                <div>los precios varian de acuerdo a la cantidad de personas</div>
+                                <div class="sidebar-item">
+                                    <h3 class="font-negro"><?php echo PRICES_TEXT; ?>:</h3>
+                                </div>
+                                <div><?php echo PRICE_CHANGE_DEPENDING; ?></div>
                                 <br>
 
                             </section>
@@ -117,32 +139,33 @@
                         </div><!-- SECCION ENDS -->
 
 
-                        <div class="post_bottom">
-                            <ul>
-                                <li class="like">
-                                    <a href="#">
-                                        <i class="fa fa-commenting-o"></i>
-                                        <span>12</span>
-                                    </a>
-                                </li>
-
-                                <li class="share">
-                                    <a href="#">
-                                        <i class="fa fa-share-alt"></i>
-                                        <span>12</span>
-                                    </a>
-                                </li>
-
-                                <li class="favorite">
-                                    <a href="#">
-                                        <i class="fa fa-heart"></i>
-                                        <span>12</span>
-                                    </a>
-                                </li>
-
-
-                            </ul>
-                        </div><!--end post bottom-->
+<!--                        <div class="post_bottom">-->
+<!--                            <ul>-->
+<!--                                <li class="like">-->
+<!--                                    <a href="#">-->
+<!--                                        <i class="fa fa-commenting-o"></i>-->
+<!--                                        <span>12</span>-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!---->
+<!--                                <li class="share">-->
+<!--                                    <a href="#">-->
+<!--                                        <i class="fa fa-share-alt"></i>-->
+<!--                                        <span>12</span>-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!---->
+<!--                                <li class="favorite">-->
+<!--                                    <a href="#">-->
+<!--                                        <i class="fa fa-heart"></i>-->
+<!--                                        <span>12</span>-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!---->
+<!---->
+<!--                            </ul>-->
+<!--                        </div>-->
+                        <!--end post bottom-->
 
                     </div>
 
@@ -189,7 +212,7 @@
 
 
                             <div class="form-group">
-                                <div class="input-group">
+                                <div class="input-group" title="<?php echo WHEN_U_WANT_TRAVELLING_TEXT; ?>">
                                     <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                                     <input name="rfecha" type="text" class="form-control date_pic" placeholder="08/16/2016" >
                                 </div>
@@ -203,10 +226,9 @@
                             </div>
 
                             <div class="form-group">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-comment"></i></span>
-                                    <input name="rmensaje" type="text" class="form-control" placeholder="<?php echo YOUR_MESSAGE_TEXT;?>">
-                                </div>
+                                <textarea name="rmensaje" id="" style="width: 100%; padding: 5px" placeholder="<?php echo YOUR_MESSAGE_TEXT;?>" rows="4"></textarea>
+
+
                             </div>
 
                             <div class="text-center">

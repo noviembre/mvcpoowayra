@@ -3,7 +3,7 @@
     <!-- Start Header -->
     <header class="header-logo bg-dark bb-1 br-1 br-light-dark">
         <a class="nav-link text-center mr-lg-3 hidden-xs" id="sidenavToggler"><i class="ti-align-left"></i></a>
-        <a class="gredient-cl navbar-brand" href="<?php echo URLROOT; ?>"><?php echo PCSITENAME; ?></a>
+        <a class="gredient-cl navbar-brand" href="../" target="_blank">Grupo Wayra</a>
     </header>
     <!-- End Header -->
 
@@ -59,7 +59,12 @@
                 </li>
                 <!-- End Tasks Apps -->
 
-
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tours">
+                    <a class="nav-link" href="<?php echo URLROOT; ?>/users/logout">
+                        <i class="ti i-cl-3 ti-power-off"></i>
+                        <span class="nav-link-text">Salir</span>
+                    </a>
+                </li>
 
 
 

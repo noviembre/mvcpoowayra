@@ -46,7 +46,7 @@ class Ture {
 
     public function listarTourEnglishAll(){
         $this->db->query("SELECT * FROM tdetalles a INNER JOIN tours b 
-                            ON a.tid=b.tid WHERE a.tid IS NOT NULL  AND lang = 'en' 
+                            ON a.tid=b.tid WHERE a.tid IS NOT NULL AND lang = 'en' 
                             ORDER by b.actualizacion DESC LIMIT 30");
 
         $results = $this->db->selectAll();
