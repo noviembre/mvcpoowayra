@@ -1,4 +1,14 @@
 <?php require APPROOT . '/views/inc/cabecera.php'; ?>
+<!-- Language Switcher -->
+<div id="color-switcher">
+    <h2>Choose Language<a href="#"><i class="fa fa-pencil"></i></a></h2>
+    <div style="display: block; margin: auto; padding-left: 30%;">
+        <select style="padding: 3px 5px; margin-bottom: 15px;" onChange="langchange(this.value)">
+            <?php echo $lang_dd; ?>
+        </select>
+    </div>
+</div>
+
 <!-- ========= SLIDE STARTS =========== -->
 <div id="banner" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
 
@@ -361,14 +371,6 @@
 
 
 
-<!-- ========== TREKKING SECTION STARTS ========== -->
-
-<!-- ========== TREKKING SECTION ENDS ========== -->
-
-
-
-
-
 <!-- CONTACT FORM STARTS-->
 <section id="contact-us" class="parallax" data-stellar-background-ratio="0.5" style="background-image: url(<?php echo URLROOT; ?>/img/banner/1_machupicchu.jpg);">
     <div class="container">
@@ -428,28 +430,27 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-8">
                 <div class="contact-right">
-                    <form action="#" method="post">
+                    <form action="<?php echo URLROOT; ?>/pages/index" method="post" onsubmit="return validarMensaje()">
                         <div class="row">
+
                             <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="fname" class="form-control" placeholder='<?php echo NAME_TEXT; ?>'>
+                                    <input type="text" name="nombres" id="nombres" class="form-control" placeholder='<?php echo NAME_TEXT; ?>' required>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="lname" class="form-control" placeholder='<?php echo LAST_NAME_TEXT; ?>'>
+                                    <input type="text" name="apellidos" id="apellidos" class="form-control" placeholder='<?php echo LAST_NAME_TEXT; ?>' required>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="email" class="form-control" placeholder='<?php echo YOUR_EMAIL_TEXT; ?>'>
+                            <input type="text" name="correo" id="correo" class="form-control" placeholder='<?php echo YOUR_EMAIL_TEXT; ?>' required>
                         </div>
 
+
                         <div class="form-group">
-                            <input type="text" name="subject" class="form-control" placeholder='<?php echo SUBJECT_TEXT; ?>'>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" rows="6" cols="20" placeholder="<?php echo ANY_SUGGESTION_TEXT; ?>"></textarea>
+                            <textarea name="mensaje" class="form-control" id="mensaje" rows="6" cols="20" placeholder="<?php echo ANY_SUGGESTION_TEXT; ?>" required></textarea>
                         </div>
                         <input type="submit" class="btn btn-primary" name="submit" value="<?php echo SUBMIT_TEXT; ?>">
 

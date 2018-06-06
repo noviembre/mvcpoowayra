@@ -37,22 +37,27 @@
 
 <!-- jQuery -->
 <script src="<?php echo URLROOT; ?>/js/jquery.js"></script>
+
 <script src="<?php echo URLROOT; ?>/js/bootstrap.min.js"></script>
 <script src="<?php echo URLROOT; ?>/js/jquery.easing.min.js"></script>
-<script src="<?php echo URLROOT; ?>/js/wow.js"></script>
+<script src="<?php echo URLROOT; ?>/js/wow.min.js"></script>
 <script src="<?php echo URLROOT; ?>/js/jquery.mixitup.min.js"></script>
 <script src="<?php echo URLROOT; ?>/js/jquery.fancybox.pack.js"></script>
 <script src="<?php echo URLROOT; ?>/js/waypoints.min.js"></script>
 <script src="<?php echo URLROOT; ?>/js/jquery.counterup.min.js"></script>
 <script src="<?php echo URLROOT; ?>/js/owl.carousel.min.js"></script>
 <script src="<?php echo URLROOT; ?>/js/jquery.stellar.min.js"></script>
-<script src="<?php echo URLROOT; ?>/js/bootstrap-datepicker.js"></script>
+
 
 
 <script src="<?php echo URLROOT; ?>/js/switcher.js"></script>
 <script src="<?php echo URLROOT; ?>/js/script.js"></script>
 <script src="<?php echo URLROOT; ?>/sj/script_slide.js"></script>
+<script src="<?php echo URLROOT; ?>/sj/validateMSN.min.js"></script>
 
+<!-- Scripts -->
+
+    
 </body>
 
 </html>

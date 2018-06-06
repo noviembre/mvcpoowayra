@@ -8,13 +8,40 @@ class Pages extends Controller {
 	}
 
     public function index(){
+        $this->msnModel = $this->model('Message');
+
+        if($_SERVER['REQUEST_METHOD'] == 'POST'){
+            // Sanitize POST array
+            $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+            date_default_timezone_set('America/Lima');
+                        $fechaPeru = date("Y-m-d H:i:s");
+
+            $data = [
+                'nombres' => trim($_POST['nombres']),
+                'apellidos' => trim($_POST['apellidos']),
+                'correo' => trim($_POST['correo']),
+                'mensaje' => trim($_POST["mensaje"]),
+                'created_at'=> $fechaPeru,
+
+            ];
 
 
-        $data = [
+            if($this->msnModel->add($data)){
+                redirect('index');
 
-        ];
+            } else {
+                die('Something went wrong');
+            }
 
-        $this->view('pages/index', $data);
+        } else {
+            $data = [
+
+            ];
+
+            $this->view('pages/index', $data);
+        }
+
+
     }
 
     public function todos(){

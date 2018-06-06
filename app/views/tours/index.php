@@ -178,17 +178,17 @@
                 <div class="sidebar">
                     <div class="sidebar-item">
                             <h3 class="text-center"><?php echo BOOKING_OR_DOUBT_TEXT;?></h3>
-                        <form action="" method="post" id="booking-form">
+                        <form action="<?php echo URLROOT; ?>/tours/reservar" method="post" id="booking-form">
 
                             <div class="form-group">
                                 <div class="input-group">
                                     <span class="input-group-addon">
                                         <i class="fa fa-question"></i>
                                     </span>
-                                    <select name="religio" id="" class="form-control">
+                                    <select name="booking_or_no" id="" class="form-control" required="">
                                         <option value=""><?php echo CHOOSE_TEXT;?> </option>
-                                        <option value="reservar"><?php echo BOOKING_TEXT;?></option>
-                                        <option value="consultar"><?php echo SUGGESTION_TEXT;?></option>
+                                        <option value="1"><?php echo BOOKING_TEXT;?></option>
+                                        <option value="0"><?php echo SUGGESTION_TEXT;?></option>
                                     </select>
 
                                 </div>
@@ -199,14 +199,15 @@
                                     <span class="input-group-addon">
                                         <i class="fa fa-user"></i>
                                     </span>
-                                    <input name="rnombre" type="text" class="form-control" placeholder="<?php echo NAME_TEXT;?>">
+                                    <input name="tid" id="tid" type="hidden" value="<?php echo $data['tours']->tid; ?>">
+                                    <input name="nombres" id="nombres" type="text" class="form-control" placeholder="<?php echo NAME_TEXT;?>" required>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
-                                    <input name="remail" type="text" class="form-control" placeholder="<?php echo YOUR_EMAIL_TEXT;?>">
+                                    <input name="correo" id="correo" type="email" class="form-control" placeholder="<?php echo YOUR_EMAIL_TEXT;?>" required>
                                 </div>
                             </div>
 
@@ -214,19 +215,19 @@
                             <div class="form-group">
                                 <div class="input-group" title="<?php echo WHEN_U_WANT_TRAVELLING_TEXT; ?>">
                                     <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                    <input name="rfecha" type="text" class="form-control date_pic" placeholder="08/16/2016" >
+                                    <input name="fecha" type="date" class="form-control date_pic" >
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-users"></i></span>
-                                    <input name="rpersonas" type="number" class="form-control" placeholder="1" min="1" title="<?php echo HOW_MANY_TEXT;?>" >
+                                    <input name="cantidad" id="cantidad" type="number" class="form-control" placeholder="1" min="1" title="<?php echo HOW_MANY_TEXT;?>" required>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <textarea name="rmensaje" id="" style="width: 100%; padding: 5px" placeholder="<?php echo YOUR_MESSAGE_TEXT;?>" rows="4"></textarea>
+                                <textarea name="mensaje" id="mensaje" style="width: 100%; padding: 5px" placeholder="<?php echo YOUR_MESSAGE_TEXT;?>" rows="4"></textarea>
 
 
                             </div>

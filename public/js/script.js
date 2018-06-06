@@ -67,15 +67,6 @@
 			}
 		 });
 		
-		//===================== Datepicker ================
-		$( ".date_pic" ).datepicker({
-			todayBtn: "linked",
-			keyboardNavigation: false,
-			forceParse: false,
-			calendarWeeks: true,
-			autoclose: true,
-			format: 'mm/dd/yyyy'
-		});
 		
 		
 		//===================== Testimonials Carousel =====

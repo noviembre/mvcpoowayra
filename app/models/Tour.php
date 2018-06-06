@@ -17,7 +17,7 @@ class Tour {
     // Find tour by id
     public function encontrarTourbyUrl($url){
 
-        $this->db->query('SELECT * FROM portada WHERE enlace = :url');
+        $this->db->query('SELECT * FROM tours WHERE enlace = :url');
         // Bind value
         $this->db->bind(':url', $url);
 
@@ -34,7 +34,7 @@ class Tour {
     # Listar Tours en la portada
     public function listarTourByUrl($url){
 
-        $this->db->query('SELECT * FROM portada a INNER JOIN tdetalles b ON a.pid=b.tid WHERE enlace = :url');
+        $this->db->query('SELECT * FROM tours a INNER JOIN tdetalles b ON a.tid=b.tid WHERE enlace = :url');
         $this->db->bind(':url', $url);
 
         $row = $this->db->single();

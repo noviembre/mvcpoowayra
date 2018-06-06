@@ -52,6 +52,7 @@ define('MACHUPICCHU_BY_CAR_LINK','machupicchu-by-car-es');
 
 define('INKA_TRAIL_2D1N_LINK','inka-trail-2days-1night-es');
 define('INKA_TRAIL_4D3N_LINK','inka-trail-4days-3nights-es');
+
 define('JUNGLE_TREK_3D2N_LINK','jungle-trek-3days-2nights-es');
 define('JUNGLE_TREK_4D3N_LINK','jungle-trek-4days-3nights-es');
 

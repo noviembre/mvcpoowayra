@@ -99,7 +99,7 @@
 
 <!-- Bootstrap core JavaScript-->
 
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="<?php echo URLROOT; ?>/assets/plugins/jquery/jquery-1.12.4.js"></script>
 <script src="<?php echo URLROOT; ?>/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Core plugin JavaScript-->

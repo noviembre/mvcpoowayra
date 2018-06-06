@@ -48,6 +48,7 @@ define('VALLE_SUR_LINK','valle-sur-en');
 define('MACHUPICCHU_BY_CAR_LINK','machupicchu-by-car-en');
 define('INKA_TRAIL_2D1N_LINK','inka-trail-2days-1night-en');
 define('INKA_TRAIL_4D3N_LINK','33');
+
 define('JUNGLE_TREK_3D2N_LINK','jungle-trek-3days-2nights-en');
 define('JUNGLE_TREK_4D3N_LINK','jungle-trek-4days-3nights-en');
 
