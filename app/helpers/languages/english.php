@@ -1,17 +1,51 @@
-<?php
-// index.php
-define('HOME_TEXT','Home');
-define('READ_MORE_TEXT','Read more');
 
-define('ABOUT_TEXT','About Us');
-define('TOURS_TEXT','Tours');
-define('PACKAGE_TEXT','Packages');
-define('FAQS_TEXT','FAQS');
-define('CONTACT_TEXT','Contact Us');
+<?php
+
+#===============================================================
+#============================== E N G L I S H ==================
+
+#--------------------- index.php --------------------------
+#========|----- MENU TEXT----- | ===========
+
+define('HOME_TEXT','Home');
 define('TREKKING_TEXT','Trekking');
-// Portada - LINK
 define('TREKKING_LINK','trekking');
 
+define('PACKAGE_TEXT','Packages');
+define('PACKAGES_LINK','packages');
+
+define('FAQS_TEXT','FAQS');
+define('FAQS_LINK','faqs');
+
+define('ABOUT_TEXT','About Us');
+define('ABOUT_US_LINK','aboutus');
+
+define('CONTACT_TEXT','Contact Us');
+define('CONTACT_LINK','contact-en');
+
+
+define('LANGUAGE','Language');
+define('TOURS_LINK','tours-en');
+
+
+define('TOURS_TEXT','Tours');
+
+
+
+
+
+
+
+
+
+#========|----- CARROUSEL ----- | ===========
+define('MACHUPICCHU_PREVIEW_TEXT','Are you ready to travel and visit one of the New Seven Wonders of the World? What are you waiting for?');
+define('INKA_TRAIL_PREVIEW_TEXT','The Inca Trail in Peru is perhaps the largest trek in the world because it combines...');
+define('MOUNTAIN_COLOURS_PREVIEW_TEXT','The Rainbown mountain is part of the Peruvian Andes and is one of the most incredible geological features in the world...');
+
+define('SALKANTAY_TEXT','Salkantay Tour');
+define('SALKANTAY_PREVIEW_TEXT','Salkantay es Lorem Ipsum is simply dummy text of the printing and typeseatting industry. Lorem Ipsum has been the');
+define('READ_MORE_TEXT','Read more');
 
 
 define('MEET_MACHUPICCHU_TEXT','MEET OUR WONDER.');
@@ -20,144 +54,60 @@ define('BOOK_NOW_TEXT','Booking');
 define('MORE_INFO_TEXT','More Info');
 define('POPULAR_TOURS_TEXT','Most Popular Tours');
 
-#------- Name Tours -------------
+
+define('INKA_TRAIL_4D3N_TEXT','Inka Trail 4 Days 3 Nights');
+define('INKA_TRAIL_4D3N_LINK','inka-trail-4days-3nights-en');
+
+
+
+
+
+
+
+
+
+
+
+#========|----- TOURS POPULARES - LINK ----- | ===========
+define('CITY_TOUR_LINK','city-tour-en');
+define('SACRED_VALLEY_LINK','sacred-valley-en');
+define('MOUNTAIN_COLOURS_LINK','rainbown-mountain-en');
+
+define('VALLE_SUR_LINK','valle-sur-en');
+define('MACHUPICCHU_BY_CAR_LINK','machupicchu-by-car-en');
+define('INKA_TRAIL_2D1N_LINK','inka-trail-2days-1night-en');
+
+define('JUNGLE_TREK_4D3N_LINK','jungle-trek-4days-3nights-en');
+
+
+
+
+#========|----- TOURS POPULARES - TEXT ----- | ===========
 define('MACHUPICCHU_TEXT','Machu Picchu');
 define('CITY_TOUR_TEXT','City Tour');
 define('JUNGLE_TREK_TEXT','Jungle Trek');
 define('SACRED_VALLEY_TEXT','Sacred Valley');
 define('MOUNTAIN_COLOURS_TEXT','Rainbown Mountain');
 define('INKA_TRAIL_TEXT','Inka Trail');
-define('MARAS_MORAY_TEXT','Maras Moray');
-define('VALLE_SUR_TEXT','Valle Sur');
+
 define('MACHUPICCHU_BY_CAR_TEXT','Machu Picchu by Car');
 
 define('INKA_TRAIL_2D1N_TEXT','Inka Trail 2 Days 1 Night');
-define('INKA_TRAIL_4D3N_TEXT','Inka Trail 4 Days 3 Nights');
-define('JUNGLE_TREK_3D2N_TEXT','Jungle Trek 3 Days 2 Nights');
+
 define('JUNGLE_TREK_4D3N_TEXT','Jungle Trek 4 Days 3 Nights');
 
 
-define('WATCH_CONDOR_FLYING_CUSCO_TEXT','Watch Condor Flying - Cusco');
-
-#------- LINKS TOURS -------------
-define('CITY_TOUR_LINK','city-tour-en');
-define('SACRED_VALLEY_LINK','sacred-valley-en');
-define('MOUNTAIN_COLOURS_LINK','rainbown-mountain-en');
-define('MARAS_MORAY_LINK','maras-moray-en');
-define('VALLE_SUR_LINK','valle-sur-en');
-define('MACHUPICCHU_BY_CAR_LINK','machupicchu-by-car-en');
-define('INKA_TRAIL_2D1N_LINK','inka-trail-2days-1night-en');
-define('INKA_TRAIL_4D3N_LINK','33');
-
-define('JUNGLE_TREK_3D2N_LINK','jungle-trek-3days-2nights-en');
-define('JUNGLE_TREK_4D3N_LINK','jungle-trek-4days-3nights-en');
 
 
 
-define('WATCH_CONDOR_FLYING_CUSCO_LINK','watch-condor-flying-cusco-en');
-
-define('MACHUPICCHU_LINK','machupicchu-en');
-define('JUNGLE_TREK_LINK','jungle-trek-en');
-define('INKA_TRAIL_LINK','inka-trail-en');
-
-define('MACHUPICCHU_FULL_DAY_LINK','3');
-define('MACHUPICCHU_2D1N_LINK','machupicchu-2days-1night-en');
-
-define('FAQS_LINK','faqs');
-define('TOURS_LINK','tours-en');
-define('PACKAGES_LINK','packages');
-define('ABOUT_US_LINK','aboutus');
-define('CONTACT_LINK','contact-en');
-
-/*------- SEND US A MESSAGE   --------*/
-define('ADDRESS_TEXT','Address');
-define('PHONE_TEXT','Phone');
-define("WEREHAPPY_TO_HEAR_FROM_YOU_TEXT", "WE'RE HAPPY TO HEAR FROM YOU");
-define('YOUR_EMAIL_TEXT','Your Email');
-define('FIRST_NAME_TEXT','First Name');
-define('LAST_NAME_TEXT','Last Name');
-define('SUBJECT_TEXT','Subject');
-define("ANY_SUGGESTION_TEXT","Doubts, questions, We'll be glad to help you" );
-
-
-/*----- Contact.php  ----------*/
-
-define('NAME_TEXT','Name');
-define('FULL_NAME_TEXT','Full Name');
 
 
 
-define('DROP_US_A_LINE_TEXT','Drop us a line');
-define('YOUR_MESSAGE_TEXT','Your Message');
-
-define('WHEN_U_WANT_TRAVELLING_TEXT','When you want to travel?');
-
-define('SELECT_A_PROGRAM_TEXT','Select a Program');
-define('TOUR_TEXT','Show Tours');
-define('JUST_REQUEST_TEXT','I just have a Question');
-define('HOW_DID_YOU_FIND_US_TEXT','How did you find us?');
-define('SEARCH_ENGINE_TEXT','Search Engine');
-define('FRIENDS_TEXT','Friends');
-define('ADVERTISEMENT_TEXT','Advertisement');
-define('OTHER_TEXT','Other');
-
-define('SUBMIT_TEXT','Submit');
 
 
-/*----- quienes somos  ----------*/
-define('WHO_WE_ARE_TEXT','About Us');
-define('MISSION_TEXT','Mission');
-define('VISION_TEXT','Vision');
 
 
-/*----- consulta o reserva  ----------*/
-define('HOW_MANY_TEXT','How many people?');
-define('CHOOSE_TEXT','What do you want to do?');
-define('BOOKING_TEXT','I want to Book');
-define('SUGGESTION_TEXT','I have a doubt');
-define('BOOKING_OR_DOUBT_TEXT','Booking');
-
-/* ======= Detalles del tour ========*/
-define('DESCRIPTION_TEXT','Description');
-define('INCLUDES_LINK','Inclusions');
-define('INCLUDES_TEXT','Does Include');
-define('INCLUDES_NOT_TEXT','Does Not Include');
-define('INFO_TEXT','Information');
-define('RECOMENDATIONS_TEXT','Recomendations');
-define('WHAT_SHOULD_I_TAKE_TEXT','What should I pack for my journey');
-define('PRICES_TEXT','Prices');
-define('DETAILS_OF_TOUR_TEXT','Details of the Tour');
-define('INFO_BEFORE_BOOKING_TEXT','Information before booking');
-
-define('PRICE_CHANGE_DEPENDING','the price change depending on quantity of person, the more person you are the cheaper');
-
-define('SALES_TEXT','Sales');
-
-#----------- Trekking.php ----------*
-define('JUST_FOR_TREKKING_GUYS_TEXT','Just for Trekking guys');
-
-
-define('TOUR_NAME_TEXT','Tour: ');
-define('DIFFICULTY_TEXT','Difficulty: ');
-define('USD__TEXT','USD: ');
-define('HARD_TEXT','Difficult');
-define('MEDIUM_TEXT','Medium');
-define('EASY_TEXT','Piece of cake');
-define('SALKANTAY_5D4N_TEXT','Salkantay 5 Days 4 Nights');
-define('SALKANTAY_4D3N_TEXT','Salkantay 4 Days 3 Nights');
-define('WATCH_CONDOR_FLYING_TEXT','Condor Watching - Cusco');
-define('TOUR_LAGUNA_HUMANTAY_TEXT','Humantay Lagoon Tour');
-define('HUCHUY_QOSQO_2D1N_TEXT','Huchuy Qosqo - 2 Days 1 Night ');
-
-
-define('SALKANTAY_5D4N_LINK','salkantay-5days-4nights-en');
-define('SALKANTAY_4D3N_LINK','salkantay-4days-3nights-en');
-define('CONDOR_WATCHING_LINK','condor-watching-en');
-define('HUCHUY_QOSQO_2D1N_LINK','huchuy-qosqo-tour-2days-1night-en');
-define('HUMANTAY_LAGOON_TOUR_LINK','humantay-lagoon-tour-en');
-
-#------------------------ packages.php ---------------------------------------*
-define('LENGTH_TEXT','Lenght: ');
+#========|----- PAQUETES TURISTICOS - TEXT ----- | ===========
 define('TOURISTIC_PACKAGES_TEXT','List of our Packages');
 define('T8D_7N_PACKAGE_TEXT','Machu Picchu, Sacred Valley, Cusco...');
 define('T7D_6N_PACKAGE_TEXT','Cusco, Sacred Valley, Machu Picchu...');
@@ -171,7 +121,13 @@ define('T5DIAS_4NIGHTS_TEXT','5 Days 4 Nights');
 define('T4DIAS_3NIGHTS_TEXT','4 Days 3 Nights');
 define('T3DIAS_2NIGHTS_TEXT','3 Days 2 Nights');
 
-#------------ LINKS PAQUETES ----------------*
+
+
+
+
+
+
+#========|----- PAQUETES TURISTICOS - LINK ----- | ===========
 define('CUSCO_PKG_8D7N_LINK','cusco-package-8days-7nights-en');
 define('CUSCO_PKG_7D6N_LINK','cusco-package-7days-6nights-en');
 define('CUSCO_PKG_6D5N_LINK','cusco-package-6days-5nights-en');
@@ -179,42 +135,196 @@ define('CUSCO_PKG_5D4N_LINK','cusco-package-5days-4nights-en');
 define('CUSCO_PKG_4D3N_LINK','cusco-package-4days-3nights-en');
 define('CUSCO_PKG_3D2N_LINK','cusco-package-3days-2nights-en');
 
-
-define('ONLINE_BOOKING_TEXT', 'Online Booking');
-define('CHECK_IN_DATE_TEXT','Check-in Date');
-define('CHECK_OUT_DATE_TEXT','Check-out Date');
-define('ADULT_OR_ROOM_TEXT','Adult/Room');
-define('SEARCH_TEXT','Search');
-define('ENTER_CHECK_IN_DATE_ALERT','Please Enter Check-In Date');
-define('ENTER_CHECK_OUT_DATE_ALERT','Please Enter Check-Out Date');
-define('CURRENCY_TEXT','Currency');
+define('SALES_TEXT','Sales');
 
 define('DAYS_TEXT','Days');
 define('NIGHTS_TEXT','Nights');
-define('NIGHT_TEXT','Night');;
-define('FULLDAY_TEXT','Full Day');;
-define('HALFDAY_TEXT','Half Day');;
+define('NIGHT_TEXT','Night');
+define('FULLDAY_TEXT','Full Day');
+define('HALFDAY_TEXT','Half Day');
 
-#----------- more.php ----------*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#========|----- SEND US A MESSAGE ----- | ===========
+define("WEREHAPPY_TO_HEAR_FROM_YOU_TEXT", "WE'RE HAPPY TO HEAR FROM YOU");
+
+define('NAME_TEXT','First Name');
+define('LAST_NAME_TEXT','Last Name');
+define('YOUR_EMAIL_TEXT','Your E-mail');
+define("ANY_SUGGESTION_TEXT","Doubts, questions, We'll be glad to help you" );
+define('SUBMIT_TEXT','Submit');
+
+
+
+
+
+
+
+
+
+
+
+
+#------------------------------------------------------------------------
+#--------------------- detalles del tour.php ------------------------------
+
+define('DESCRIPTION_TEXT','Description');
+define('INCLUDES_TEXT','Does Include');
+define('INCLUDES_LINK','Inclusions');
+define('RECOMENDATIONS_TEXT','Recomendations');
+define('PRICES_TEXT','Prices');
+
+define('DETAILS_OF_TOUR_TEXT','Details of the Tour');
+
+define('INCLUDES_NOT_TEXT','Does Not Include');
+define('WHAT_SHOULD_I_TAKE_TEXT','What should I pack for my journey');
+
+define('INFO_TEXT','Information');
+define('INFO_BEFORE_BOOKING_TEXT','Information before booking');
+define('PRICE_CHANGE_DEPENDING','the price change depending on quantity of person, the more person you are the cheaper');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#========|----- CONSULTA O RESERVA  ----- | ===========
+define('CHOOSE_TEXT','What do you want to do?');
+define('BOOKING_TEXT','I want to Book');
+define('SUGGESTION_TEXT','I have a doubt');
+define('BOOKING_OR_DOUBT_TEXT','Booking');
+define('HOW_MANY_TEXT','How many people?');
+define('WHEN_U_WANT_TRAVELLING_TEXT','When you want to travel?');
+
+
+define('DROP_US_A_LINE_TEXT','Drop us a line');
+define('YOUR_MESSAGE_TEXT','Your Message');
+
+define('FULL_NAME_TEXT','Full Name');
+
+
+
+
+
+
+#========|----- TREKKING  ----- | ===========
+define('JUST_FOR_TREKKING_GUYS_TEXT','Just for Trekking guys');
+define('TOUR_LAGUNA_HUMANTAY_TEXT','Humantay Lagoon Tour');
+define('HUMANTAY_LAGOON_TOUR_LINK','humantay-lagoon-tour-en');
+define('HUCHUY_QOSQO_2D1N_TEXT','Huchuy Qosqo - 2 Days 1 Night ');
+define('HUCHUY_QOSQO_2D1N_LINK','huchuy-qosqo-tour-2days-1night-en');
+define('JUNGLE_TREK_3D2N_LINK','jungle-trek-3days-2nights-en');
+define('JUNGLE_TREK_3D2N_TEXT','Jungle Trek 3 Days 2 Nights');
+
+
+#========|----- TREKKING  - no usando ----- | ===========
+
+define('SALKANTAY_5D4N_LINK','salkantay-5days-4nights-en');
+define('SALKANTAY_4D3N_LINK','salkantay-4days-3nights-en');
+define('SALKANTAY_5D4N_TEXT','Salkantay 5 Days 4 Nights');
+define('SALKANTAY_4D3N_TEXT','Salkantay 4 Days 3 Nights');
+
+define('WATCH_CONDOR_FLYING_CUSCO_TEXT','Watch Condor Flying - Cusco');
+define('WATCH_CONDOR_FLYING_CUSCO_LINK','watch-condor-flying-cusco-en');
+
+define('MACHUPICCHU_FULL_DAY_LINK','machupicchu-full-day-en');
+define('MACHUPICCHU_2D1N_LINK','machupicchu-2days-1night-en');
+
+define('WATCH_CONDOR_FLYING_TEXT','Condor Watching - Cusco');
+define('CONDOR_WATCHING_LINK','condor-watching-en');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#========|----- CONTACTENOS ----- | ===========;
+define('PHONE_TEXT','Phone');
+
+
+
+
+
+
+
+
+#========|----- QUIENES SOMOS ----- | ===========
+define('WHO_WE_ARE_TEXT','About Us');
+define('MISSION_TEXT','Mission');
+define('VISION_TEXT','Vision');
+
+define('ABOUT_WHOARE_PARRAGRAPH_TEXT_1','aaaa');
+define('ABOUT_WHOARE_PARRAGRAPH_TEXT_2','bbbb');
+define('ABOUT_WHOARE_PARRAGRAPH_TEXT_3','vvv');
+define('ABOUT_WHOARE_PARRAGRAPH_TEXT_4','ccc');
+define('ABOUT_MISSION_PARRAGRAPH_TEXT_1','ccc');
+define('ABOUT_VISION_PARRAGRAPH_TEXT_1','ccvc');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#========|----- NO SE USA ----- | ===========
 define('CONDOR_WATCHING_TEXT','Condor Watching');
 define('MAPI_BY_CAR_TEXT','Machu Picchu by Car');
 define('MARAS_MORAY_TOUR_TEXT','Maras Moray Tour');
 define('HUMANTAY_LAGOON_TEXT','Humantay Lagoon Tour');
 define('HUCHUY_QOSQO_TOUR_TEXT','Huchuy Qosqo Tour');
 define('VALLEY_SUR_TOUR_TEXT','South Valley Cusco Tour');
+define('MARAS_MORAY_LINK','maras-moray-en');
+define('MARAS_MORAY_TEXT','Maras Moray');
+define('VALLE_SUR_TEXT','Valle Sur');
 
 
-#----------- CARROUSEL ----------*
-define('MACHUPICCHU_PREVIEW_TEXT','Are you ready to travel and visit one of the New Seven Wonders of the World? What are you waiting for?');
-define('INKA_TRAIL_PREVIEW_TEXT','The Inca Trail in Peru is perhaps the largest trek in the world because it combines...');
-define('MOUNTAIN_COLOURS_PREVIEW_TEXT','The Rainbown mountain is part of the Peruvian Andes and is one of the most incredible geological features in the world...');
 
-define('SALKANTAY_TEXT','Salkantay Tour');
-define('SALKANTAY_PREVIEW_TEXT','Salkantay es Lorem Ipsum is simply dummy text of the printing and typeseatting industry. Lorem Ipsum has been the');
 
-# ---------- faqs.php -----------
+
+
+
+
+
+
+#========|----- PREGUNTAS FRECUENTES ----- | ===========
 define('NEW_FAQS_TEXT','FAQS');
-
 define('FAQS_WEATHER_TITLE_TEXT','¿ How is the weather in Perú?');
 define('FAQS_WEATHER_DESCRIPTION_TEXT','On the coast it is usually quite hot although during the winter (April-August) it can get chilly early in the morning and at night. In the Andes there are two main seasons - wet and dry. The wet season runs from November to April and is wet but usually warmer overall. The dry season runs from May to October and has hot clear days but cold nights. The only one thing you can say about the weather in Peru is that it is difficult to accurately predict. ');
 

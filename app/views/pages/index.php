@@ -1,13 +1,4 @@
 <?php require APPROOT . '/views/inc/cabecera.php'; ?>
-<!-- Language Switcher -->
-<div id="color-switcher">
-    <h2>Choose Language<a href="#"><i class="fa fa-pencil"></i></a></h2>
-    <div style="display: block; margin: auto; padding-left: 30%;">
-        <select style="padding: 3px 5px; margin-bottom: 15px;" onChange="langchange(this.value)">
-            <?php echo $lang_dd; ?>
-        </select>
-    </div>
-</div>
 
 <!-- ========= SLIDE STARTS =========== -->
 <div id="banner" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
@@ -123,7 +114,7 @@
 									<i class="fa fa-star-o"></i>
 									<span class="review-count"></span>
                                 </span>
-<!--                            <span class="pull-right price">$1800</span>-->
+                            <!--                            <span class="pull-right price">$1800</span>-->
                             <span class="pull-right review-count"><?php echo SALES_TEXT; ?>: 154</span>
                         </div>
                     </a>
@@ -201,7 +192,7 @@
 									<i class="fa fa-star-o"></i>
 									<span class="review-count"></span>
                                 </span>
-<!--                            <span class="pull-right price">$1300</span>-->
+                            <!--                            <span class="pull-right price">$1300</span>-->
                             <span class="pull-right review-count"><?php echo SALES_TEXT; ?>: 110</span>
                         </div>
                     </a>
@@ -228,7 +219,7 @@
 									<i class="fa fa-star"></i>
 									<span class="review-count"></span>
                                 </span>
-<!--                            <span class="pull-right price">$1200</span>-->
+                            <!--                            <span class="pull-right price">$1200</span>-->
                             <span class="pull-right review-count"><?php echo SALES_TEXT; ?>: 98</span>
                         </div>
                     </a>
@@ -256,7 +247,7 @@
 									<i class="fa fa-star-half-o"></i>
 									<span class="review-count"></span>
                                 </span>
-<!--                            <span class="pull-right price">$1500</span>-->
+                            <!--                            <span class="pull-right price">$1500</span>-->
                             <span class="pull-right review-count"><?php echo SALES_TEXT; ?>: 93</span>
                         </div>
                     </a>

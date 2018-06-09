@@ -13,7 +13,7 @@ class Tures extends Controller {
             redirect('users/login');
         }
         $this->tourModelo = $this->model('Ture');
-       
+
     }
     public function index(){
 
@@ -76,31 +76,27 @@ class Tures extends Controller {
     }
 
     public function add(){
+
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
+
             // Sanitize POST array
             $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
-            date_default_timezone_set('America/Lima');
-            $user = $_SESSION['user_id'];
-            $fechaPeru = date("Y-m-d H:i:s");
-            $aleatorio= mt_rand(100, 999);
 
+            date_default_timezone_set('America/Lima');
+
+
+            $fechaPeru = date("Y-m-d H:i:s");
+            $aleatorio= mt_rand(1, 99);
             $data = [
                 'titulo' => trim($_POST['titulo']),
-                'duracion' => trim($_POST['duracion']),
                 'etiquetas' => trim($_POST['etiquetas']),
                 'idioma' => trim($_POST['idioma']),
-                'enlace' => trim($_POST['titulo']),
                 'fecha' => $fechaPeru,
-                'uid' => $user,
+                'uid' => $_SESSION['user_id'],
                 'aleatorio' => $aleatorio,
-                'titulo_err' => ''
+
             ];
-
-            // Validate data
-            if(empty($data['titulo'])){
-                $data['titulo_err'] = 'Please enter title';
-            }
-
 
 
 
@@ -127,6 +123,10 @@ class Tures extends Controller {
             $this->view('tures/add', $data);
         }
     }
+
+
+
+
 
     public function temporal(){
         if($_SERVER['REQUEST_METHOD'] == 'POST'){

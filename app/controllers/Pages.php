@@ -1,11 +1,11 @@
-<?php 
+<?php
 #podemos acceder a Controller desde aqui
 class Pages extends Controller {
 
-	public function __construct(){
+    public function __construct(){
 
 
-	}
+    }
 
     public function index(){
         $this->msnModel = $this->model('Message');
@@ -14,7 +14,7 @@ class Pages extends Controller {
             // Sanitize POST array
             $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
             date_default_timezone_set('America/Lima');
-                        $fechaPeru = date("Y-m-d H:i:s");
+            $fechaPeru = date("Y-m-d H:i:s");
 
             $data = [
                 'nombres' => trim($_POST['nombres']),
@@ -174,13 +174,13 @@ class Pages extends Controller {
             $data = [
 
                 'tid' => $tourIdTemporal->tid,
-               // 'isimple' => trim($_POST['tisimple']),
+                // 'isimple' => trim($_POST['tisimple']),
                 'ifull' => trim($_POST['tifull']),
                 'descripcion' => trim($_POST['tdescripcion']),
-               // 'nota' => trim($_POST['tnota']),
+                // 'nota' => trim($_POST['tnota']),
                 'incluye' => trim($_POST['tincluye']),
                 'noincluye' => trim($_POST['tnoincluye']),
-               // 'quellevar' => trim($_POST['tquellevar'])
+                // 'quellevar' => trim($_POST['tquellevar'])
 
             ];
 
@@ -258,12 +258,14 @@ class Pages extends Controller {
                     'etitulo' => trim($_POST['etitulo']),
                     'eduracion' => trim($_POST['eduracion']),
                     'eestado' => trim($_POST['eestado']),
+                    'eenlace' => trim($_POST['eenlace']),
+
                     //'eisimple' => trim($_POST['eisimple']),
                     'eifull' => trim($_POST['eifull']),
                     'edescripcion' => trim($_POST['edescripcion']),
                     //'edolares' => trim($_POST['edolares']),
-                   // 'esoles' => trim($_POST['esoles']),
-                    //'eetiquetas' => trim($_POST['eetiquetas']),
+                    'esoles' => trim($_POST['esoles']),
+                    'eetiquetas' => trim($_POST['eetiquetas']),
                     'enota' => trim($_POST['enota']),
                     'eincluye' => trim($_POST['eincluye']),
                     'enoincluye' => trim($_POST['enoincluye']),
@@ -302,12 +304,13 @@ class Pages extends Controller {
                     'duracion' => $tour->duracion,
                     'estado' => $tour->estado,
                     'lang' => $tour->lang,
+                    'enlace' => $tour->enlace,
                     //'itinerario' => $tour->itinerario,
                     'full_itinerario' => $tour->full_itinerario,
                     'descripcion' => $tour->descripcion,
                     //'dolares' => $tour->dolares,
-                    //'soles' => $tour->soles,
-                    //'etiquetas' => $tour->etiquetas,
+                    'soles' => $tour->soles,
+                    'etiquetas' => $tour->etiquetas,
                     'nota' => $tour->nota,
                     'incluye' => $tour->incluye,
                     'noincluye' => $tour->noincluye,

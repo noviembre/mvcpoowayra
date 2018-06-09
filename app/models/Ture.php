@@ -100,7 +100,7 @@ class Ture {
 
         $this->db->query("INSERT INTO tours
                       (titulo,uid,duracion, estado, etiquetas,fecha, actualizacion, enlace,ramdon,lang)
-                       VALUES (:titulo,:uid, :duracion, 'editando',:etiquetas, :fecha, :fecha, :enlace,:aleatorio,:idioma)");
+                       VALUES (:titulo,:uid, :duracion, 'editando',:etiquetas, :fecha, :fecha, :titulo,:aleatorio,:idioma)");
 
         // Bind values
         $this->db->bind(':titulo', $data['titulo']);
@@ -108,7 +108,6 @@ class Ture {
         $this->db->bind(':etiquetas', $data['etiquetas']);
         $this->db->bind(':fecha', $data['fecha']);
 
-        $this->db->bind(':enlace', $data['enlace']);
         $this->db->bind(':idioma', $data['idioma']);
         $this->db->bind(':uid', $data['uid']);
         $this->db->bind(':aleatorio', $data['aleatorio']);
@@ -133,13 +132,13 @@ class Ture {
 
         $this->db->bind(':tid', $data['tid']);
 
-       // $this->db->bind(':isimple', $data['isimple']);
+        // $this->db->bind(':isimple', $data['isimple']);
         $this->db->bind(':ifull', $data['ifull']);
         $this->db->bind(':descripcion', $data['descripcion']);
-       // $this->db->bind(':nota', $data['nota']);
+        // $this->db->bind(':nota', $data['nota']);
         $this->db->bind(':incluye', $data['incluye']);
         $this->db->bind(':noincluye', $data['noincluye']);
-       // $this->db->bind(':quellevar', $data['quellevar']);
+        // $this->db->bind(':quellevar', $data['quellevar']);
 
         // Execute
         if($this->db->execute()){
@@ -203,7 +202,10 @@ class Ture {
         $this->db->query("UPDATE tdetalles a INNER JOIN tours b 
                           ON a.tid=b.tid SET titulo = :titulo, uid=:uid,
                           duracion = :duracion,
-                           estado = :estado,  
+                           estado = :estado, 
+                           soles = :soles,
+                           enlace = :enlace,  
+                           etiquetas = :etiquetas, 
                            actualizacion =:fecha,
                            descripcion =:descripcion, 
                            incluye = :incluye, noincluye =:noincluye, 
@@ -211,18 +213,20 @@ class Ture {
                            full_itinerario = :ifull WHERE b.tid = :tid");
 
         //durmiendo
-        //etiquetas = :etiquetas, itinerario = :isimple,
-        //soles = :soles, dolares =:dolares,
+        //itinerario = :isimple,
+        //dolares =:dolares,
 
         // Bind values
         $this->db->bind(':tid', $data['tid']);
         $this->db->bind(':titulo', $data['etitulo']);
         $this->db->bind(':duracion', $data['eduracion']);
         $this->db->bind(':estado', $data['eestado']);
-       // $this->db->bind(':etiquetas', $data['eetiquetas']);
+        $this->db->bind(':enlace', $data['eenlace']);
+
+        $this->db->bind(':etiquetas', $data['eetiquetas']);
         $this->db->bind(':descripcion', $data['edescripcion']);
-       // $this->db->bind(':soles', $data['esoles']);
-       // $this->db->bind(':dolares', $data['edolares']);
+        $this->db->bind(':soles', $data['esoles']);
+        // $this->db->bind(':dolares', $data['edolares']);
         $this->db->bind(':incluye', $data['eincluye']);
         $this->db->bind(':noincluye', $data['enoincluye']);
         //$this->db->bind(':isimple', $data['eisimple']);
