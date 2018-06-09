@@ -1,13 +1,13 @@
 <?php
 if(isset($_REQUEST['lang'])){
-    $_COOKIE['language']=$_REQUEST['lang'];
+    $_SESSION['language']=$_REQUEST['lang'];
 }
 
 $sql= $mysqli->query("select * from bsi_language where `lang_default`=true");
 $row_default_lang=$sql->fetch_assoc();
 
-if(isset($_COOKIE['language']))
-    $language_selected=$mysqli->real_escape_string($_COOKIE['language']);
+if(isset($_SESSION['language']))
+    $language_selected=$mysqli->real_escape_string($_SESSION['language']);
 else
     $language_selected=$row_default_lang['lang_code'];
 $sql2=$mysqli->query("select * from bsi_language where  lang_code='$language_selected' ");

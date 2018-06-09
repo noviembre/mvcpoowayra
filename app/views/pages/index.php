@@ -32,7 +32,7 @@
                             <div class="caption-info-inner text-center">
                                 <h1 class="animated zoomIn"><?PHP  echo INKA_TRAIL_TEXT;?></h1>
                                 <p class="animated zoomIn"><?PHP  echo INKA_TRAIL_PREVIEW_TEXT;?></p>
-                                <a href="tours/<?php echo INKA_TRAIL_2D1N_LINK; ?>" class="animated zoomIn btn btn-primary page-scroll">
+                                <a href="tours/<?php echo INKA_TRAIL_4D3N_LINK; ?>" class="animated zoomIn btn btn-primary page-scroll">
                                     <?PHP  echo READ_MORE_TEXT;?>
                                 </a>
                             </div>
@@ -383,8 +383,10 @@
                                 <i class="fa fa-phone"></i>
                             </div>
                             <div class="contact-info">
-                                <p><?php echo PHONE_TEXT; ?>:+051 928 946561<br/>
-                                    <?php echo PHONE_TEXT; ?>:+051 944 262401</p>
+                                <p><?php echo PHONE_TEXT; ?> 1:
+                                    <a href="tel:+51928946561">+051 928 946561</a></p>
+                                 <p><?php echo PHONE_TEXT; ?> 2:
+                                     <a href="tel:+51944262401">+051 944 262401</a></p>
                             </div>
                         </li>
 
@@ -411,7 +413,10 @@
                                 <i class="fa fa-whatsapp"></i>
                             </div>
                             <div class="contact-info">
-                                <p>+051 928 946561<br/> +051 944 262401 </p>
+                                <p>WhatsApp 1:
+                                    <a href="https://api.whatsapp.com/send?phone=51928946561">+051 928 946561</a></p>
+                                <p>WhatsApp 2:
+                                    <a href="https://api.whatsapp.com/send?phone=51944262401">+051 944 262401</a></p>
                             </div>
                         </li>
 

@@ -13,8 +13,8 @@ define('HOME_TEXT','Inicio');
 define('TREKKING_TEXT','Trekking');
 define('TREKKING_LINK','trekking');
 
-define('PACKAGE_TEXT','Paquetes');
-define('PACKAGES_LINK','packages');
+define('PACKAGE_TEXT','Destinos');
+define('PACKAGES_LINK','cities-es');
 
 define('FAQS_TEXT','Preg. Frecuentes');
 define('FAQS_LINK','faqs');
@@ -23,9 +23,8 @@ define('ABOUT_TEXT','Nosotros');
 define('ABOUT_US_LINK','aboutus');
 
 define('CONTACT_TEXT','Contactenos');
-define('CONTACT_LINK','contact-es');
+define('CONTACT_LINK','contactus');
 
-define('LANGUAGE','Idioma');
 
 define('TOURS_TEXT','Tours');
 define('TOURS_LINK','tours-es');
@@ -39,16 +38,20 @@ define('TOURS_LINK','tours-es');
 
 
 #========|----- CARROUSEL ----- | ===========
+
+define('MACHUPICCHU_TEXT','Machu Picchu');
+define('INKA_TRAIL_TEXT','Camino Inca');
+define('MOUNTAIN_COLOURS_TEXT','Montaña 7 Colores');
+
 define('MACHUPICCHU_PREVIEW_TEXT','Estas listo para viajar y conocer una de las 7 Maravillas del Mundo? Que Esperas?');
 define('INKA_TRAIL_PREVIEW_TEXT','El Camino Inca en Perú es quizás la caminata más grande del mundo porque combina...');
 define('MOUNTAIN_COLOURS_PREVIEW_TEXT','La Montaña 7 Colores es parte de los Andes peruanos y es una de las características geológicas más increíbles del mundo...');
 
 define('SALKANTAY_TEXT','Salkantay');
 define('SALKANTAY_PREVIEW_TEXT','Salkantay es Lorem Ipsum is simply dummy text of the printing and typeseatting industry. Lorem Ipsum has been the');
-define('READ_MORE_TEXT','Leer mas');
 
 
-define('MEET_MACHUPICCHU_TEXT','conoce nuestra maravilla.');
+
 define('BOOK_TEXT','Descubre Nuestros Tours');
 define('BOOK_NOW_TEXT','Reservar');
 define('MORE_INFO_TEXT','Mas Informacion');
@@ -61,6 +64,7 @@ define('INKA_TRAIL_4D3N_LINK','inka-trail-4days-3nights-es');
 
 
 
+define('READ_MORE_TEXT','Leer mas');
 
 
 
@@ -69,12 +73,10 @@ define('INKA_TRAIL_4D3N_LINK','inka-trail-4days-3nights-es');
 
 #========|----- TOURS POPULARES - LINK ----- | ===========
 define('CITY_TOUR_LINK','city-tour-es');
+define('MACHUPICCHU_BY_CAR_LINK','machupicchu-by-car-es');
+define('INKA_TRAIL_2D1N_LINK','inka-trail-2days-1night-es');
 define('SACRED_VALLEY_LINK','sacred-valley-es');
 define('MOUNTAIN_COLOURS_LINK','rainbown-mountain-es');
-
-define('MACHUPICCHU_BY_CAR_LINK','machupicchu-by-car-es');
-
-define('INKA_TRAIL_2D1N_LINK','inka-trail-2days-1night-es');
 
 
 
@@ -83,19 +85,15 @@ define('INKA_TRAIL_2D1N_LINK','inka-trail-2days-1night-es');
 
 
 #========|----- TOURS POPULARES - TEXT ----- | ===========
-define('MACHUPICCHU_TEXT','Machu Picchu');
-define('CITY_TOUR_TEXT','City Tour');
-define('JUNGLE_TREK_TEXT','Inka Jungle');
-define('SACRED_VALLEY_TEXT','Valle Sagrado');
-define('MOUNTAIN_COLOURS_TEXT','Montaña 7 Colores');
-define('INKA_TRAIL_TEXT','Camino Inca');
 
+define('CITY_TOUR_TEXT','City Tour');
 define('MACHUPICCHU_BY_CAR_TEXT','Machu Picchu by Car');
+define('SACRED_VALLEY_TEXT','Valle Sagrado');
+
 
 define('INKA_TRAIL_2D1N_TEXT','Camino Inka 2 Dias 1 Noche');
 
-define('JUNGLE_TREK_4D3N_TEXT','Inka Jungle 4 Dias 3 Noches');
-define('JUNGLE_TREK_4D3N_LINK','jungle-trek-4days-3nights-es');
+
 
 define('LAGUNA_HUMANTAY_TEXT','Laguna Humantay');
 
@@ -238,6 +236,9 @@ define('HUCHUY_QOSQO_2D1N_LINK','huchuy-qosqo-tour-2days-1night-es');
 define('JUNGLE_TREK_3D2N_LINK','jungle-trek-3days-2nights-es');
 define('JUNGLE_TREK_3D2N_TEXT','Inka Jungle 3 Dias 2 Noches');
 
+define('JUNGLE_TREK_4D3N_TEXT','Inka Jungle 4 Dias 3 Noches');
+define('JUNGLE_TREK_4D3N_LINK','jungle-trek-4days-3nights-es');
+define('JUNGLE_TREK_TEXT','Inka Jungle');
 
 #========|----- TREKKING  - no usando ----- | ===========
 define('SALKANTAY_5D4N_TEXT','Salkantay 5 Dias 4 Noches');
@@ -287,7 +288,7 @@ define('VISION_TEXT','Vision');
 define('ABOUT_WHOARE_PARRAGRAPH_TEXT_1','Somos una agencia de viajes, Operadora de Turismo; que ofrece las mejores posibilidades de viaje en nuestro pa&iacute;s, brind&aacute;ndoles experiencias &uacute;nicas a la medida de sus necesidades. Preparados para atenderlos en sus vacaciones de familia, viajes de negocios, grupos de incentivo, luna de miel, caminatas- aventura y atenci&oacute;n a pasajeros de la tercera edad.');
 define('ABOUT_WHOARE_PARRAGRAPH_TEXT_2','Conocedores de lo importante que es para ustedes, el buen trato a los clientes, nos hemos especializado en el manejo del Turismo Receptivo Individual y Grupal. Ser la mejor empresa en calidad y servicio es una meta que nos proponemos, gracias a ustedes.');
 define('ABOUT_WHOARE_PARRAGRAPH_TEXT_3','PERU, es un pa&iacute;s con muchas opciones de viaje es por eso que hemos creado diferentes paquetes orientados a satisfacer las necesidades de cada uno de ustedes. Ofrecemos turismo cultural, turismo de naturaleza, turismo vivencial, turismo de aventura, turismo gastron&oacute;mico y&nbsp;turismo m&iacute;stico.');
-define('ABOUT_WHOARE_PARRAGRAPH_TEXT_4','Nuestro equipo de trabajo, con personal profesional y capacitado, gu&iacute;as especializados en diferentes idiomas, est&aacute; esper&aacute;ndolos para brindarles un servicio personalizado, con precios competitivos y directos con una grata experiencia que jam&aacute;s olvidar&aacute;n.');
+define('ABOUT_WHOARE_PARRAGRAPH_TEXT_4','Nuestro equipo de trabajo esta conformado por personal profesional y capacitado, gu&iacute;as especializados en diferentes idiomas. Estamos esper&aacute;ndolos para brindarles un servicio personalizado, con precios competitivos y directos con una inolvidable experiencia que jam&aacute;s olvidar&aacute;n.');
 
 define('ABOUT_MISSION_PARRAGRAPH_TEXT_1','Brindar servicios tur&iacute;sticos que supere las expectativas de nuestros clientes mediante un servicio confiable y&nbsp; de calidad que contribuya al desarrollo socioecon&oacute;mico de las comunidades ancestrales, minimizar los impactos negativos al medio ambiente y lograr la plena satisfacci&oacute;n de nuestros clientes.');
 define('ABOUT_VISION_PARRAGRAPH_TEXT_1','Ser reconocidos por la industria como la mejor empresa de turismo del cusco, basada en la calidez, eficacia, eficiencia, profesionalismo y el desarrollo tecnol&oacute;gico, habiendo logrado que nuestra gente sienta a Wayra Cusco World como su propia empresa.');

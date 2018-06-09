@@ -11,8 +11,8 @@ define('HOME_TEXT','Home');
 define('TREKKING_TEXT','Trekking');
 define('TREKKING_LINK','trekking');
 
-define('PACKAGE_TEXT','Packages');
-define('PACKAGES_LINK','packages');
+define('PACKAGE_TEXT','Cities');
+define('PACKAGES_LINK','cities-en');
 
 define('FAQS_TEXT','FAQS');
 define('FAQS_LINK','faqs');
@@ -21,10 +21,10 @@ define('ABOUT_TEXT','About Us');
 define('ABOUT_US_LINK','aboutus');
 
 define('CONTACT_TEXT','Contact Us');
-define('CONTACT_LINK','contact-en');
+define('CONTACT_LINK','contactus');
 
 
-define('LANGUAGE','Language');
+
 define('TOURS_LINK','tours-en');
 
 
@@ -39,8 +39,14 @@ define('TOURS_TEXT','Tours');
 
 
 #========|----- CARROUSEL ----- | ===========
+define('MACHUPICCHU_TEXT','Machu Picchu');
+define('INKA_TRAIL_TEXT','Inka Trail');
+define('MOUNTAIN_COLOURS_TEXT','Rainbown Mountain');
+
+
 define('MACHUPICCHU_PREVIEW_TEXT','Are you ready to travel and visit one of the New Seven Wonders of the World? What are you waiting for?');
 define('INKA_TRAIL_PREVIEW_TEXT','The Inca Trail in Peru is perhaps the largest trek in the world because it combines...');
+
 define('MOUNTAIN_COLOURS_PREVIEW_TEXT','The Rainbown mountain is part of the Peruvian Andes and is one of the most incredible geological features in the world...');
 
 define('SALKANTAY_TEXT','Salkantay Tour');
@@ -48,15 +54,11 @@ define('SALKANTAY_PREVIEW_TEXT','Salkantay es Lorem Ipsum is simply dummy text o
 define('READ_MORE_TEXT','Read more');
 
 
-define('MEET_MACHUPICCHU_TEXT','MEET OUR WONDER.');
+
 define('BOOK_TEXT','Discover Our Tours');
 define('BOOK_NOW_TEXT','Booking');
 define('MORE_INFO_TEXT','More Info');
 define('POPULAR_TOURS_TEXT','Most Popular Tours');
-
-
-define('INKA_TRAIL_4D3N_TEXT','Inka Trail 4 Days 3 Nights');
-define('INKA_TRAIL_4D3N_LINK','inka-trail-4days-3nights-en');
 
 
 
@@ -83,12 +85,11 @@ define('JUNGLE_TREK_4D3N_LINK','jungle-trek-4days-3nights-en');
 
 
 #========|----- TOURS POPULARES - TEXT ----- | ===========
-define('MACHUPICCHU_TEXT','Machu Picchu');
+
 define('CITY_TOUR_TEXT','City Tour');
-define('JUNGLE_TREK_TEXT','Jungle Trek');
+
 define('SACRED_VALLEY_TEXT','Sacred Valley');
-define('MOUNTAIN_COLOURS_TEXT','Rainbown Mountain');
-define('INKA_TRAIL_TEXT','Inka Trail');
+
 
 define('MACHUPICCHU_BY_CAR_TEXT','Machu Picchu by Car');
 
@@ -236,6 +237,10 @@ define('HUCHUY_QOSQO_2D1N_LINK','huchuy-qosqo-tour-2days-1night-en');
 define('JUNGLE_TREK_3D2N_LINK','jungle-trek-3days-2nights-en');
 define('JUNGLE_TREK_3D2N_TEXT','Jungle Trek 3 Days 2 Nights');
 
+define('JUNGLE_TREK_TEXT','Jungle Trek');
+define('INKA_TRAIL_4D3N_TEXT','Inka Trail 4 Days 3 Nights');
+define('INKA_TRAIL_4D3N_LINK','inka-trail-4days-3nights-en');
+
 
 #========|----- TREKKING  - no usando ----- | ===========
 
@@ -282,12 +287,15 @@ define('WHO_WE_ARE_TEXT','About Us');
 define('MISSION_TEXT','Mission');
 define('VISION_TEXT','Vision');
 
-define('ABOUT_WHOARE_PARRAGRAPH_TEXT_1','aaaa');
-define('ABOUT_WHOARE_PARRAGRAPH_TEXT_2','bbbb');
-define('ABOUT_WHOARE_PARRAGRAPH_TEXT_3','vvv');
-define('ABOUT_WHOARE_PARRAGRAPH_TEXT_4','ccc');
-define('ABOUT_MISSION_PARRAGRAPH_TEXT_1','ccc');
-define('ABOUT_VISION_PARRAGRAPH_TEXT_1','ccvc');
+define('ABOUT_WHOARE_PARRAGRAPH_TEXT_1','We are a travel agency, Tourism Operator; that offers the best way to travel in our country, providing unique experiences tailored to your needs. Prepared to assist them in your family vacations, business trips, groups, honeymoon, adventure hikes and care for seniors.');
+define('ABOUT_WHOARE_PARRAGRAPH_TEXT_2','Knowing how important it is for you, good treatment to clients, we have specialized in the management of Individual and Group Receptive Tourism. Our goal is being the best company in quality and service.');
+
+define('ABOUT_WHOARE_PARRAGRAPH_TEXT_3','PERU, is a country with many travel options that is why we have created different packages oriented to satisfy the needs of each one of you. We offer cultural tourism, nature tourism, experiential tourism, adventure tourism, gastronomic tourism and mystic tourism.');
+define('ABOUT_WHOARE_PARRAGRAPH_TEXT_4','We work with professional and trained personnel, specialized guides in different languages. We are waiting for you to offer a personalized service, with confortable prices with and an wonderfull experience that you will never forget.');
+
+define('ABOUT_MISSION_PARRAGRAPH_TEXT_1','Our Mission is provide tourism services that exceed the expectations of our customers through a reliable and quality service that contributes to the socioeconomic development of ancestral communities, minimize negative impacts on the environment and achieve the full satisfaction of our customers.');
+
+define('ABOUT_VISION_PARRAGRAPH_TEXT_1','Our Vision is to be recognized by the industry as the best tourism company in Cusco, based on warmth, efficiency, professionalism and technological development, having made our people feel Wayra Cusco World as their own company.');
 
 
 

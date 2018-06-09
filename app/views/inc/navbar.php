@@ -11,7 +11,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand page-scroll" href="/">
+                    <a class="navbar-brand page-scroll" href="<?php echo URLROOT; ?>/">
                         <img style="width: 198px; height: auto" src="<?php echo URLROOT; ?>/img/logo-white.png" alt="Logo" /></a>
                 </div>
 
@@ -24,10 +24,11 @@
                     <ul class="nav navbar-nav navbar-right" style="padding-left: 20px">
                         <li class="dropdown">
                             <a href="#" class="page-scroll" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                <?php echo LANGUAGE; ?></a>
+                                Language</a>
                             <ul class="dropdown-menu page-scroll" onchange="langchange(this.value)">
-                                <li><a class="page-scroll" href="index.php?lang=es">Spanish</a></li>
                                 <li><a class="page-scroll" href="index.php?lang=en">English</a></li>
+                                <li><a class="page-scroll" href="index.php?lang=es">Spanish</a></li>
+                                <li><a class="page-scroll" href="index.php?lang=br">Portuguese</a></li>
                             </ul>
                         </li>
                     </ul>

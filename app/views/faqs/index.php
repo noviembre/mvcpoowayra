@@ -106,7 +106,6 @@ require APPROOT . '/views/inc/cabecera.php'; ?>
 
 
         </div>
-    </div>
 </section>
 <!--end main-content-->
 <?php
